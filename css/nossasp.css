@@ -1,56 +1,198 @@
 /* HEADER */
+#header {
+    background-color: #70baca;
+    background-image: url("../images/nossasp_header_bg1.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
 #header * {
     clear: none;
     margin:0;
     padding:0;
 }
 
-.header-vew, .header-vew label, .header-vew .views-widget , .vew-0 * {
+#logo {
+    z-index: 20;
+    width:320px;
+}
+
+.region-header {
+    float:left;
+}
+
+#views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-form {
+    position:absolute;
+    padding: 23px 0;
+}
+
+#views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-widgets {
+    position: relative;
+}
+
+.header-vew, .header-vew .views-widget, .vew-0 div {
+    display: inline-block;
     vertical-align: middle;
-    display:inline-block;
+}
+
+.vew-0, .vew-1 , .vew-2 , .vew-3 {
+    position: absolute;
 }
 
 /* 
     CAMPOS DE BUSCA POR NOME OU ENDEREÇO 
     */
+/** LABELS **/
+/*** FORMATO E COR  ***/
+#header .vew-0 .label-header, #header .vew-1 .label-header {
+    display: block;
+    width: 118px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-top: -10px;
+    background-color: rgba(97,144,167,0.3);
+}
+
+/* header busca ativa */
+.active-search-bg {
+    background-color: rgba(97,144,167,1) !important;
+}
+
+/*** POSICIONAMENTO ***/
+#header .vew-0 label.label-header {
+    left: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px; 
+}
+#header .vew-1 label.label-header {
+    position: absolute;
+    left: 138px;
+}
+
+
+/* INPUTS */
 .vew-0 input, .vew-1 input {
     width: 150px;
 }
-
-#header .vew-0 label, #header .vew-1 label {
+.vew-0 div.views-widget, .vew-1 div.views-widget {
     position: absolute;
-    top: 30px;
-    width: 100px;
-    text-align: center;
-    padding: 0 10px;
+    left: 276px;
+    top: -10px;
 }
 
-.vew-0 label {
-    left:50px;
+.vew-0 input, .vew-1 input {
+    height: 46px;
+    border: 0;
 }
 
-.vew-1 label {
-    left: 140px;
+.vew-0 fieldset {
+    border: 0;
 }
 
-.vew-0 .views-widget, .vew-1 .views-widget {
-    position: absolute;
-    top: 35px;
-    left: 250px;
+#header .vew-0 input.form-autocomplete {
+    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 33px, 100% 18px;
+}
+
+#header .vew-0 input.throbbing {
+    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% -21px, 100% -1px;
 }
 
 .vew-0 .views-widget {
-    z-index: 0;
-}
-
-.vew-1 .views-widget {
     z-index: 1;
 }
 
-/*
-    CAMPOS DE BUSCA POR TIPO DE ORGANIZAÇÃO OU ÁREA DE ATUAÇÃO
-    */
+.vew-1 .views-widget {
+    z-index: 0;
+}
 
+/* BOTÃO "OK" (Aplly) */
+#header div.header-vew-ok {
+    position: absolute;
+    left: 426px;
+    top: -10px;
+}
+
+#header .header-vew-ok input {
+    content: "OK";
+    background-color: rgba(98,145,168,1);
+    height: 46px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}
+
+/* Aqui começam os dois últimos filtros do HEADER  */
+/* TIPO DE ORGANIZAÇÃO (vew-3) */
+.vew-3 {
+    left: 490px;
+    top: -10px;
+}
+
+.vew-3 label.label-header, .vew-3 div.view-widget {
+    position: absolute;
+}
+#header .vew-3 label.label-header {
+    width: auto;
+    padding: 14px 0 0 3px;
+    font-size: 14px;
+    height: 28px;
+    vertical-align: middle;
+    background: none;
+    color: rgba(200,200,200,1);
+    user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+#header .vew-3 select {
+    height: 46px;
+    width: 190px;
+    border: none;
+}
+
+#header .vew-3 select, #header .vew-3 option {
+    background: white;
+}
+
+#header .vew-3 select {
+    color: white;
+}
+
+#header .vew-3 select option {
+    color: black;
+}
+
+/* ÁREA DE ATUAÇÃO (vew-2) */
+.vew-2 {
+    display:none;
+}
+.vew-2 label[for="edit-tid"] {
+    display:none;
+}
+.vew-2 .views-widget {
+/*    position: absolute;*/
+/*    left:950px;*/
+    z-index: 1;
+    background-color: rgba(200,200,200,0.7);
+}
 
 /* 1.0 Barra Superior */
 /*  1.1 Filtros   */

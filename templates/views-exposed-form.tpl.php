@@ -29,7 +29,7 @@
         foreach($widgets as $id => $widget): ?>
       <div class="views-exposed-widget header-vew vew-<? print $counter; ?>">
         <?php if (!empty($widget->label)): ?>
-          <label for="<?php print $widget->id; ?>" class="label-header">
+          <label for="<?php print $widget->id; ?>" class="label-header <? if ($counter=="0") { echo(' active-search-bg');}; ?>" >
             <?php print $widget->label; ?>
           </label>
         <?php endif; ?>
@@ -44,7 +44,7 @@
         </div>
       </div>
     <?php endforeach; ?>
-    <div class="views-exposed-widget">
+    <div class="views-exposed-widget header-vew-ok">
       <?php print $button ?>
     </div>
   </div>
