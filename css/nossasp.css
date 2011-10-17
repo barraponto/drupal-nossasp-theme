@@ -161,6 +161,9 @@
     -khtml-user-select: none; 
     -webkit-user-select: none; 
     -o-user-select: none; 
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
 }
 
 #header .vew-3 select {
@@ -169,6 +172,9 @@
     border: none;
     color: white;
     background: transparent;
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
 }
 
 #header .vew-3 select option {
@@ -210,16 +216,17 @@
     padding: 20px 5px 20px 5px;
     z-index:1;
 }
-.vew-2 .views-widget {
-/*    position: absolute;*/
-/*    left:950px;*/
-    z-index: 1;
-    background-color: rgba(200,200,200,0.7);
+
+.views-admin-links {
+    z-index: 100;
+    font-size: 10px;
+    position: absolute;
+    right:0;
+}
+#navigation {
+    display:none;
 }
 
-/* 1.0 Barra Superior */
-/*  1.1 Filtros   */
-/*   1.1.1 INPUTS Text */
-input.edit-title.form-text {
-    
+#main-wrapper #main #content {
+    margin-top: 0;
 }
