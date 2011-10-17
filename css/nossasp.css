@@ -140,8 +140,9 @@
 /* Aqui começam os dois últimos filtros do HEADER  */
 /* TIPO DE ORGANIZAÇÃO (vew-3) */
 .vew-3 {
-    left: 490px;
+    left: 500px;
     top: -10px;
+    background: url(../images/arrow.png) no-repeat right #fff
 }
 
 .vew-3 label.label-header, .vew-3 div.view-widget {
@@ -166,26 +167,48 @@
     height: 46px;
     width: 190px;
     border: none;
-}
-
-#header .vew-3 select, #header .vew-3 option {
-    background: white;
-}
-
-#header .vew-3 select {
     color: white;
+    background: transparent;
 }
 
 #header .vew-3 select option {
+    background: white;
     color: black;
 }
 
 /* ÁREA DE ATUAÇÃO (vew-2) */
 .vew-2 {
-    display:none;
+    left: 700px;
+    top: -10px;
+    height: 46px;
 }
-.vew-2 label[for="edit-tid"] {
-    display:none;
+
+#header .vew-2 label.label-header {
+    display: block;
+    width: 225px;
+    padding: 14px 0 0 10px;
+    font-size: 14px;
+    height: 32px;
+    vertical-align: middle;
+    background: url(../images/arrow.png) no-repeat top right #fff;
+    color: rgba(200,200,200,1);
+    user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none;
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+#header .vew-2 .form-checkboxes {
+    position: absolute;
+    top: 46px;
+    background: white;
+    width: 225px;
+    padding: 20px 5px 20px 5px;
+    z-index:1;
 }
 .vew-2 .views-widget {
 /*    position: absolute;*/
