@@ -1,3 +1,4 @@
+/* ----------- HEADER ----------- */
 /* HEADER */
 #header {
     background-color: #70baca;
@@ -12,6 +13,7 @@
     padding:0;
 }
 
+/* ---------- HEADER: LOGO ---------- */
 #logo {
     z-index: 20;
     width:320px;
@@ -21,6 +23,7 @@
     float:left;
 }
 
+/* ---------- HEADER: FORMS ---------- */
 #views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-form {
     position:absolute;
     padding: 23px 0;
@@ -46,18 +49,18 @@
 /*** FORMATO E COR  ***/
 #header .vew-0 .label-header, #header .vew-1 .label-header {
     display: block;
-    width: 118px;
+    width: 100px;
     height: 36px;
     text-align: center;
     vertical-align: middle;
     font-size: 14px;
     color: #ffffff;
-    padding: 5px 10px;
-    margin-top: -10px;
+    padding: 2px 4px;
+    margin-top: -7px;
     background-color: rgba(97,144,167,0.3);
 }
 
-/* header busca ativa */
+/* header busca ativa - ADICIONADO VIA JAVASCRIPT */
 .active-search-bg {
     background-color: rgba(97,144,167,1) !important;
 }
@@ -65,31 +68,31 @@
 /*** POSICIONAMENTO ***/
 #header .vew-0 label.label-header {
     left: 0;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    -webkit-border-top-left-radius: 8px;
-    -webkit-border-bottom-left-radius: 8px;
-    -moz-border-radius-topleft: 8px;
-    -moz-border-radius-bottomleft: 8px; 
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-bottomleft: 6px; 
 }
 #header .vew-1 label.label-header {
     position: absolute;
-    left: 138px;
+    left: 108px;
 }
 
 
 /* INPUTS */
 .vew-0 input, .vew-1 input {
-    width: 150px;
+    width: 178px;
 }
 .vew-0 div.views-widget, .vew-1 div.views-widget {
     position: absolute;
-    left: 276px;
-    top: -10px;
+    left: 217px;
+    top: -7px;
 }
 
 .vew-0 input, .vew-1 input {
-    height: 46px;
+    height: 40px;
     border: 0;
 }
 
@@ -100,13 +103,13 @@
 #header .vew-0 input.form-autocomplete {
     background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
     background-repeat: no-repeat, no-repeat;
-    background-position: 100% 33px, 100% 18px;
+    background-position: 100% 28px, 100% 13px;
 }
 
 #header .vew-0 input.throbbing {
     background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
     background-repeat: no-repeat, no-repeat;
-    background-position: 100% -21px, 100% -1px;
+    background-position: 100% -26px, 100% -7px;
 }
 
 .vew-0 .views-widget {
@@ -120,28 +123,34 @@
 /* BOTÃO "OK" (Aplly) */
 #header div.header-vew-ok {
     position: absolute;
-    left: 426px;
-    top: -10px;
+    left: 396px;
+    top: -7px;
 }
 
 #header .header-vew-ok input {
     content: "OK";
     background-color: rgba(98,145,168,1);
-    height: 46px;
+    height: 40px;
     text-align: center;
     vertical-align: middle;
     font-size: 14px;
     color: #ffffff;
     font-weight: bold;
     border: none;
-    padding: 5px;
+    padding: 2px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px; 
 }
 
 /* Aqui começam os dois últimos filtros do HEADER  */
 /* TIPO DE ORGANIZAÇÃO (vew-3) */
 .vew-3 {
-    left: 500px;
-    top: -10px;
+    left: 460px;
+    top: -7px;
     background: url(../images/arrow.png) no-repeat right #fff
 }
 
@@ -150,7 +159,7 @@
 }
 #header .vew-3 label.label-header {
     width: auto;
-    padding: 14px 0 0 3px;
+    padding: 12px 0 0 3px;
     font-size: 14px;
     height: 28px;
     vertical-align: middle;
@@ -161,14 +170,15 @@
     -khtml-user-select: none; 
     -webkit-user-select: none; 
     -o-user-select: none; 
-    border-top-right-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topright: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    z-index:1;
 }
 
 #header .vew-3 select {
-    height: 46px;
-    width: 190px;
+    height: 39px;
+    width: 208px;
     border: none;
     color: white;
     background: transparent;
@@ -184,17 +194,17 @@
 
 /* ÁREA DE ATUAÇÃO (vew-2) */
 .vew-2 {
-    left: 700px;
-    top: -10px;
-    height: 46px;
+    left: 675px;
+    top: -7px;
+    height: 40px;
 }
 
 #header .vew-2 label.label-header {
     display: block;
     width: 225px;
-    padding: 14px 0 0 10px;
+    padding: 12px 0 0 10px;
     font-size: 14px;
-    height: 32px;
+    height: 28px;
     vertical-align: middle;
     background: url(../images/arrow.png) no-repeat top right #fff;
     color: rgba(200,200,200,1);
@@ -210,23 +220,216 @@
 
 #header .vew-2 .form-checkboxes {
     position: absolute;
-    top: 46px;
+    top: 40px;
     background: white;
     width: 225px;
-    padding: 20px 5px 20px 5px;
+    padding: 22px 5px;
     z-index:1;
 }
 
+/* Hiding Admin Links */
 .views-admin-links {
-    z-index: 100;
+    z-index: 999;
     font-size: 10px;
     position: absolute;
     right:0;
+    top:0;
+    visibility: hidden;
 }
+
+.views-admin-links:hover {
+    visibility: visible;
+}
+
 #navigation {
     display:none;
 }
 
 #main-wrapper #main #content {
     margin-top: 0;
+}
+
+/* ----------- SIDEBAR LEFT (SDBL) ----------- */
+#page .region-sidebar-first {
+    z-index:2;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    width: 320px;
+    margin-top: 0;
+}
+
+#page .region-sidebar-first .section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    margin: 0;
+    background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
+}
+
+/* ---------- SDBL: "COMO FUNCIONA" ---------- */
+#page .region-sidebar-first #block-block-2 {
+    background-color: rgba(240,249,251,1);
+    width: 305px;
+    height: 28px;
+    top: 0;
+    position: relative;
+    padding: 10px 0 10px 15px;
+    display: block;
+}
+
+#page .region-sidebar-first #block-block-2 h2.title {
+    font-size: 14px;
+    color: rgba(38,146,203,1);
+    float: left;
+    padding: 5px 0 0 0;
+}
+
+#page .region-sidebar-first #block-block-2 .content a {
+    margin:0;
+    padding: 14px 0;
+    float: right;
+    padding: 5px 10px 0 0;
+    font-size: 11px;
+    color: rgba(161,161,161,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+#page .region-sidebar-first #block-block-2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- SDBL: DOWNLOAD DO BANCO DE DADOS ---------- */
+#page .region-sidebar-first #block-block-1 {
+    background-color: rgba(234,234,234,1);
+    right: 0;
+    width: 138px;
+    height: 34px;
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+#page .region-sidebar-first #block-block-1 #texto_download {
+    margin: 4px 5px 0 0;
+    padding: 4px 36px 0 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#page .region-sidebar-first #block-block-1 #img_download {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+
+/* ---------- SDBL: NUM DE RESULTADOS ---------- */
+#page .region-sidebar-first .view-header {
+    margin-left: 15px;
+    padding-left: 10px;
+    background-color: rgba(89,160,102,1);
+    font-size: 16px;
+    color: rgba(38,146,203,1);
+    text-transform: uppercase;
+}
+
+
+#page .region-sidebar-first .view-header p {
+    margin: 0;
+    padding: 16px 0 16px 5px;
+    background-color: rgba(234,234,234,1);
+}
+
+/* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
+#page .region-sidebar-first .view-content {
+    padding-left: 15px;
+}
+
+#page .region-sidebar-first .view-content .views-row {
+    padding: 12px 0 12px 15px;
+    font-size: 12px;
+}
+
+#page .region-sidebar-first .view-content .views-row-odd {
+    background: rgba(255,255,255,1);
+}
+
+#page .region-sidebar-first .view-content .views-row-even {
+    background: rgba(230,230,230,1);
+}
+
+#page .region-sidebar-first .view-content .views-row .views-field-title * {
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+}
+
+#page .region-sidebar-first .view-content .views-row .views-field-tid {
+    color: rgba(81,128,153,1);
+    text-overflow: clip;
+}
+
+#page .region-sidebar-first .view-content .views-row .views-field-tid-1 {
+    color: rgba(0,0,0,1);
+}
+
+/* ---------- SDBL: PAGINAÇÃO DAS ENTIDADES ---------- */
+#page .region-sidebar-first .item-list {
+    padding: 15px 0 15px 30px;
+    background: rgba(255,255,255,1);
+}
+
+#page .region-sidebar-first .item-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+#page .region-sidebar-first .item-list .pager-first,
+#page .region-sidebar-first .item-list .pager-last {
+    display:none;
+}
+
+#page .region-sidebar-first .item-list {
+
+}
+
+#page .region-sidebar-first .item-list {
+
+}
+
+/* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
+#page .region-sidebar-first #block-block-3 {
+    margin: 0 0 0 15px;
+    padding: 25px 0 25px 15px;
+    text-align: center;
+    background: rgba(230,230,230,1);
+    width: 290px;
+}
+
+#page .region-sidebar-first #block-block-3 .content {
+    width: auto;
+}
+
+#page .region-sidebar-first #block-block-3 p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#page .region-sidebar-first #block-block-3 p a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    padding: 15px 10px;
+    background: rgba(164,5,0,1);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
 }
