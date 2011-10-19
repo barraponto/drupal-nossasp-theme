@@ -157,6 +157,7 @@
 .vew-3 label.label-header, .vew-3 div.view-widget {
     position: absolute;
 }
+
 #header .vew-3 label.label-header {
     width: auto;
     padding: 12px 0 0 3px;
@@ -213,9 +214,13 @@
     -khtml-user-select: none; 
     -webkit-user-select: none; 
     -o-user-select: none;
-    border-top-right-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topright: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+#header #area_atuacao {
+    display: none;
 }
 
 #header .vew-2 .form-checkboxes {
@@ -225,6 +230,9 @@
     width: 225px;
     padding: 22px 5px;
     z-index:1;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
 }
 
 /* Hiding Admin Links */

@@ -29,19 +29,27 @@
         foreach($widgets as $id => $widget): ?>
       <div class="views-exposed-widget header-vew vew-<? print $counter; ?>">
         <?php if (!empty($widget->label)): ?>
-          <label for="<?php print $widget->id; ?>" class="label-header <? if ($counter=="0") { echo(' active-search-bg');}; ?>" >
-            <?php print $widget->label; ?>
-          </label>
+            <?php if ($counter == '2'): ?>
+                <label onClick="area_atuacao('area_atuacao');" for="<?php print $widget->id; ?>" class="label-header <? if ($counter=="0") { echo(' active-search-bg');}; ?>" >
+            <?php else: ?>
+                <label for="<?php print $widget->id; ?>" class="label-header <? if ($counter=="0") { echo(' active-search-bg');}; ?>" >
+            <?php endif; ?>
+                  <?php print $widget->label; ?>
+                </label>
         <?php endif; ?>
         <?php if (!empty($widget->operator)): ?>
           <div class="views-operator">
             <?php print $widget->operator; ?>
           </div>
         <?php endif; ?>
-        <div class="views-widget">
-          <?php print $widget->widget; 
-          $counter++;?>
-        </div>
+        <?php if ($counter == '2'): ?>
+            <div id="area_atuacao" class="views-widget">
+        <?php else: ?>
+            <div class="views-widget">
+        <?php endif; ?>
+                <?php print $widget->widget; 
+            $counter++;?>
+            </div>
       </div>
     <?php endforeach; ?>
     <div class="views-exposed-widget header-vew-ok">
