@@ -15,7 +15,7 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 /*    clipolor-stop(0, rgb(255,255,255)),*/
 /*    color-stop(0.75, rgb(103,165,180))*/
 /*    );*/
-    background: url(/nossasp/sites/all/themes/nossasp/images/cabecalho.jpg) top left no-repeat;
+    background: url(../images/cabecalho.jpg) top left no-repeat;
 /*    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
 /*    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
 /*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
