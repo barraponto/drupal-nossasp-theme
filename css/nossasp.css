@@ -16,16 +16,16 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 /*    color-stop(0.75, rgb(103,165,180))*/
 /*    );*/
     background: url(/nossasp/sites/all/themes/nossasp/images/cabecalho.jpg) top left no-repeat;
-    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);
-    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);
-    box-shadow: 5px 5px 5px rgba(50,50,50,1);
+/*    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+/*    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+/*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
     z-index:2;
 }
 
 #header .section {
-    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);
-    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);
-    box-shadow: 5px 5px 5px rgba(50,50,50,1);
+/*    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+/*    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+/*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
 }
 
 #header * {
@@ -620,3 +620,116 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
     z-index: 0;
 }
 
+/* ---------- LOGIN ----------- */
+.breadcrumb {
+    display: none;
+}
+
+#main #content h1.title {
+    display: none;
+}
+
+#main #content .tabs ul.tabs * {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+#main #content div.tabs ul.tabs li:nth-child(2) {
+    position: absolute;
+    left: 30%;
+    top: 30px;
+    padding: 0 0 0 6px;
+    background: rgba(89,160,102,1);
+    width: 259px;
+    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
+}
+
+#main #content div.tabs ul.tabs li:nth-child(2) a {
+    text-align: left;
+    text-transform: uppercase;
+    background: rgba(241,249,252,1);
+    color: rgba(38,146,203,1);
+    padding: 10px 25px 5px 5px;
+    font-size: 20px;
+}
+
+#main #content #content-area {
+    margin: 0;
+    padding: 0;
+}
+
+#main #content #content-area form {
+    position: absolute;
+    left: 30%;
+    top: 69px;
+    background: rgba(247,247,247,1);
+    padding: 0 0 50px 15px;
+    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
+    width: 250px;
+    color: rgba(117,125,130,1);
+}
+
+#main #content #content-area form div input {
+    width: 230px;
+}
+
+#main #content #content-area form div .description {
+    display: none;
+}
+
+#main #content #content-area form #edit-submit {
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+    width: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: rgba(0,174,239,1);
+    color: rgba(255,255,255,1);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
+    font-family: 'Abel', sans-serif;
+}
+
+/* -------------- Criar uma nova conta ------ */
+#main #content div.tabs ul.tabs li:nth-child(1) {
+    position: absolute;
+    left: 34%;
+    top: 350px;
+    padding: 0 0 0 6px;
+}
+
+#main #content div.tabs ul.tabs li:nth-child(1) span {
+    text-align: left;
+    background: rgba(90,161,103,1);
+    color: rgba(255,255,255,1);
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    font-family: 'Abel', sans-serif;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
+}
+
+/* -------------- Recuperar Senha ----------- */
+#main #content div.tabs ul.tabs li:nth-child(3) {
+    position: absolute;
+    left: 39%;
+    top: 195px;
+    padding: 0 0 0 6px;
+    z-index: 3;
+}
+
+#main #content div.tabs ul.tabs li:nth-child(3) span {
+    text-align: left;
+    background: none;
+    color: rgba(117,125,130,1);
+    padding: 10px 10px 10px 10px;
+    font-size: 10px;
+    font-family: 'Abel', sans-serif;
+}
