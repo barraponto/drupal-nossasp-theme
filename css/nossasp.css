@@ -1,10 +1,31 @@
+body #page-wrapper * { font-family: 'Arimo', sans-serif; }
+
 /* ----------- HEADER ----------- */
 /* HEADER */
 #header {
-    background-color: #70baca;
-    background-image: url("../images/nossasp_header_bg1.png");
-    background-repeat: no-repeat;
-    background-position: top left;
+/*    background-image: linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
+/*    background-image: -o-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
+/*    background-image: -moz-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
+/*    background-image: -webkit-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
+/*    background-image: -ms-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
+/*    background-image: -webkit-gradient(*/
+/*    linear,*/
+/*    left top,*/
+/*    right top,*/
+/*    clipolor-stop(0, rgb(255,255,255)),*/
+/*    color-stop(0.75, rgb(103,165,180))*/
+/*    );*/
+    background: url(/nossasp/sites/all/themes/nossasp/images/cabecalho.jpg) top left no-repeat;
+    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);
+    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);
+    box-shadow: 5px 5px 5px rgba(50,50,50,1);
+    z-index:2;
+}
+
+#header .section {
+    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);
+    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);
+    box-shadow: 5px 5px 5px rgba(50,50,50,1);
 }
 
 #header * {
@@ -21,6 +42,7 @@
 
 #logo img {
     padding: 0 0 0 15px;
+    visibility: hidden;
 }
 
 .region-header {
@@ -57,11 +79,13 @@
     height: 36px;
     text-align: center;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: 12ix;
     color: #ffffff;
     padding: 2px 4px;
     margin-top: -7px;
     background-color: rgba(97,144,167,0.3);
+    font-family: 'Abel', sans-serif;
+    text-shadow: 2px 2px 2px rgba(100,100,100,0.6);
 }
 
 /* header busca ativa - ADICIONADO VIA JAVASCRIPT */
@@ -129,6 +153,7 @@
     position: absolute;
     left: 396px;
     top: -7px;
+    font-family: 'Abel', sans-serif;
 }
 
 #header .header-vew-ok input {
@@ -179,6 +204,7 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     z-index:1;
+    font-family: 'Abel', sans-serif;
 }
 
 #header .vew-3 select {
@@ -221,6 +247,7 @@
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
+    font-family: 'Abel', sans-serif;
 }
 
 #header #area_atuacao {
@@ -276,6 +303,9 @@
     width: 320px;
     margin: 0;
     background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
+    -moz-box-shadow: 3px 0 0 rgba(150,150,150,0.5);
+    -webkit-box-shadow: 3px 0 0 rgba(150,150,150,0.5);
+    box-shadow: 3px 0 0 rgba(150,150,150,0.5);
 }
 
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
@@ -294,6 +324,7 @@
     color: rgba(38,146,203,1);
     float: left;
     padding: 5px 0 0 0;
+    font-family: 'Abel', sans-serif;
 }
 
 #page .region-sidebar-first #block-block-2 .content a {
@@ -313,9 +344,10 @@
 
 /* ---------- SDBL: DOWNLOAD DO BANCO DE DADOS ---------- */
 #page .region-sidebar-first #block-block-1 {
-    background-color: rgba(234,234,234,1);
+/*    background-color: rgba(234,234,234,1);*/
+    background: rgba(247,247,247,1);
     right: 0;
-    width: 138px;
+    width: 144px;
     height: 34px;
     position: absolute;
     display: block;
@@ -350,7 +382,9 @@
 #page .region-sidebar-first .view-header p {
     margin: 0;
     padding: 16px 0 16px 5px;
-    background-color: rgba(234,234,234,1);
+/*    background-color: rgba(234,234,234,1);*/
+    background: rgba(247,247,247,1);
+    font-family: 'Abel', sans-serif;
 }
 
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
@@ -368,7 +402,8 @@
 }
 
 #page .region-sidebar-first .view-content .views-row-even {
-    background: rgba(230,230,230,1);
+/*    background: rgba(230,230,230,1);*/
+    background: rgba(247,247,247,1);
 }
 
 #page .region-sidebar-first .view-content .views-row .views-field-title * {
@@ -415,7 +450,7 @@
     margin: 0 0 0 15px;
     padding: 25px 0 25px 15px;
     text-align: center;
-    background: rgba(230,230,230,1);
+    background: rgba(247,247,247,1);
     width: 290px;
 }
 
@@ -431,21 +466,25 @@
 
 #page .region-sidebar-first #block-block-3 p a {
     font-size: 12px;
+    font-family: 'Abel', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: rgba(255,255,255,1);
     text-decoration: none;
     padding: 15px 10px;
-    background: rgba(164,5,0,1);
+    background: rgba(222,8,0,1);
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
+    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
 }
 
 /* ----------- Barra de Navegação ----------- */
 #main #navigation {
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     right: 0;
     margin: 0 99px 20px 0;
     padding: 0;
@@ -454,8 +493,11 @@
 }
 
 #main #navigation ul {
-    margin: 0 10px 0 0;
+    margin: 0 10px 4px 0;
     padding: 0;
+    -moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
+    box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
 }
 
 #main #navigation ul li {
@@ -489,10 +531,9 @@
     background: rgba(255,255,255,1);
     padding: 6px 10px 6px 10px;
     display: block;
-    text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
-    font-weight: bold;
+    font-family: 'Abel', sans-serif;
 }
 
 #main #navigation ul li.first a {
@@ -531,6 +572,7 @@
     margin: 0 10px 10px 0;
     width: auto;
     height: auto;
+    background: rgba(255,255,255,0.1);
 }
 
 #main #content #block-block-4 .content,
@@ -550,7 +592,7 @@
     bottom: 0;
     right: 0;
     padding: 0;
-    margin: 0 439px 15px 0;
+    margin: 0 380px 15px 0;
     width: auto;
     height: auto;
 }
@@ -575,5 +617,6 @@
 /* ----------- MAPA ----------- */
 #main #content #content-area {
     margin: 0 0 0 320px;
+    z-index: 0;
 }
 
