@@ -1,17 +1,13 @@
-Drupal.behaviors.fullsizedmap = function() {
-  $(window).resize(function(){
-    $map = $('#openlayers-map-auto-id-0');
-    $sidebar = $('.region-sidebar-first .section');
-    $header = $('#header');
-    
-    $map.height($(window).height() - $header.height() + 'px');
-    console.log($map.height());
-  });
-    $map = $('#openlayers-map-auto-id-0');
-    $sidebar = $('.region-sidebar-first .section');
-    $header = $('#header');
-    
-    $map.height($(window).height() - $header.height() + 'px');
-    console.log($map.height());
-}
+(function ($) {
 
+  Drupal.behaviors.fullsizedmap = function(context) {
+    $map = $('.openlayers-map.openlayers-preset-nossasp_search', context);
+    $sidebar = $('.region-sidebar-first .section', context);
+    $header = $('#header', context);
+
+    $(window).resize(
+      function(context) {
+        $map.height($(window).height() - $header.height() + 'px'); } );
+
+    $(window).resize();
+  } } )(jQuery);

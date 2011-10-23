@@ -746,4 +746,5 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
 #openlayers-map-auto-id-0 { 
-  height: 100%; }
+  min-height: 250px;
+  height: 250px; }
