@@ -19,13 +19,13 @@
  *   this, we have to override the theme function. You have to first find the
  *   theme function that generates the output, and then "catch" it and modify it
  *   here. The easiest way to do it is to copy the original function in its
- *   entirety and paste it here, changing the prefix from theme_ to STARTERKIT_.
+ *   entirety and paste it here, changing the prefix from theme_ to nossasp_.
  *   For example:
  *
  *     original: theme_breadcrumb()
- *     theme override: STARTERKIT_breadcrumb()
+ *     theme override: nossasp_breadcrumb()
  *
- *   where STARTERKIT is the name of your sub-theme. For example, the
+ *   where nossasp is the name of your sub-theme. For example, the
  *   zen_classic theme would define a zen_classic_breadcrumb() function.
  *
  *   If you would like to override any of the theme functions used in Zen core,
@@ -64,7 +64,7 @@
 /**
  * Implementation of HOOK_theme().
  */
-function STARTERKIT_theme(&$existing, $type, $theme, $path) {
+function nossasp_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
   /*
@@ -83,7 +83,7 @@ function STARTERKIT_theme(&$existing, $type, $theme, $path) {
  *   The name of the template being rendered (name of the .tpl.php file.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess(&$vars, $hook) {
+function nossasp_preprocess(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -96,10 +96,10 @@ function STARTERKIT_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
-
+function nossasp_preprocess_page(&$vars, $hook) {
+  if (arg(0) == 'organizations' && arg(1) == 'search') {
+    $vars['classes_array'][] = 'full-sized-map';
+  }
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
 }
@@ -114,11 +114,11 @@ function STARTERKIT_preprocess_page(&$vars, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_node(&$vars, $hook) {
+function nossasp_preprocess_node(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // STARTERKIT_preprocess_node_page() or STARTERKIT_preprocess_node_story().
+  // nossasp_preprocess_node_page() or nossasp_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $vars['node']->type;
   if (function_exists($function)) {
     $function($vars, $hook);
@@ -135,7 +135,7 @@ function STARTERKIT_preprocess_node(&$vars, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_comment(&$vars, $hook) {
+function nossasp_preprocess_comment(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -149,7 +149,7 @@ function STARTERKIT_preprocess_comment(&$vars, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_block(&$vars, $hook) {
+function nossasp_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
