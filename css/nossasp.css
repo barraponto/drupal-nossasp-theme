@@ -733,3 +733,6 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
     font-size: 10px;
     font-family: 'Abel', sans-serif;
 }
+
+/* convencendo o mapa a aparecer de um jeito razoavel  */
+#openlayers-map-auto-id-0 { min-height: 250px; height: 400px; }

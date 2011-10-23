@@ -74,7 +74,7 @@ body {
 }
 
 .sidebar-first #content .section {
-  padding-left: 200px; /* LTR */ /* The width + left margin of .region-sidebar-first. */
+  padding-left: 320px; /* LTR */ /* The width + left margin of .region-sidebar-first. */
   padding-right: 0; /* LTR */
 }
 
