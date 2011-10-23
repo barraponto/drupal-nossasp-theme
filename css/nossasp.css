@@ -361,42 +361,48 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 
 /* ---------- SDBL: NUM DE RESULTADOS ---------- */
 #page .region-sidebar-first .view-header {
-    margin-left: 15px;
-    padding-left: 10px;
-    background-color: rgba(89,160,102,1);
-    font-size: 16px;
-    color: rgba(38,146,203,1);
-    text-transform: uppercase;
-    overflow: hidden;
+  margin-left: 15px;
+  padding-left: 10px;
+  background-color: rgba(89,160,102,1);
+  font-size: 16px;
+  color: rgba(38,146,203,1);
+  text-transform: uppercase;
+  overflow: hidden;
+  border-bottom: #e7ecef solid 1px;
 }
 
 
 #page .region-sidebar-first .view-header .counter,
 #page .region-sidebar-first .view-header .download {
-    display: block;
     float: left;
     margin: 0;
-    padding: 16px 0 16px;
-/*    background-color: rgba(234,234,234,1);*/
     background: rgba(247,247,247,1);
 }
 
 #page .region-sidebar-first .view-header .counter {
+  padding: 10px 0;
   text-indent: 5px;
   font-family: 'Abel', sans-serif;
+  line-height: 36px;
   width: 130px;
 }
 
 #page .region-sidebar-first .view-header .download {
-  width: 120px;
-  padding-right: 40px;
-  text-decoration: none;
-  text-transform: none;
-  font-size: 10px;
-  font-weight: bold;
-  color: #A1A1A1;
+  width: 164px;
+  border-left: #e7ecef solid 1px;
+  text-align: right;
 }
 
+#page .region-sidebar-first .view-header .download a {
+  background: url('../images/nossasp_download_banco.png') no-repeat 90% 50%;
+  padding: 10px 60px 10px 0;
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  color: #A1A1A1;
+  font-size: 10px;
+  font-weight: bold;
+}
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
 #page .region-sidebar-first .view-content {
     padding-left: 15px;
