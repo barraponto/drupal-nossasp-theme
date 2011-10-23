@@ -286,26 +286,18 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 
 /* ----------- SIDEBAR LEFT (SDBL) ----------- */
 #page .region-sidebar-first {
-    z-index:2;
-    position: relative;
-    top: 0;
-    left: 0;
     background: #fff;
     height: 100%;
     width: 320px;
-    margin-top: 0;
+    margin: 0;
 }
 
 #page .region-sidebar-first .section {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 320px;
     margin: 0;
+    padding: 0;
+    border: none;
     background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
-    -moz-box-shadow: 3px 0 0 rgba(150,150,150,0.5);
-    -webkit-box-shadow: 3px 0 0 rgba(150,150,150,0.5);
-    box-shadow: 3px 0 0 rgba(150,150,150,0.5);
 }
 
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
@@ -313,10 +305,9 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
     background-color: rgba(240,249,251,1);
     width: 305px;
     height: 28px;
-    top: 0;
-    position: relative;
     padding: 10px 0 10px 15px;
     display: block;
+    margin: 0;
 }
 
 #page .region-sidebar-first #block-block-2 h2.title {
@@ -376,15 +367,34 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
     font-size: 16px;
     color: rgba(38,146,203,1);
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 
-#page .region-sidebar-first .view-header p {
+#page .region-sidebar-first .view-header .counter,
+#page .region-sidebar-first .view-header .download {
+    display: block;
+    float: left;
     margin: 0;
-    padding: 16px 0 16px 5px;
+    padding: 16px 0 16px;
 /*    background-color: rgba(234,234,234,1);*/
     background: rgba(247,247,247,1);
-    font-family: 'Abel', sans-serif;
+}
+
+#page .region-sidebar-first .view-header .counter {
+  text-indent: 5px;
+  font-family: 'Abel', sans-serif;
+  width: 130px;
+}
+
+#page .region-sidebar-first .view-header .download {
+  width: 120px;
+  padding-right: 40px;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 10px;
+  font-weight: bold;
+  color: #A1A1A1;
 }
 
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
