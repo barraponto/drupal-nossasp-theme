@@ -9,5 +9,7 @@
       function(context) {
         $map.height($(window).height() - $header.height() + 'px'); } );
 
+    $map.addClass('full-sized');
+
     $(window).resize();
   } } )(jQuery);
