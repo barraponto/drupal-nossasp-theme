@@ -663,7 +663,6 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 }
 
 #main #content #content-area form div .description {
-    display: none;
 }
 
 #main #content #content-area form #edit-submit {
@@ -681,10 +680,10 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-#openlayers-map-auto-id-0 { 
+#openlayers-map-auto-id-0 .olMapViewport { 
   min-height: 640px;
   height: 640px; }
 
-#openlayers-map-auto-id-0.full-sized {
+#openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
