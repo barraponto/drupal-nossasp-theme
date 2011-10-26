@@ -105,13 +105,65 @@
       }
     }
 
+    #autocomplete { 
+      border: none;
+      min-width: 200%;
+      li {
+        text-indent: 0; 
+        overflow: hidden;
+        padding: .25em;
+        &:nth-of-type(even) {
+          background-color: lighten(#6190A7, 42%); }
+        &.selected { 
+          background-color: #6190A7; } }
+    }
+
     fieldset { 
       margin: 0;
       padding: 0;
       border: none; }
     }
 
-  .header-vew-ok, .vew-2, .vew-3 { display: none !important; }
+  #edit-submit-nossasp-organizations-map {
+    @include text-shadow(rgba(100,100,100,0.6) 2px 2px 2px);
+    @include border-top-right-radius(6px);
+    @include border-bottom-right-radius(6px);
+    width: 36px;
+    height: 42px;
+    margin: 0;
+    border: none;
+    position: absolute;
+    top: 23px; left: 390px;
+    font-family: 'Abel', sans-serif;
+    background-color: #6190A7;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover { 
+      background-color: #1E6283; }
+  }
+
+  #area_atuacao { 
+    position: absolute;
+    top: 23px; left: 442px;
+    .jquery_dropdown_header {
+      @include border-radius(6px);
+      height: 42px;
+      width: 220px;
+      font-size: 14px;
+      border: none;
+      line-height: 42px;
+      vertical-align: middle;
+      text-indent: 1em;
+      font-family: 'Abel', sans-serif;
+      color: #666;
+    }
+  }
+ 
+  .vew-3 { display: none !important; }
 }
 
 /* 
@@ -156,30 +208,7 @@
 .vew-1 .views-widget {
 }
 
-/* BOTÃO "OK" (Aply) */
-#header div.header-vew-ok {
-    left: 396px;
-    top: -7px;
-    font-family: 'Abel', sans-serif;
-}
-
 #header .header-vew-ok input {
-    content: "OK";
-    background-color: rgba(98,145,168,1);
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: bold;
-    border: none;
-    padding: 2px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 6px; 
 }
 
 /* Aqui começam os dois últimos filtros do HEADER  */
