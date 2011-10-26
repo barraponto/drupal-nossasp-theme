@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 3, ../sass/nossasp.scss */
-body #page-wrapper * {
+#page-wrapper {
   font-family: 'Arimo', sans-serif;
 }
 
@@ -26,18 +26,94 @@ body #page-wrapper * {
 /* line 18, ../sass/nossasp.scss */
 .region-header {
   margin-left: 320px;
+  clear: none;
 }
 
 /* ---------- HEADER: FORMS ---------- */
-/* line 23, ../sass/nossasp.scss */
+/* line 24, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 {
+  display: block;
+  position: relative;
+}
+/* line 28, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-form {
+  height: 40px;
   padding: 23px 0;
 }
-
-/* line 30, ../sass/nossasp.scss */
-.header-vew, .header-vew .views-widget, .vew-0 div {
-  display: inline-block;
+/* line 32, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-widgets {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 37, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-widget {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+/* line 42, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .search-switch, #views-exposed-form-nossasp-organizations-map-page-2 .vew-0 > label, #views-exposed-form-nossasp-organizations-map-page-2 .vew-1 > label {
+  text-shadow: rgba(100, 100, 100, 0.6) 2px 2px 2px;
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 36px;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  text-align: center;
   vertical-align: middle;
+  color: white;
+  padding: 2px 4px;
+  font-family: 'Abel', sans-serif;
+  background-color: #6190A7;
+}
+/* line 57, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .search-input, #views-exposed-form-nossasp-organizations-map-page-2 .vew-0 #edit-title, #views-exposed-form-nossasp-organizations-map-page-2 .vew-1 #edit-circle-location-wrapper {
+  position: absolute;
+  top: 23px;
+  left: 216px;
+}
+/* line 64, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .vew-0 > label {
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -o-border-top-left-radius: 6px;
+  -ms-border-top-left-radius: 6px;
+  -khtml-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -o-border-bottom-left-radius: 6px;
+  -ms-border-bottom-left-radius: 6px;
+  -khtml-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+/* line 74, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .vew-1 > label {
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -o-border-top-right-radius: 6px;
+  -ms-border-top-right-radius: 6px;
+  -khtml-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -o-border-bottom-right-radius: 6px;
+  -ms-border-bottom-right-radius: 6px;
+  -khtml-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* line 82, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .vew-1 fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* line 88, ../sass/nossasp.scss */
+#views-exposed-form-nossasp-organizations-map-page-2 .header-vew-ok, #views-exposed-form-nossasp-organizations-map-page-2 .vew-2, #views-exposed-form-nossasp-organizations-map-page-2 .vew-3 {
+  display: none !important;
 }
 
 /* 
@@ -45,76 +121,49 @@ body #page-wrapper * {
     */
 /** LABELS **/
 /*** FORMATO E COR  ***/
-/* line 43, ../sass/nossasp.scss */
-#header .vew-0 .label-header, #header .vew-1 .label-header {
-  display: block;
-  width: 100px;
-  height: 36px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 12ix;
-  color: #ffffff;
-  padding: 2px 4px;
-  margin-top: -7px;
-  background-color: rgba(97, 144, 167, 0.3);
-  font-family: 'Abel', sans-serif;
-  text-shadow: 2px 2px 2px rgba(100, 100, 100, 0.6);
-}
-
 /* header busca ativa - ADICIONADO VIA JAVASCRIPT */
-/* line 59, ../sass/nossasp.scss */
+/* line 100, ../sass/nossasp.scss */
 .active-search-bg {
   background-color: #6190a7 !important;
 }
 
 /*** POSICIONAMENTO ***/
-/* line 64, ../sass/nossasp.scss */
-#header .vew-0 label.label-header {
-  left: 0;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-topleft: 6px;
-  -moz-border-radius-bottomleft: 6px;
-}
-
-/* line 73, ../sass/nossasp.scss */
+/* line 105, ../sass/nossasp.scss */
 #header .vew-1 label.label-header {
   left: 108px;
 }
 
 /* INPUTS */
-/* line 79, ../sass/nossasp.scss */
+/* line 111, ../sass/nossasp.scss */
 .vew-0 input, .vew-1 input {
   width: 178px;
 }
 
-/* line 82, ../sass/nossasp.scss */
+/* line 114, ../sass/nossasp.scss */
 .vew-0 div.views-widget, .vew-1 div.views-widget {
   left: 217px;
   top: -7px;
 }
 
-/* line 87, ../sass/nossasp.scss */
+/* line 119, ../sass/nossasp.scss */
 .vew-0 input, .vew-1 input {
   height: 40px;
   border: 0;
 }
 
-/* line 92, ../sass/nossasp.scss */
+/* line 124, ../sass/nossasp.scss */
 .vew-0 fieldset {
   border: 0;
 }
 
-/* line 96, ../sass/nossasp.scss */
+/* line 128, ../sass/nossasp.scss */
 #header .vew-0 input.form-autocomplete {
   background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
   background-repeat: no-repeat, no-repeat;
   background-position: 100% 28px, 100% 13px;
 }
 
-/* line 102, ../sass/nossasp.scss */
+/* line 134, ../sass/nossasp.scss */
 #header .vew-0 input.throbbing {
   background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
   background-repeat: no-repeat, no-repeat;
@@ -122,14 +171,14 @@ body #page-wrapper * {
 }
 
 /* BOTÃO "OK" (Aply) */
-/* line 115, ../sass/nossasp.scss */
+/* line 147, ../sass/nossasp.scss */
 #header div.header-vew-ok {
   left: 396px;
   top: -7px;
   font-family: 'Abel', sans-serif;
 }
 
-/* line 121, ../sass/nossasp.scss */
+/* line 153, ../sass/nossasp.scss */
 #header .header-vew-ok input {
   content: "OK";
   background-color: #6291a8;
@@ -151,12 +200,12 @@ body #page-wrapper * {
 
 /* Aqui começam os dois últimos filtros do HEADER  */
 /* TIPO DE ORGANIZAÇÃO (vew-3) */
-/* line 142, ../sass/nossasp.scss */
+/* line 174, ../sass/nossasp.scss */
 .vew-3 {
   background: url(../images/arrow.png) no-repeat right white;
 }
 
-/* line 149, ../sass/nossasp.scss */
+/* line 181, ../sass/nossasp.scss */
 #header .vew-3 label.label-header {
   width: auto;
   padding: 12px 0 0 3px;
@@ -177,7 +226,7 @@ body #page-wrapper * {
   font-family: 'Abel', sans-serif;
 }
 
-/* line 169, ../sass/nossasp.scss */
+/* line 201, ../sass/nossasp.scss */
 #header .vew-3 select {
   height: 39px;
   width: 208px;
@@ -189,14 +238,14 @@ body #page-wrapper * {
   -moz-border-radius-topright: 8px;
 }
 
-/* line 180, ../sass/nossasp.scss */
+/* line 212, ../sass/nossasp.scss */
 #header .vew-3 select option {
   background: white;
   color: black;
 }
 
 /* ÁREA DE ATUAÇÃO (vew-2) */
-/* line 189, ../sass/nossasp.scss */
+/* line 221, ../sass/nossasp.scss */
 #header .vew-2 label.label-header {
   display: block;
   width: 225px;
@@ -217,7 +266,7 @@ body #page-wrapper * {
   font-family: 'Abel', sans-serif;
 }
 
-/* line 212, ../sass/nossasp.scss */
+/* line 244, ../sass/nossasp.scss */
 #header .vew-2 .form-checkboxes {
   background: white;
   width: 225px;
@@ -228,24 +277,24 @@ body #page-wrapper * {
 }
 
 /* Hiding Admin Links */
-/* line 222, ../sass/nossasp.scss */
+/* line 254, ../sass/nossasp.scss */
 .views-admin-links {
   font-size: 10px;
   visibility: hidden;
 }
 
-/* line 227, ../sass/nossasp.scss */
+/* line 259, ../sass/nossasp.scss */
 .views-admin-links:hover {
   visibility: visible;
 }
 
-/* line 231, ../sass/nossasp.scss */
+/* line 263, ../sass/nossasp.scss */
 #main-wrapper #main #content {
   margin-top: 0;
 }
 
 /* ----------- SIDEBAR LEFT (SDBL) ----------- */
-/* line 236, ../sass/nossasp.scss */
+/* line 268, ../sass/nossasp.scss */
 #page .region-sidebar-first {
   background: #fff;
   height: 100%;
@@ -253,7 +302,7 @@ body #page-wrapper * {
   margin: 0;
 }
 
-/* line 243, ../sass/nossasp.scss */
+/* line 275, ../sass/nossasp.scss */
 #page .region-sidebar-first .section {
   width: 320px;
   margin: 0;
@@ -263,7 +312,7 @@ body #page-wrapper * {
 }
 
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
-/* line 252, ../sass/nossasp.scss */
+/* line 284, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 {
   background-color: #f0f9fb;
   width: 305px;
@@ -273,7 +322,7 @@ body #page-wrapper * {
   margin: 0;
 }
 
-/* line 261, ../sass/nossasp.scss */
+/* line 293, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 h2.title {
   font-size: 14px;
   color: #2692cb;
@@ -282,7 +331,7 @@ body #page-wrapper * {
   font-family: 'Abel', sans-serif;
 }
 
-/* line 269, ../sass/nossasp.scss */
+/* line 301, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 .content a {
   margin: 0;
   padding: 14px 0;
@@ -294,14 +343,14 @@ body #page-wrapper * {
   text-decoration: none;
 }
 
-/* line 279, ../sass/nossasp.scss */
+/* line 311, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 .content p {
   margin: 0;
   padding: 0;
 }
 
 /* ---------- SDBL: DOWNLOAD DO BANCO DE DADOS ---------- */
-/* line 285, ../sass/nossasp.scss */
+/* line 317, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 {
   /*    background-color: rgba(234,234,234,1);*/
   background: #f7f7f7;
@@ -313,7 +362,7 @@ body #page-wrapper * {
   text-align: center;
 }
 
-/* line 295, ../sass/nossasp.scss */
+/* line 327, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 #texto_download {
   margin: 4px 5px 0 0;
   padding: 4px 36px 0 0;
@@ -321,7 +370,7 @@ body #page-wrapper * {
   font-weight: bold;
 }
 
-/* line 302, ../sass/nossasp.scss */
+/* line 334, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 #img_download {
   margin: 0;
   padding: 0;
@@ -331,7 +380,7 @@ body #page-wrapper * {
 }
 
 /* ---------- SDBL: NUM DE RESULTADOS ---------- */
-/* line 311, ../sass/nossasp.scss */
+/* line 343, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header {
   margin-left: 15px;
   padding-left: 10px;
@@ -343,7 +392,7 @@ body #page-wrapper * {
   border-bottom: #e7ecef solid 1px;
 }
 
-/* line 324, ../sass/nossasp.scss */
+/* line 356, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .counter,
 #page .region-sidebar-first .view-header .download {
   float: left;
@@ -351,7 +400,7 @@ body #page-wrapper * {
   background: #f7f7f7;
 }
 
-/* line 330, ../sass/nossasp.scss */
+/* line 362, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .counter {
   padding: 10px 0;
   text-indent: 5px;
@@ -360,14 +409,14 @@ body #page-wrapper * {
   width: 130px;
 }
 
-/* line 338, ../sass/nossasp.scss */
+/* line 370, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .download {
   width: 164px;
   border-left: #e7ecef solid 1px;
   text-align: right;
 }
 
-/* line 344, ../sass/nossasp.scss */
+/* line 376, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .download a {
   background: url("../images/nossasp_download_banco.png") no-repeat 90% 50%;
   padding: 10px 60px 10px 0;
@@ -380,67 +429,67 @@ body #page-wrapper * {
 }
 
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
-/* line 355, ../sass/nossasp.scss */
+/* line 387, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content {
   padding-left: 15px;
 }
 
-/* line 359, ../sass/nossasp.scss */
+/* line 391, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row {
   padding: 12px 0 12px 15px;
   font-size: 12px;
 }
 
-/* line 364, ../sass/nossasp.scss */
+/* line 396, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row-odd {
   background: white;
 }
 
-/* line 368, ../sass/nossasp.scss */
+/* line 400, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row-even {
   /*    background: rgba(230,230,230,1);*/
   background: #f7f7f7;
 }
 
-/* line 373, ../sass/nossasp.scss */
+/* line 405, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-title * {
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
 
-/* line 379, ../sass/nossasp.scss */
+/* line 411, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-tid {
   color: #518099;
   text-overflow: clip;
 }
 
-/* line 384, ../sass/nossasp.scss */
+/* line 416, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-tid-1 {
   color: black;
 }
 
 /* ---------- SDBL: PAGINAÇÃO DAS ENTIDADES ---------- */
-/* line 389, ../sass/nossasp.scss */
+/* line 421, ../sass/nossasp.scss */
 #page .region-sidebar-first .item-list {
   padding: 15px 0 15px 30px;
   background: white;
 }
 
-/* line 394, ../sass/nossasp.scss */
+/* line 426, ../sass/nossasp.scss */
 #page .region-sidebar-first .item-list ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 400, ../sass/nossasp.scss */
+/* line 432, ../sass/nossasp.scss */
 #page .region-sidebar-first .item-list .pager-first,
 #page .region-sidebar-first .item-list .pager-last {
   display: none;
 }
 
 /* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
-/* line 413, ../sass/nossasp.scss */
+/* line 445, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 {
   margin: 0 0 0 15px;
   padding: 25px 0 25px 15px;
@@ -449,19 +498,19 @@ body #page-wrapper * {
   width: 290px;
 }
 
-/* line 421, ../sass/nossasp.scss */
+/* line 453, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 .content {
   width: auto;
 }
 
-/* line 425, ../sass/nossasp.scss */
+/* line 457, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 p {
   margin: 0;
   padding: 0;
   width: auto;
 }
 
-/* line 431, ../sass/nossasp.scss */
+/* line 463, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 p a {
   font-size: 12px;
   font-family: 'Abel', sans-serif;
@@ -480,7 +529,7 @@ body #page-wrapper * {
 }
 
 /* ----------- Barra de Navegação ----------- */
-/* line 449, ../sass/nossasp.scss */
+/* line 481, ../sass/nossasp.scss */
 #main #navigation {
   position: absolute;
   bottom: -3px;
@@ -491,7 +540,7 @@ body #page-wrapper * {
   height: auto;
 }
 
-/* line 459, ../sass/nossasp.scss */
+/* line 491, ../sass/nossasp.scss */
 #main #navigation ul {
   margin: 0 10px 4px 0;
   padding: 0;
@@ -500,7 +549,7 @@ body #page-wrapper * {
   box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
 }
 
-/* line 467, ../sass/nossasp.scss */
+/* line 499, ../sass/nossasp.scss */
 #main #navigation ul li {
   margin: 0;
   padding: 0;
@@ -508,7 +557,7 @@ body #page-wrapper * {
   background: #c8c8c8;
 }
 
-/* line 475, ../sass/nossasp.scss */
+/* line 507, ../sass/nossasp.scss */
 #main #navigation ul li.first {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -518,7 +567,7 @@ body #page-wrapper * {
   -moz-border-radius-bottomleft: 7px;
 }
 
-/* line 484, ../sass/nossasp.scss */
+/* line 516, ../sass/nossasp.scss */
 #main #navigation ul li.last {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -528,7 +577,7 @@ body #page-wrapper * {
   -moz-border-radius-bottomright: 7px;
 }
 
-/* line 493, ../sass/nossasp.scss */
+/* line 525, ../sass/nossasp.scss */
 #main #navigation ul li a {
   margin: 0 2px 0 0;
   background: white;
@@ -539,7 +588,7 @@ body #page-wrapper * {
   font-family: 'Abel', sans-serif;
 }
 
-/* line 503, ../sass/nossasp.scss */
+/* line 535, ../sass/nossasp.scss */
 #main #navigation ul li.first a {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -549,7 +598,7 @@ body #page-wrapper * {
   -moz-border-radius-bottomleft: 7px;
 }
 
-/* line 512, ../sass/nossasp.scss */
+/* line 544, ../sass/nossasp.scss */
 #main #navigation ul li.last a {
   border: 0;
   margin: 0;
@@ -562,7 +611,7 @@ body #page-wrapper * {
 }
 
 /* ----------- Logo Rede Nossa SP ----------- */
-/* line 524, ../sass/nossasp.scss */
+/* line 556, ../sass/nossasp.scss */
 #main #content .region-content-top {
   position: absolute;
   bottom: 0;
@@ -570,7 +619,7 @@ body #page-wrapper * {
   z-index: 1;
 }
 
-/* line 531, ../sass/nossasp.scss */
+/* line 563, ../sass/nossasp.scss */
 #main #content #block-block-4 {
   position: absolute;
   bottom: 0;
@@ -582,7 +631,7 @@ body #page-wrapper * {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 547, ../sass/nossasp.scss */
+/* line 579, ../sass/nossasp.scss */
 #main #content #block-block-4 .content,
 #main #content #block-block-5 .content,
 #main #content #block-block-4 .content p,
@@ -594,7 +643,7 @@ body #page-wrapper * {
 }
 
 /* ----------- Redes Sociais Nossa SP ----------- */
-/* line 553, ../sass/nossasp.scss */
+/* line 585, ../sass/nossasp.scss */
 #main #content #block-block-5 {
   display: block;
   position: absolute;
@@ -606,53 +655,53 @@ body #page-wrapper * {
   height: auto;
 }
 
-/* line 564, ../sass/nossasp.scss */
+/* line 596, ../sass/nossasp.scss */
 #main #content #block-block-5 .content p {
   position: relative;
 }
 
-/* line 569, ../sass/nossasp.scss */
+/* line 601, ../sass/nossasp.scss */
 #twitter_img,
 #facebook_img {
   position: absolute;
   bottom: 0;
 }
 
-/* line 573, ../sass/nossasp.scss */
+/* line 605, ../sass/nossasp.scss */
 #facebook_img {
   right: 0;
 }
 
-/* line 577, ../sass/nossasp.scss */
+/* line 609, ../sass/nossasp.scss */
 #twitter_img {
   right: 35px;
 }
 
 /* ----------- MAPA ----------- */
-/* line 582, ../sass/nossasp.scss */
+/* line 614, ../sass/nossasp.scss */
 #main #content #content-area {
   margin: 0 0 0 320px;
   z-index: 0;
 }
 
 /* ---------- LOGIN ----------- */
-/* line 588, ../sass/nossasp.scss */
+/* line 620, ../sass/nossasp.scss */
 .breadcrumb {
   display: none;
 }
 
-/* line 592, ../sass/nossasp.scss */
+/* line 624, ../sass/nossasp.scss */
 #main #content h1.title {
   display: none;
 }
 
-/* line 596, ../sass/nossasp.scss */
+/* line 628, ../sass/nossasp.scss */
 #main #content #content-area {
   margin: 0;
   padding: 0;
 }
 
-/* line 601, ../sass/nossasp.scss */
+/* line 633, ../sass/nossasp.scss */
 #main #content #content-area form {
   padding: 3em;
   background: #f7f7f7;
@@ -661,12 +710,12 @@ body #page-wrapper * {
   color: #757d82;
 }
 
-/* line 609, ../sass/nossasp.scss */
+/* line 641, ../sass/nossasp.scss */
 #main #content #content-area form div input {
   width: 230px;
 }
 
-/* line 616, ../sass/nossasp.scss */
+/* line 648, ../sass/nossasp.scss */
 #main #content #content-area form #edit-submit {
   width: auto;
   -webkit-border-radius: 3px;
@@ -682,13 +731,13 @@ body #page-wrapper * {
 }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-/* line 631, ../sass/nossasp.scss */
+/* line 663, ../sass/nossasp.scss */
 #openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
   height: 640px;
 }
 
-/* line 635, ../sass/nossasp.scss */
+/* line 667, ../sass/nossasp.scss */
 #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
