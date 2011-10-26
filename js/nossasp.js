@@ -18,6 +18,19 @@
 
     $('.vew-0 > label').click();
   } 
+
+  Drupal.behaviors.nossaspCheckboxes = function(context) { 
+    $('#views-exposed-form-nossasp-organizations-map-page-2 .vew-3', context).click(function() {
+      $(this).children('.views-widget').show(); 
+    });
+
+    $('#views-exposed-form-nossasp-organizations-map-page-2 .vew-3', context).hover(
+      function(){},
+      function() {
+      $(this).children('.views-widget').hide();
+    });
+  }
+
 } )(jQuery);
 
 //function area_atuacao(id) {

@@ -151,8 +151,10 @@
     top: 23px; left: 442px;
     .jquery_dropdown_header {
       @include border-radius(6px);
+      background: white image-url('select-button.png') right center no-repeat;
       height: 42px;
-      width: 220px;
+      width: 180px;
+      padding-right: 40px;
       font-size: 14px;
       border: none;
       line-height: 42px;
@@ -161,9 +163,64 @@
       font-family: 'Abel', sans-serif;
       color: #666;
     }
-  }
+    .jquery_dropdown_list {
+      border: none; 
+      padding: 0;
+      width: 220px;
+      li {
+        border: none;
+        padding: 0 1em;
+        &:hover { 
+          background-color: #6190a7; }
+        a { 
+          display: block;
+          padding: 0.25em 0;
+          font-size: 12px;
+          &:hover { 
+            background-color: #6190a7; } } } } }
  
-  .vew-3 { display: none !important; }
+  .vew-3 {
+      width: 220px;
+      position: absolute;
+      top: 23px; left: 680px; z-index: 101;
+    > label { 
+      @include border-radius(6px);
+      display: block;
+      background: white image-url('select-button.png') right center no-repeat;
+      height: 42px;
+      width: 180px;
+      padding-right: 40px;
+      border: none;
+      font-size: 14px;
+      line-height: 42px;
+      vertical-align: middle;
+      text-indent: 1em;
+      font-family: 'Abel', sans-serif;
+      color: #666;
+      }
+    .views-widget {
+      display: none;
+      border: none; 
+      margin-top: -3px;
+      padding: 0;
+      width: 220px;
+      background: white;
+    
+      .form-checkboxes { 
+        margin: 0; }
+      .form-item { 
+        margin: 0;
+        padding: 0.25em 1em;
+        font-size: 12px; }
+      label { 
+        display: block;
+        padding-left: 1.5em;
+        position: relative; }
+      .form-checkbox { 
+        position: absolute;
+        top: auto; left: 0;
+        margin: 2px 0; } }
+  }
 }
 
 /* 
@@ -190,17 +247,6 @@
     border: 0;
 }
 
-#header .vew-0 input.form-autocomplete {
-    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% 28px, 100% 13px;
-}
-
-#header .vew-0 input.throbbing {
-    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% -26px, 100% -7px;
-}
 
 .vew-0 .views-widget {
 }
@@ -213,47 +259,8 @@
 
 /* Aqui começam os dois últimos filtros do HEADER  */
 /* TIPO DE ORGANIZAÇÃO (vew-3) */
-.vew-3 {
-    background: url(../images/arrow.png) no-repeat right #fff
-}
 
 .vew-3 label.label-header, .vew-3 div.view-widget {
-}
-
-#header .vew-3 label.label-header {
-    width: auto;
-    padding: 12px 0 0 3px;
-    font-size: 14px;
-    height: 28px;
-    vertical-align: middle;
-    background: none;
-    color: rgba(200,200,200,1);
-    user-select: none; 
-    -moz-user-select: none; 
-    -khtml-user-select: none; 
-    -webkit-user-select: none; 
-    -o-user-select: none; 
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    z-index:1;
-    font-family: 'Abel', sans-serif;
-}
-
-#header .vew-3 select {
-    height: 39px;
-    width: 208px;
-    border: none;
-    color: white;
-    background: transparent;
-    border-top-right-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topright: 8px;
-}
-
-#header .vew-3 select option {
-    background: white;
-    color: black;
 }
 
 /* ÁREA DE ATUAÇÃO (vew-2) */
