@@ -1,0 +1,669 @@
+@import "compass";
+
+#page-wrapper { 
+  font-family: 'Arimo', sans-serif; }
+
+/* ----------- HEADER and LOGO ----------- */
+#header {
+  @include background(linear-gradient(left, white, #6ca5b6));
+  background-color: #6ca5b6;
+}
+
+#logo {
+  display: block;
+  width: 320px;
+  margin-right: -320px;
+}
+
+.region-header {
+  margin-left: 320px;
+  clear: none;
+}
+
+/* ---------- HEADER: FORMS ---------- */
+#views-exposed-form-nossasp-organizations-map-page-2 {
+  display: block;
+  position: relative;
+
+  .views-exposed-form {
+    height: 40px;
+    padding: 23px 0; }
+
+  .views-exposed-widgets {
+    margin: 0;
+    padding: 0;
+    border: none; }
+
+  .views-exposed-widget {
+    margin: 0;
+    padding: 0;
+    float: none; } 
+
+  .search-switch { 
+    @include text-shadow(rgba(100,100,100,0.6) 2px 2px 2px);
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 36px;
+    position: absolute; 
+    top: 23px; left: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    padding: 2px 4px;
+    font-family: 'Abel', sans-serif;
+    background-color: #6190A7; }
+
+  .search-input { 
+    position: absolute;
+    top: 23px;
+    left: 2 * 108px; }
+
+  // widget da busca por nome
+  .vew-0 {
+    > label { 
+      @extend .search-switch;
+      @include border-top-left-radius(6px);
+      @include border-bottom-left-radius(6px); }
+    
+    #edit-title { 
+      @extend .search-input; } }
+
+  // widget da busca por endereço
+  .vew-1 {
+    > label { 
+      @extend .search-switch;
+      @include border-top-right-radius(6px);
+      @include border-bottom-right-radius(6px); }
+
+    #edit-circle-location-wrapper { 
+      @extend .search-input; }
+
+    fieldset { 
+      margin: 0;
+      padding: 0;
+      border: none; }
+    }
+
+  .header-vew-ok, .vew-2, .vew-3 { display: none !important; }
+}
+
+/* 
+    CAMPOS DE BUSCA POR NOME OU ENDEREÇO 
+    */
+/** LABELS **/
+/*** FORMATO E COR  ***/
+#header .vew-0 .label-header, #header .vew-1 .label-header {
+}
+
+/* header busca ativa - ADICIONADO VIA JAVASCRIPT */
+.active-search-bg {
+    background-color: rgba(97,144,167,1) !important;
+}
+
+/*** POSICIONAMENTO ***/
+#header .vew-1 label.label-header {
+    left: 108px;
+}
+
+
+/* INPUTS */
+.vew-0 input, .vew-1 input {
+    width: 178px;
+}
+.vew-0 div.views-widget, .vew-1 div.views-widget {
+    left: 217px;
+    top: -7px;
+}
+
+.vew-0 input, .vew-1 input {
+    height: 40px;
+    border: 0;
+}
+
+.vew-0 fieldset {
+    border: 0;
+}
+
+#header .vew-0 input.form-autocomplete {
+    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 28px, 100% 13px;
+}
+
+#header .vew-0 input.throbbing {
+    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% -26px, 100% -7px;
+}
+
+.vew-0 .views-widget {
+}
+
+.vew-1 .views-widget {
+}
+
+/* BOTÃO "OK" (Aply) */
+#header div.header-vew-ok {
+    left: 396px;
+    top: -7px;
+    font-family: 'Abel', sans-serif;
+}
+
+#header .header-vew-ok input {
+    content: "OK";
+    background-color: rgba(98,145,168,1);
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 2px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px; 
+}
+
+/* Aqui começam os dois últimos filtros do HEADER  */
+/* TIPO DE ORGANIZAÇÃO (vew-3) */
+.vew-3 {
+    background: url(../images/arrow.png) no-repeat right #fff
+}
+
+.vew-3 label.label-header, .vew-3 div.view-widget {
+}
+
+#header .vew-3 label.label-header {
+    width: auto;
+    padding: 12px 0 0 3px;
+    font-size: 14px;
+    height: 28px;
+    vertical-align: middle;
+    background: none;
+    color: rgba(200,200,200,1);
+    user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    z-index:1;
+    font-family: 'Abel', sans-serif;
+}
+
+#header .vew-3 select {
+    height: 39px;
+    width: 208px;
+    border: none;
+    color: white;
+    background: transparent;
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+#header .vew-3 select option {
+    background: white;
+    color: black;
+}
+
+/* ÁREA DE ATUAÇÃO (vew-2) */
+.vew-2 {
+}
+
+#header .vew-2 label.label-header {
+    display: block;
+    width: 225px;
+    padding: 12px 0 0 10px;
+    font-size: 14px;
+    height: 28px;
+    vertical-align: middle;
+    background: url(../images/arrow.png) no-repeat top right #fff;
+    color: rgba(200,200,200,1);
+    user-select: none; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    font-family: 'Abel', sans-serif;
+}
+
+#header #area_atuacao {
+}
+
+#header .vew-2 .form-checkboxes {
+    background: white;
+    width: 225px;
+    padding: 22px 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+/* Hiding Admin Links */
+.views-admin-links {
+    font-size: 10px;
+    visibility: hidden;
+}
+
+.views-admin-links:hover {
+    visibility: visible;
+}
+
+#main-wrapper #main #content {
+    margin-top: 0;
+}
+
+/* ----------- SIDEBAR LEFT (SDBL) ----------- */
+#page .region-sidebar-first {
+    background: #fff;
+    height: 100%;
+    width: 320px;
+    margin: 0;
+}
+
+#page .region-sidebar-first .section {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
+}
+
+/* ---------- SDBL: "COMO FUNCIONA" ---------- */
+#page .region-sidebar-first #block-block-2 {
+    background-color: rgba(240,249,251,1);
+    width: 305px;
+    height: 28px;
+    padding: 10px 0 10px 15px;
+    display: block;
+    margin: 0;
+}
+
+#page .region-sidebar-first #block-block-2 h2.title {
+    font-size: 14px;
+    color: rgba(38,146,203,1);
+    float: left;
+    padding: 5px 0 0 0;
+    font-family: 'Abel', sans-serif;
+}
+
+#page .region-sidebar-first #block-block-2 .content a {
+    margin:0;
+    padding: 14px 0;
+    float: right;
+    padding: 5px 10px 0 0;
+    font-size: 11px;
+    color: rgba(161,161,161,1);
+    font-weight: bold;
+    text-decoration: none;
+}
+#page .region-sidebar-first #block-block-2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- SDBL: DOWNLOAD DO BANCO DE DADOS ---------- */
+#page .region-sidebar-first #block-block-1 {
+/*    background-color: rgba(234,234,234,1);*/
+    background: rgba(247,247,247,1);
+    right: 0;
+    width: 144px;
+    height: 34px;
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+#page .region-sidebar-first #block-block-1 #texto_download {
+    margin: 4px 5px 0 0;
+    padding: 4px 36px 0 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#page .region-sidebar-first #block-block-1 #img_download {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+
+/* ---------- SDBL: NUM DE RESULTADOS ---------- */
+#page .region-sidebar-first .view-header {
+  margin-left: 15px;
+  padding-left: 10px;
+  background-color: rgba(89,160,102,1);
+  font-size: 16px;
+  color: rgba(38,146,203,1);
+  text-transform: uppercase;
+  overflow: hidden;
+  border-bottom: #e7ecef solid 1px;
+}
+
+
+#page .region-sidebar-first .view-header .counter,
+#page .region-sidebar-first .view-header .download {
+    float: left;
+    margin: 0;
+    background: rgba(247,247,247,1);
+}
+
+#page .region-sidebar-first .view-header .counter {
+  padding: 10px 0;
+  text-indent: 5px;
+  font-family: 'Abel', sans-serif;
+  line-height: 36px;
+  width: 130px;
+}
+
+#page .region-sidebar-first .view-header .download {
+  width: 164px;
+  border-left: #e7ecef solid 1px;
+  text-align: right;
+}
+
+#page .region-sidebar-first .view-header .download a {
+  background: url('../images/nossasp_download_banco.png') no-repeat 90% 50%;
+  padding: 10px 60px 10px 0;
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  color: #A1A1A1;
+  font-size: 10px;
+  font-weight: bold;
+}
+/* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
+#page .region-sidebar-first .view-content {
+    padding-left: 15px;
+}
+
+#page .region-sidebar-first .view-content .views-row {
+    padding: 12px 0 12px 15px;
+    font-size: 12px;
+}
+
+#page .region-sidebar-first .view-content .views-row-odd {
+    background: rgba(255,255,255,1);
+}
+
+#page .region-sidebar-first .view-content .views-row-even {
+/*    background: rgba(230,230,230,1);*/
+    background: rgba(247,247,247,1);
+}
+
+#page .region-sidebar-first .view-content .views-row .views-field-title * {
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+}
+
+#page .region-sidebar-first .view-content .views-row .views-field-tid {
+    color: rgba(81,128,153,1);
+    text-overflow: clip;
+}
+
+#page .region-sidebar-first .view-content .views-row .views-field-tid-1 {
+    color: rgba(0,0,0,1);
+}
+
+/* ---------- SDBL: PAGINAÇÃO DAS ENTIDADES ---------- */
+#page .region-sidebar-first .item-list {
+    padding: 15px 0 15px 30px;
+    background: rgba(255,255,255,1);
+}
+
+#page .region-sidebar-first .item-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+#page .region-sidebar-first .item-list .pager-first,
+#page .region-sidebar-first .item-list .pager-last {
+    display:none;
+}
+
+#page .region-sidebar-first .item-list {
+
+}
+
+#page .region-sidebar-first .item-list {
+
+}
+
+/* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
+#page .region-sidebar-first #block-block-3 {
+    margin: 0 0 0 15px;
+    padding: 25px 0 25px 15px;
+    text-align: center;
+    background: rgba(247,247,247,1);
+    width: 290px;
+}
+
+#page .region-sidebar-first #block-block-3 .content {
+    width: auto;
+}
+
+#page .region-sidebar-first #block-block-3 p {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#page .region-sidebar-first #block-block-3 p a {
+    font-size: 12px;
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    padding: 15px 10px;
+    background: rgba(222,8,0,1);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+}
+
+/* ----------- Barra de Navegação ----------- */
+#main #navigation {
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    margin: 0 99px 20px 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+#main #navigation ul {
+    margin: 0 10px 4px 0;
+    padding: 0;
+    -moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
+    box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
+}
+
+#main #navigation ul li {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background: rgba(200,200,200,1);
+}
+
+
+#main #navigation ul li.first {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+}
+
+#main #navigation ul li.last {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -moz-border-radius-bottomright: 7px;
+}
+
+#main #navigation ul li a {
+    margin: 0 2px 0 0;
+    background: rgba(255,255,255,1);
+    padding: 6px 10px 6px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+}
+
+#main #navigation ul li.first a {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+}
+
+#main #navigation ul li.last a {
+    border: 0;
+    margin: 0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -moz-border-radius-bottomright: 7px;
+}
+
+/* ----------- Logo Rede Nossa SP ----------- */
+#main #content .region-content-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#main #content #block-block-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 10px 10px 0;
+    width: auto;
+    height: auto;
+    background: rgba(255,255,255,0.1);
+}
+
+#main #content #block-block-4 .content,
+#main #content #block-block-5 .content,
+#main #content #block-block-4 .content p, 
+#main #content #block-block-5 .content p,
+#main #content #block-block-5 .content p a, 
+#main #content #block-block-5 .content p a img {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- Redes Sociais Nossa SP ----------- */
+#main #content #block-block-5 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 380px 15px 0;
+    width: auto;
+    height: auto;
+}
+
+#main #content #block-block-5 .content p {
+    position: relative;
+}
+
+#twitter_img, 
+#facebook_img {
+    position: absolute;
+    bottom: 0;
+}
+#facebook_img {
+    right: 0;
+}
+
+#twitter_img {
+    right: 35px;
+}
+
+/* ----------- MAPA ----------- */
+#main #content #content-area {
+    margin: 0 0 0 320px;
+    z-index: 0;
+}
+
+/* ---------- LOGIN ----------- */
+.breadcrumb {
+    display: none;
+}
+
+#main #content h1.title {
+    display: none;
+}
+
+#main #content #content-area {
+    margin: 0;
+    padding: 0;
+}
+
+#main #content #content-area form {
+    padding: 3em;
+    background: rgba(247,247,247,1);
+    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
+    width: 250px;
+    color: rgba(117,125,130,1);
+}
+
+#main #content #content-area form div input {
+    width: 230px;
+}
+
+#main #content #content-area form div .description {
+}
+
+#main #content #content-area form #edit-submit {
+    width: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: rgba(0,174,239,1);
+    color: rgba(255,255,255,1);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
+    font-family: 'Abel', sans-serif;
+}
+
+/* convencendo o mapa a aparecer de um jeito razoavel  */
+#openlayers-map-auto-id-0 .olMapViewport { 
+  min-height: 640px;
+  height: 640px; }
+
+#openlayers-map-auto-id-0.full-sized .olMapViewport {
+  min-height: 0;
+}
