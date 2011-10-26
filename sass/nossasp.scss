@@ -52,12 +52,17 @@
     color: white;
     padding: 2px 4px;
     font-family: 'Abel', sans-serif;
-    background-color: #6190A7; }
+    background-color: #6190A7;
+    &.active {
+      background-color: #1e6283; } }
 
-  .search-input { 
+  .search-input {
+    display: none;
     position: absolute;
     top: 23px;
-    left: 2 * 108px; }
+    left: 2 * 108px;
+    &.active { 
+      display: block; } }
 
   // widget da busca por nome
   .vew-0 {
@@ -79,6 +84,13 @@
     #edit-circle-location-wrapper { 
       @extend .search-input; }
 
+    #edit-circle-location { 
+      background: white;
+      &.throbbing {
+       background: white image-url('ajax.gif')  90% center  no-repeat; 
+      }
+    }
+
     fieldset { 
       margin: 0;
       padding: 0;
@@ -94,11 +106,6 @@
 /** LABELS **/
 /*** FORMATO E COR  ***/
 #header .vew-0 .label-header, #header .vew-1 .label-header {
-}
-
-/* header busca ativa - ADICIONADO VIA JAVASCRIPT */
-.active-search-bg {
-    background-color: rgba(97,144,167,1) !important;
 }
 
 /*** POSICIONAMENTO ***/

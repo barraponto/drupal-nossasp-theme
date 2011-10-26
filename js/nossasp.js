@@ -1,4 +1,25 @@
-/* função que mostra/esconde o box do filtro "Área de atuação" */
+(function ($) {
+
+  Drupal.behaviors.nossaspSearchForm = function(context) {
+
+    // workaround: por algum motivo, esse wrapper vem com um display:block
+    $('#edit-circle-location-wrapper, context').attr('style', '');
+
+    $('.vew-0 > label, context').click(function() {
+      $('.active', context).removeClass('active');
+      $(this).addClass('active');
+      $(this).siblings('.views-widget').find('input.form-text').addClass('active');
+    } );
+    $('.vew-1 > label, context').click(function() {
+      $('.active', context).removeClass('active');
+      $(this).addClass('active');
+      $(this).siblings('.views-widget').find('#edit-circle-location-wrapper').addClass('active');
+    } );
+
+    $('.vew-0 > label').click();
+  } 
+} )(jQuery);
+
 //function area_atuacao(id) {
 //  var e = document.getElementById(id);
 //  if(e.style.display=='block') {
