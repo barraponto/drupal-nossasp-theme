@@ -1,16 +1,48 @@
-/* line 1, ../sass/content.scss */
-.field .field-items {
-  color: #337180;
+/**Levar para css/fields.css**/
+/* line 3, ../sass/content.scss */
+fieldset {
+  border: none;
 }
 
-/* line 5, ../sass/content.scss */
-#fieldset a {
+/* line 7, ../sass/content.scss */
+fieldset legend {
+  color: #8F8F8F;
+  font-size: 1.1em;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* line 14, ../sass/content.scss */
+fieldset a {
   color: #337180;
   text-decoration: none;
 }
 
-/* line 10, ../sass/content.scss */
-#fieldset legend {
-  color: #8F8F8F;
-  font-size: 1.1em;
+/* line 19, ../sass/content.scss */
+.fieldgroup {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+/* line 24, ../sass/content.scss */
+.field .field-label, .field .field-label-inline, .field .field-label-inline-first {
+  font-weight: normal;
+  color: #8f8f8f;
+}
+
+/* line 29, ../sass/content.scss */
+.field .field-items {
+  color: #337180;
+}
+
+/* line 33, ../sass/content.scss */
+.group-resumo .field-label {
+  visibility: hidden;
+  display: inline;
+}
+
+/* line 38, ../sass/content.scss */
+.group-resumo .field-items {
+  color: #4a4a4a;
+  margin-top: -20px;
 }

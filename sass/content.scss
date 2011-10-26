@@ -1,13 +1,41 @@
-.field .field-items {
-	color: #337180;
+/**Levar para css/fields.css**/
+
+fieldset {
+	border: none;
 }
 
-#fieldset a {
+fieldset legend {
+	color: #8F8F8F;
+	font-size: 1.1em;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+fieldset a {
 	color: #337180;
 	text-decoration: none;
 }
 
-#fieldset legend {
-	color: #8F8F8F;
-	font-size: 1.1em;
+.fieldgroup {
+	margin-bottom: 25px;
+	padding: 0;
+}
+
+.field .field-label, .field .field-label-inline, .field .field-label-inline-first {
+	font-weight: normal;
+	color: #8f8f8f;
+}
+
+.field .field-items {
+	color: #337180;
+}
+
+.group-resumo .field-label {
+	visibility: hidden;
+	display: inline;
+}
+
+.group-resumo .field-items {
+	color: #4a4a4a;
+	margin-top: -20px;
 }
