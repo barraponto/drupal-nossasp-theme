@@ -1,48 +1,57 @@
 /**Levar para css/fields.css**/
-/* line 3, ../sass/content.scss */
-fieldset {
-  border: none;
-}
-
-/* line 7, ../sass/content.scss */
-fieldset legend {
-  color: #8F8F8F;
-  font-size: 1.1em;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
-/* line 14, ../sass/content.scss */
-fieldset a {
-  color: #337180;
-  text-decoration: none;
-}
-
-/* line 19, ../sass/content.scss */
+/* line 2, ../sass/content.scss */
 .fieldgroup {
   margin-bottom: 25px;
   padding: 0;
 }
 
-/* line 24, ../sass/content.scss */
+/* line 7, ../sass/content.scss */
 .field .field-label, .field .field-label-inline, .field .field-label-inline-first {
   font-weight: normal;
   color: #8f8f8f;
 }
 
-/* line 29, ../sass/content.scss */
+/* line 12, ../sass/content.scss */
 .field .field-items {
   color: #337180;
 }
 
-/* line 33, ../sass/content.scss */
+/* line 16, ../sass/content.scss */
 .group-resumo .field-label {
   visibility: hidden;
   display: inline;
 }
 
-/* line 38, ../sass/content.scss */
+/* line 21, ../sass/content.scss */
 .group-resumo .field-items {
   color: #4a4a4a;
   margin-top: -20px;
+}
+
+/* line 26, ../sass/content.scss */
+.map-and-text {
+  float: left;
+  width: 70%;
+}
+/* line 29, ../sass/content.scss */
+.map-and-text .content {
+  padding: 1em;
+}
+/* line 31, ../sass/content.scss */
+.map-and-text p {
+  margin: 0 0 1em 0;
+}
+
+/* line 34, ../sass/content.scss */
+.details {
+  float: left;
+  width: 30%;
+}
+/* line 37, ../sass/content.scss */
+.details h3 {
+  padding: 0;
+  margin-bottom: 1em;
+  color: #8F8F8F;
+  font-size: 1.2em;
+  font-weight: normal;
 }
