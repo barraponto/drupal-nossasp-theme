@@ -3,23 +3,7 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 /* ----------- HEADER ----------- */
 /* HEADER */
 #header {
-/*    background-image: linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
-/*    background-image: -o-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
-/*    background-image: -moz-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
-/*    background-image: -webkit-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
-/*    background-image: -ms-linear-gradient(left , rgb(255,255,255) 0%, rgb(103,165,180) 75%);*/
-/*    background-image: -webkit-gradient(*/
-/*    linear,*/
-/*    left top,*/
-/*    right top,*/
-/*    clipolor-stop(0, rgb(255,255,255)),*/
-/*    color-stop(0.75, rgb(103,165,180))*/
-/*    );*/
     background: url(../images/cabecalho.jpg) top left no-repeat;
-/*    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
-/*    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
-/*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
-    z-index:2;
 }
 
 #header .section {

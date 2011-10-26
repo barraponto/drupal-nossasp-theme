@@ -97,6 +97,8 @@ function nossasp_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function nossasp_preprocess_page(&$vars, $hook) {
+  drupal_set_html_head('<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">');
+  $vars['head'] = drupal_get_html_head();
   if (arg(0) == 'organizations' && arg(1) == 'search') {
     $vars['classes_array'][] = 'full-sized-map';
   }
