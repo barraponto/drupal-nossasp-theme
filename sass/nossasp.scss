@@ -46,11 +46,11 @@
     width: 100px;
     height: 36px;
     position: absolute; 
-    top: 23px; left: 0;
+    top: 23px; left: 0; z-index: 102; // because opnelayers is z-indexed 100
     text-align: center;
     vertical-align: middle;
     color: white;
-    padding: 2px 4px;
+    padding: 3px 4px;
     font-family: 'Abel', sans-serif;
     background-color: #6190A7;
     &.active {
@@ -58,9 +58,12 @@
 
   .search-input {
     display: none;
+    margin: 0;
+    padding: 1px 0;
+    width: 180px;
     position: absolute;
-    top: 23px;
-    left: 2 * 108px;
+    top: 23px; left: 210px; z-index: 101; // because opnelayers is z-indexed 100
+    background-color: white;
     &.active { 
       display: block; } }
 
@@ -72,7 +75,10 @@
       @include border-bottom-left-radius(6px); }
     
     #edit-title { 
-      @extend .search-input; } }
+      @extend .search-input;
+      border: none;
+      height: 40px;
+      text-indent: 15px; } }
 
   // widget da busca por endereço
   .vew-1 {
@@ -82,10 +88,18 @@
       @include border-bottom-right-radius(6px); }
 
     #edit-circle-location-wrapper { 
-      @extend .search-input; }
+      @extend .search-input;
+      padding: 0;
+      z-index: 101; }
 
     #edit-circle-location { 
+      display: block;
+      width: 180px;
+      height: 40px;
+      padding: 1px 0;
+      border: none;
       background: white;
+      text-indent: 15px;
       &.throbbing {
        background: white image-url('ajax.gif')  90% center  no-repeat; 
       }
@@ -115,17 +129,9 @@
 
 
 /* INPUTS */
-.vew-0 input, .vew-1 input {
-    width: 178px;
-}
 .vew-0 div.views-widget, .vew-1 div.views-widget {
     left: 217px;
     top: -7px;
-}
-
-.vew-0 input, .vew-1 input {
-    height: 40px;
-    border: 0;
 }
 
 .vew-0 fieldset {
