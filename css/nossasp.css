@@ -1,43 +1,40 @@
-body #page-wrapper * { font-family: 'Arimo', sans-serif; }
+@charset "UTF-8";
+/* line 1, ../sass/nossasp.scss */
+body #page-wrapper * {
+  font-family: 'Arimo', sans-serif;
+}
 
 /* ----------- HEADER ----------- */
 /* HEADER */
-#header {
-}
-
+/* line 8, ../sass/nossasp.scss */
 #header .section {
-/*    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
-/*    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
-/*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+  /*    -moz-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+  /*    -webkit-box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
+  /*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
 }
 
 /* ---------- HEADER: LOGO ---------- */
-#logo {
-}
-
-#logo img {
-}
-
-.region-header {
-}
-
 /* ---------- HEADER: FORMS ---------- */
+/* line 25, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-form {
-    position:absolute;
-    padding: 23px 0;
+  position: absolute;
+  padding: 23px 0;
 }
 
+/* line 30, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .views-exposed-widgets {
-    position: relative;
+  position: relative;
 }
 
+/* line 34, ../sass/nossasp.scss */
 .header-vew, .header-vew .views-widget, .vew-0 div {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.vew-0, .vew-1 , .vew-2 , .vew-3 {
-    position: absolute;
+/* line 39, ../sass/nossasp.scss */
+.vew-0, .vew-1, .vew-2, .vew-3 {
+  position: absolute;
 }
 
 /* 
@@ -45,312 +42,352 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
     */
 /** LABELS **/
 /*** FORMATO E COR  ***/
+/* line 48, ../sass/nossasp.scss */
 #header .vew-0 .label-header, #header .vew-1 .label-header {
-    display: block;
-    width: 100px;
-    height: 36px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 12ix;
-    color: #ffffff;
-    padding: 2px 4px;
-    margin-top: -7px;
-    background-color: rgba(97,144,167,0.3);
-    font-family: 'Abel', sans-serif;
-    text-shadow: 2px 2px 2px rgba(100,100,100,0.6);
+  display: block;
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12ix;
+  color: #ffffff;
+  padding: 2px 4px;
+  margin-top: -7px;
+  background-color: rgba(97, 144, 167, 0.3);
+  font-family: 'Abel', sans-serif;
+  text-shadow: 2px 2px 2px rgba(100, 100, 100, 0.6);
 }
 
 /* header busca ativa - ADICIONADO VIA JAVASCRIPT */
+/* line 64, ../sass/nossasp.scss */
 .active-search-bg {
-    background-color: rgba(97,144,167,1) !important;
+  background-color: #6190a7 !important;
 }
 
 /*** POSICIONAMENTO ***/
+/* line 69, ../sass/nossasp.scss */
 #header .vew-0 label.label-header {
-    left: 0;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    -webkit-border-top-left-radius: 6px;
-    -webkit-border-bottom-left-radius: 6px;
-    -moz-border-radius-topleft: 6px;
-    -moz-border-radius-bottomleft: 6px; 
-}
-#header .vew-1 label.label-header {
-    position: absolute;
-    left: 108px;
+  left: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-bottomleft: 6px;
 }
 
+/* line 78, ../sass/nossasp.scss */
+#header .vew-1 label.label-header {
+  position: absolute;
+  left: 108px;
+}
 
 /* INPUTS */
+/* line 85, ../sass/nossasp.scss */
 .vew-0 input, .vew-1 input {
-    width: 178px;
+  width: 178px;
 }
+
+/* line 88, ../sass/nossasp.scss */
 .vew-0 div.views-widget, .vew-1 div.views-widget {
-    position: absolute;
-    left: 217px;
-    top: -7px;
+  position: absolute;
+  left: 217px;
+  top: -7px;
 }
 
+/* line 94, ../sass/nossasp.scss */
 .vew-0 input, .vew-1 input {
-    height: 40px;
-    border: 0;
+  height: 40px;
+  border: 0;
 }
 
+/* line 99, ../sass/nossasp.scss */
 .vew-0 fieldset {
-    border: 0;
+  border: 0;
 }
 
+/* line 103, ../sass/nossasp.scss */
 #header .vew-0 input.form-autocomplete {
-    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% 28px, 100% 13px;
+  background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 28px, 100% 13px;
 }
 
+/* line 109, ../sass/nossasp.scss */
 #header .vew-0 input.throbbing {
-    background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% -26px, 100% -7px;
+  background-image: url(../images/throbber_cover.png), url(../images/throbber.gif);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% -26px, 100% -7px;
 }
 
+/* line 115, ../sass/nossasp.scss */
 .vew-0 .views-widget {
-    z-index: 1;
+  z-index: 1;
 }
 
+/* line 119, ../sass/nossasp.scss */
 .vew-1 .views-widget {
-    z-index: 0;
+  z-index: 0;
 }
 
 /* BOTÃO "OK" (Aplly) */
+/* line 124, ../sass/nossasp.scss */
 #header div.header-vew-ok {
-    position: absolute;
-    left: 396px;
-    top: -7px;
-    font-family: 'Abel', sans-serif;
+  position: absolute;
+  left: 396px;
+  top: -7px;
+  font-family: 'Abel', sans-serif;
 }
 
+/* line 131, ../sass/nossasp.scss */
 #header .header-vew-ok input {
-    content: "OK";
-    background-color: rgba(98,145,168,1);
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: bold;
-    border: none;
-    padding: 2px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 6px; 
+  content: "OK";
+  background-color: #6291a8;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 2px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
 }
 
 /* Aqui começam os dois últimos filtros do HEADER  */
 /* TIPO DE ORGANIZAÇÃO (vew-3) */
+/* line 152, ../sass/nossasp.scss */
 .vew-3 {
-    left: 460px;
-    top: -7px;
-    background: url(../images/arrow.png) no-repeat right #fff
+  left: 460px;
+  top: -7px;
+  background: url(../images/arrow.png) no-repeat right white;
 }
 
+/* line 158, ../sass/nossasp.scss */
 .vew-3 label.label-header, .vew-3 div.view-widget {
-    position: absolute;
+  position: absolute;
 }
 
+/* line 162, ../sass/nossasp.scss */
 #header .vew-3 label.label-header {
-    width: auto;
-    padding: 12px 0 0 3px;
-    font-size: 14px;
-    height: 28px;
-    vertical-align: middle;
-    background: none;
-    color: rgba(200,200,200,1);
-    user-select: none; 
-    -moz-user-select: none; 
-    -khtml-user-select: none; 
-    -webkit-user-select: none; 
-    -o-user-select: none; 
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    z-index:1;
-    font-family: 'Abel', sans-serif;
+  width: auto;
+  padding: 12px 0 0 3px;
+  font-size: 14px;
+  height: 28px;
+  vertical-align: middle;
+  background: none;
+  color: #c8c8c8;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  z-index: 1;
+  font-family: 'Abel', sans-serif;
 }
 
+/* line 182, ../sass/nossasp.scss */
 #header .vew-3 select {
-    height: 39px;
-    width: 208px;
-    border: none;
-    color: white;
-    background: transparent;
-    border-top-right-radius: 8px;
-    -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topright: 8px;
+  height: 39px;
+  width: 208px;
+  border: none;
+  color: white;
+  background: transparent;
+  border-top-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
 }
 
+/* line 193, ../sass/nossasp.scss */
 #header .vew-3 select option {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 /* ÁREA DE ATUAÇÃO (vew-2) */
+/* line 199, ../sass/nossasp.scss */
 .vew-2 {
-    left: 675px;
-    top: -7px;
-    height: 40px;
+  left: 675px;
+  top: -7px;
+  height: 40px;
 }
 
+/* line 205, ../sass/nossasp.scss */
 #header .vew-2 label.label-header {
-    display: block;
-    width: 225px;
-    padding: 12px 0 0 10px;
-    font-size: 14px;
-    height: 28px;
-    vertical-align: middle;
-    background: url(../images/arrow.png) no-repeat top right #fff;
-    color: rgba(200,200,200,1);
-    user-select: none; 
-    -moz-user-select: none; 
-    -khtml-user-select: none; 
-    -webkit-user-select: none; 
-    -o-user-select: none;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    font-family: 'Abel', sans-serif;
+  display: block;
+  width: 225px;
+  padding: 12px 0 0 10px;
+  font-size: 14px;
+  height: 28px;
+  vertical-align: middle;
+  background: url(../images/arrow.png) no-repeat top right white;
+  color: #c8c8c8;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  font-family: 'Abel', sans-serif;
 }
 
+/* line 225, ../sass/nossasp.scss */
 #header #area_atuacao {
-    display: none;
+  display: none;
 }
 
+/* line 229, ../sass/nossasp.scss */
 #header .vew-2 .form-checkboxes {
-    position: absolute;
-    top: 40px;
-    background: white;
-    width: 225px;
-    padding: 22px 5px;
-    z-index:1;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
+  position: absolute;
+  top: 40px;
+  background: white;
+  width: 225px;
+  padding: 22px 5px;
+  z-index: 1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
 
 /* Hiding Admin Links */
+/* line 242, ../sass/nossasp.scss */
 .views-admin-links {
-    z-index: 999;
-    font-size: 10px;
-    position: absolute;
-    right:0;
-    top:0;
-    visibility: hidden;
+  z-index: 999;
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
 }
 
+/* line 251, ../sass/nossasp.scss */
 .views-admin-links:hover {
-    visibility: visible;
+  visibility: visible;
 }
 
+/* line 255, ../sass/nossasp.scss */
 #main-wrapper #main #content {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* ----------- SIDEBAR LEFT (SDBL) ----------- */
+/* line 260, ../sass/nossasp.scss */
 #page .region-sidebar-first {
-    background: #fff;
-    height: 100%;
-    width: 320px;
-    margin: 0;
+  background: #fff;
+  height: 100%;
+  width: 320px;
+  margin: 0;
 }
 
+/* line 267, ../sass/nossasp.scss */
 #page .region-sidebar-first .section {
-    width: 320px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
 }
 
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
+/* line 276, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 {
-    background-color: rgba(240,249,251,1);
-    width: 305px;
-    height: 28px;
-    padding: 10px 0 10px 15px;
-    display: block;
-    margin: 0;
+  background-color: #f0f9fb;
+  width: 305px;
+  height: 28px;
+  padding: 10px 0 10px 15px;
+  display: block;
+  margin: 0;
 }
 
+/* line 285, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 h2.title {
-    font-size: 14px;
-    color: rgba(38,146,203,1);
-    float: left;
-    padding: 5px 0 0 0;
-    font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  color: #2692cb;
+  float: left;
+  padding: 5px 0 0 0;
+  font-family: 'Abel', sans-serif;
 }
 
+/* line 293, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 .content a {
-    margin:0;
-    padding: 14px 0;
-    float: right;
-    padding: 5px 10px 0 0;
-    font-size: 11px;
-    color: rgba(161,161,161,1);
-    font-weight: bold;
-    text-decoration: none;
+  margin: 0;
+  padding: 14px 0;
+  float: right;
+  padding: 5px 10px 0 0;
+  font-size: 11px;
+  color: #a1a1a1;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+/* line 303, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 .content p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* ---------- SDBL: DOWNLOAD DO BANCO DE DADOS ---------- */
+/* line 309, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 {
-/*    background-color: rgba(234,234,234,1);*/
-    background: rgba(247,247,247,1);
-    right: 0;
-    width: 144px;
-    height: 34px;
-    position: absolute;
-    display: block;
-    text-align: center;
-}
-#page .region-sidebar-first #block-block-1 #texto_download {
-    margin: 4px 5px 0 0;
-    padding: 4px 36px 0 0;
-    font-size: 10px;
-    font-weight: bold;
+  /*    background-color: rgba(234,234,234,1);*/
+  background: #f7f7f7;
+  right: 0;
+  width: 144px;
+  height: 34px;
+  position: absolute;
+  display: block;
+  text-align: center;
 }
 
+/* line 319, ../sass/nossasp.scss */
+#page .region-sidebar-first #block-block-1 #texto_download {
+  margin: 4px 5px 0 0;
+  padding: 4px 36px 0 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* line 326, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 #img_download {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 8px;
-    right: 4px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 4px;
 }
 
 /* ---------- SDBL: NUM DE RESULTADOS ---------- */
+/* line 335, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header {
   margin-left: 15px;
   padding-left: 10px;
-  background-color: rgba(89,160,102,1);
+  background-color: #59a066;
   font-size: 16px;
-  color: rgba(38,146,203,1);
+  color: #2692cb;
   text-transform: uppercase;
   overflow: hidden;
   border-bottom: #e7ecef solid 1px;
 }
 
-
+/* line 348, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .counter,
 #page .region-sidebar-first .view-header .download {
-    float: left;
-    margin: 0;
-    background: rgba(247,247,247,1);
+  float: left;
+  margin: 0;
+  background: #f7f7f7;
 }
 
+/* line 354, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .counter {
   padding: 10px 0;
   text-indent: 5px;
@@ -359,14 +396,16 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
   width: 130px;
 }
 
+/* line 362, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .download {
   width: 164px;
   border-left: #e7ecef solid 1px;
   text-align: right;
 }
 
+/* line 368, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .download a {
-  background: url('../images/nossasp_download_banco.png') no-repeat 90% 50%;
+  background: url("../images/nossasp_download_banco.png") no-repeat 90% 50%;
   padding: 10px 60px 10px 0;
   display: block;
   text-decoration: none;
@@ -375,287 +414,317 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
   font-size: 10px;
   font-weight: bold;
 }
+
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
+/* line 379, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
+/* line 383, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row {
-    padding: 12px 0 12px 15px;
-    font-size: 12px;
+  padding: 12px 0 12px 15px;
+  font-size: 12px;
 }
 
+/* line 388, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row-odd {
-    background: rgba(255,255,255,1);
+  background: white;
 }
 
+/* line 392, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row-even {
-/*    background: rgba(230,230,230,1);*/
-    background: rgba(247,247,247,1);
+  /*    background: rgba(230,230,230,1);*/
+  background: #f7f7f7;
 }
 
+/* line 397, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-title * {
-    font-weight: bold;
-    color: rgba(0,0,0,1);
-    text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
+/* line 403, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-tid {
-    color: rgba(81,128,153,1);
-    text-overflow: clip;
+  color: #518099;
+  text-overflow: clip;
 }
 
+/* line 408, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-tid-1 {
-    color: rgba(0,0,0,1);
+  color: black;
 }
 
 /* ---------- SDBL: PAGINAÇÃO DAS ENTIDADES ---------- */
+/* line 413, ../sass/nossasp.scss */
 #page .region-sidebar-first .item-list {
-    padding: 15px 0 15px 30px;
-    background: rgba(255,255,255,1);
+  padding: 15px 0 15px 30px;
+  background: white;
 }
 
+/* line 418, ../sass/nossasp.scss */
 #page .region-sidebar-first .item-list ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
+/* line 424, ../sass/nossasp.scss */
 #page .region-sidebar-first .item-list .pager-first,
 #page .region-sidebar-first .item-list .pager-last {
-    display:none;
-}
-
-#page .region-sidebar-first .item-list {
-
-}
-
-#page .region-sidebar-first .item-list {
-
+  display: none;
 }
 
 /* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
+/* line 437, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 {
-    margin: 0 0 0 15px;
-    padding: 25px 0 25px 15px;
-    text-align: center;
-    background: rgba(247,247,247,1);
-    width: 290px;
+  margin: 0 0 0 15px;
+  padding: 25px 0 25px 15px;
+  text-align: center;
+  background: #f7f7f7;
+  width: 290px;
 }
 
+/* line 445, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 .content {
-    width: auto;
+  width: auto;
 }
 
+/* line 449, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 p {
-    margin: 0;
-    padding: 0;
-    width: auto;
+  margin: 0;
+  padding: 0;
+  width: auto;
 }
 
+/* line 455, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-3 p a {
-    font-size: 12px;
-    font-family: 'Abel', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: rgba(255,255,255,1);
-    text-decoration: none;
-    padding: 15px 10px;
-    background: rgba(222,8,0,1);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
-    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
-    box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+  font-size: 12px;
+  font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 15px 10px;
+  background: #de0800;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -moz-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.6);
+  -webkit-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.6);
+  box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.6);
 }
 
 /* ----------- Barra de Navegação ----------- */
+/* line 473, ../sass/nossasp.scss */
 #main #navigation {
-    position: absolute;
-    bottom: -3px;
-    right: 0;
-    margin: 0 99px 20px 0;
-    padding: 0;
-    width: auto;
-    height: auto;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  margin: 0 99px 20px 0;
+  padding: 0;
+  width: auto;
+  height: auto;
 }
 
+/* line 483, ../sass/nossasp.scss */
 #main #navigation ul {
-    margin: 0 10px 4px 0;
-    padding: 0;
-    -moz-box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
-    -webkit-box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
-    box-shadow: 5px 5px 5px rgba(100,100,100,0.6);
+  margin: 0 10px 4px 0;
+  padding: 0;
+  -moz-box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
 }
 
+/* line 491, ../sass/nossasp.scss */
 #main #navigation ul li {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    background: rgba(200,200,200,1);
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: #c8c8c8;
 }
 
-
+/* line 499, ../sass/nossasp.scss */
 #main #navigation ul li.first {
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    -webkit-border-top-left-radius: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    -moz-border-radius-topleft: 7px;
-    -moz-border-radius-bottomleft: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-bottomleft: 7px;
 }
 
+/* line 508, ../sass/nossasp.scss */
 #main #navigation ul li.last {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    -webkit-border-top-right-radius: 7px;
-    -webkit-border-bottom-right-radius: 7px;
-    -moz-border-radius-topright: 7px;
-    -moz-border-radius-bottomright: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -moz-border-radius-bottomright: 7px;
 }
 
+/* line 517, ../sass/nossasp.scss */
 #main #navigation ul li a {
-    margin: 0 2px 0 0;
-    background: rgba(255,255,255,1);
-    padding: 6px 10px 6px 10px;
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Abel', sans-serif;
+  margin: 0 2px 0 0;
+  background: white;
+  padding: 6px 10px 6px 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
 }
 
+/* line 527, ../sass/nossasp.scss */
 #main #navigation ul li.first a {
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    -webkit-border-top-left-radius: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    -moz-border-radius-topleft: 7px;
-    -moz-border-radius-bottomleft: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-bottomleft: 7px;
 }
 
+/* line 536, ../sass/nossasp.scss */
 #main #navigation ul li.last a {
-    border: 0;
-    margin: 0;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    -webkit-border-top-right-radius: 7px;
-    -webkit-border-bottom-right-radius: 7px;
-    -moz-border-radius-topright: 7px;
-    -moz-border-radius-bottomright: 7px;
+  border: 0;
+  margin: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -moz-border-radius-bottomright: 7px;
 }
 
 /* ----------- Logo Rede Nossa SP ----------- */
+/* line 548, ../sass/nossasp.scss */
 #main #content .region-content-top {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
+/* line 555, ../sass/nossasp.scss */
 #main #content #block-block-4 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 0 10px 10px 0;
-    width: auto;
-    height: auto;
-    background: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0 10px 10px 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
 }
 
+/* line 571, ../sass/nossasp.scss */
 #main #content #block-block-4 .content,
 #main #content #block-block-5 .content,
-#main #content #block-block-4 .content p, 
+#main #content #block-block-4 .content p,
 #main #content #block-block-5 .content p,
-#main #content #block-block-5 .content p a, 
+#main #content #block-block-5 .content p a,
 #main #content #block-block-5 .content p a img {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* ----------- Redes Sociais Nossa SP ----------- */
+/* line 577, ../sass/nossasp.scss */
 #main #content #block-block-5 {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 0 380px 15px 0;
-    width: auto;
-    height: auto;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0 380px 15px 0;
+  width: auto;
+  height: auto;
 }
 
+/* line 588, ../sass/nossasp.scss */
 #main #content #block-block-5 .content p {
-    position: relative;
+  position: relative;
 }
 
-#twitter_img, 
+/* line 593, ../sass/nossasp.scss */
+#twitter_img,
 #facebook_img {
-    position: absolute;
-    bottom: 0;
-}
-#facebook_img {
-    right: 0;
+  position: absolute;
+  bottom: 0;
 }
 
+/* line 597, ../sass/nossasp.scss */
+#facebook_img {
+  right: 0;
+}
+
+/* line 601, ../sass/nossasp.scss */
 #twitter_img {
-    right: 35px;
+  right: 35px;
 }
 
 /* ----------- MAPA ----------- */
+/* line 606, ../sass/nossasp.scss */
 #main #content #content-area {
-    margin: 0 0 0 320px;
-    z-index: 0;
+  margin: 0 0 0 320px;
+  z-index: 0;
 }
 
 /* ---------- LOGIN ----------- */
+/* line 612, ../sass/nossasp.scss */
 .breadcrumb {
-    display: none;
+  display: none;
 }
 
+/* line 616, ../sass/nossasp.scss */
 #main #content h1.title {
-    display: none;
+  display: none;
 }
 
+/* line 620, ../sass/nossasp.scss */
 #main #content #content-area {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* line 625, ../sass/nossasp.scss */
 #main #content #content-area form {
-    padding: 3em;
-    background: rgba(247,247,247,1);
-    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
-    width: 250px;
-    color: rgba(117,125,130,1);
+  padding: 3em;
+  background: #f7f7f7;
+  box-shadow: 4px 4px 1px rgba(100, 100, 100, 0.6);
+  width: 250px;
+  color: #757d82;
 }
 
+/* line 633, ../sass/nossasp.scss */
 #main #content #content-area form div input {
-    width: 230px;
+  width: 230px;
 }
 
-#main #content #content-area form div .description {
-}
-
+/* line 640, ../sass/nossasp.scss */
 #main #content #content-area form #edit-submit {
-    width: auto;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 5px 10px;
-    background: rgba(0,174,239,1);
-    color: rgba(255,255,255,1);
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
-    font-family: 'Abel', sans-serif;
+  width: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background: #00aeef;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 4px 4px 1px rgba(100, 100, 100, 0.6);
+  font-family: 'Abel', sans-serif;
 }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-#openlayers-map-auto-id-0 .olMapViewport { 
+/* line 655, ../sass/nossasp.scss */
+#openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
-  height: 640px; }
+  height: 640px;
+}
 
+/* line 659, ../sass/nossasp.scss */
 #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
