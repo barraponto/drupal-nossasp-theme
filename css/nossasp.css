@@ -3,7 +3,6 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 /* ----------- HEADER ----------- */
 /* HEADER */
 #header {
-    background: url(../images/cabecalho.jpg) top left no-repeat;
 }
 
 #header .section {
@@ -12,25 +11,14 @@ body #page-wrapper * { font-family: 'Arimo', sans-serif; }
 /*    box-shadow: 5px 5px 5px rgba(50,50,50,1);*/
 }
 
-#header * {
-    clear: none;
-    margin:0;
-    padding:0;
-}
-
 /* ---------- HEADER: LOGO ---------- */
 #logo {
-    z-index: 20;
-    width:320px;
 }
 
 #logo img {
-    padding: 0 0 0 15px;
-    visibility: hidden;
 }
 
 .region-header {
-    float:left;
 }
 
 /* ---------- HEADER: FORMS ---------- */
