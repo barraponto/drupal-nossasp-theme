@@ -663,11 +663,6 @@
 }
 
 #main #content #content-area form {
-    padding: 3em;
-    background: rgba(247,247,247,1);
-    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
-    width: 250px;
-    color: rgba(117,125,130,1);
 }
 
 #main #content #content-area form div input {
@@ -677,19 +672,7 @@
 #main #content #content-area form div .description {
 }
 
-#main #content #content-area form #edit-submit {
-    width: auto;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 5px 10px;
-    background: rgba(0,174,239,1);
-    color: rgba(255,255,255,1);
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 4px 4px 1px rgba(100,100,100,0.6);
-    font-family: 'Abel', sans-serif;
-}
+
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
 body.front #openlayers-map-auto-id-0 .olMapViewport { 
@@ -716,4 +699,28 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
     font-family: 'Arimo',sans-serif;
     line-height: 1.6em;
     padding: 0 1em; }
+}
+
+/* Temando as forms */
+#contact-mail-page { 
+  @include pie-clearfix;
+  @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
+  padding: 1.5em 3em;
+  background: rgba(247,247,247,1);
+  width: 50%;
+  margin: 1.5em auto;
+  color: rgba(117,125,130,1);
+  h1 {
+    font-family: 'Abel', sans-serif; }
+  #edit-submit {
+    @include border-radius(3px);
+    @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
+    padding: 5px 10px;
+    width: 230px;
+    background: rgba(0,174,239,1);
+    color: rgba(255,255,255,1);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+    float: right; }
 }

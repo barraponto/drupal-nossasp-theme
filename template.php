@@ -117,6 +117,9 @@ function nossasp_preprocess_page(&$vars, $hook) {
 
     }
   }
+  else { 
+    $vars['title'] = FALSE;
+  }
 
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
