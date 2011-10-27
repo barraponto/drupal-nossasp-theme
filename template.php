@@ -102,6 +102,10 @@ function nossasp_preprocess_page(&$vars, $hook) {
 
   if (arg(0) == 'organizations' && arg(1) == 'search') {
     $vars['classes_array'][] = 'full-sized-map';
+    $js = drupal_add_js(NULL, 'module', 'header');
+    $views_path = drupal_get_path('module', 'views');
+    unset($js['module'][$views_path . '/js/ajax_view.js']);
+    $vars['scripts'] = drupal_get_js('header', $js);
   }
 
   if (isset($vars['node']) && ($vars['node']->type == 'nossasp_organization' || $vars['node']->type == 'nossasp_council')) { 
