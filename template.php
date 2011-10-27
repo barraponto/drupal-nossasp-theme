@@ -113,9 +113,6 @@ function nossasp_preprocess_page(&$vars, $hook) {
       $vars['classes_array'][] = 'org-type-' . $orgtype->tid;
       $vars['orgtype'] = $orgtype->name;
     }
-    if (!empty($vars['node']->primary_term)) {
-
-    }
   }
   else { 
     $vars['title'] = FALSE;

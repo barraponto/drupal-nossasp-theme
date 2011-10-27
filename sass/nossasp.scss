@@ -85,6 +85,11 @@
       @extend .search-input;
       border: none;
       height: 40px;
+      text-indent: 15px; } 
+    #edit-title-1 {
+      @extend .search-input;
+      border: none;
+      height: 40px;
       text-indent: 15px; } }
 
   // widget da busca por endereço
@@ -92,7 +97,8 @@
     > label { 
       @extend .search-switch;
       @include border-top-right-radius(6px);
-      @include border-bottom-right-radius(6px); }
+      @include border-bottom-right-radius(6px);
+      left: 108px; }
 
     #edit-circle-location-wrapper { 
       @extend .search-input;
@@ -154,6 +160,9 @@
     &:hover { 
       background-color: #1E6283; }
   }
+
+  .vew-2 > label { 
+    display: none; }
 
   #area_atuacao { 
     position: absolute;
@@ -232,68 +241,8 @@
   }
 }
 
-/* 
-    CAMPOS DE BUSCA POR NOME OU ENDEREÇO 
-    */
-/** LABELS **/
-/*** FORMATO E COR  ***/
-#header .vew-0 .label-header, #header .vew-1 .label-header {
-}
-
-/*** POSICIONAMENTO ***/
-#header .vew-1 label.label-header {
-    left: 108px;
-}
-
-
-/* INPUTS */
-.vew-0 div.views-widget, .vew-1 div.views-widget {
-    left: 217px;
-    top: -7px;
-}
-
 .vew-0 fieldset {
     border: 0;
-}
-
-
-.vew-0 .views-widget {
-}
-
-.vew-1 .views-widget {
-}
-
-#header .header-vew-ok input {
-}
-
-/* Aqui começam os dois últimos filtros do HEADER  */
-/* TIPO DE ORGANIZAÇÃO (vew-3) */
-
-.vew-3 label.label-header, .vew-3 div.view-widget {
-}
-
-/* ÁREA DE ATUAÇÃO (vew-2) */
-.vew-2 {
-}
-
-#header .vew-2 label.label-header {
-    display: block;
-    width: 225px;
-    padding: 12px 0 0 10px;
-    font-size: 14px;
-    height: 28px;
-    vertical-align: middle;
-    background: url(../images/arrow.png) no-repeat top right #fff;
-    color: rgba(200,200,200,1);
-    user-select: none; 
-    -moz-user-select: none; 
-    -khtml-user-select: none; 
-    -webkit-user-select: none; 
-    -o-user-select: none;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    font-family: 'Abel', sans-serif;
 }
 
 #header #area_atuacao {
@@ -306,16 +255,6 @@
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-}
-
-/* Hiding Admin Links */
-.views-admin-links {
-    font-size: 10px;
-    visibility: hidden;
-}
-
-.views-admin-links:hover {
-    visibility: visible;
 }
 
 #main-wrapper #main #content {
@@ -648,16 +587,6 @@
 
 /* ----------- MAPA ----------- */
 #main #content #content-area {
-    margin: 0 0 0 320px;
-    z-index: 0;
-}
-
-/* ---------- LOGIN ----------- */
-.breadcrumb {
-    display: none;
-}
-
-#main #content #content-area {
     margin: 0;
     padding: 0;
 }
@@ -690,13 +619,13 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
-#user-register,
 #user-login,
 #contact-mail-page { 
   @include pie-clearfix;
   @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
   padding: 1.5em 3em;
   background: rgba(247,247,247,1);
+  min-width: 275px;
   width: 50%;
   margin: 1.5em auto;
   color: rgba(117,125,130,1);
@@ -712,4 +641,6 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
     font-weight: bold;
     font-family: 'Abel', sans-serif;
     float: right; }
+  .form-text { 
+    width: 230px; }
 }
