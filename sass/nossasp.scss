@@ -662,18 +662,6 @@
     padding: 0;
 }
 
-#main #content #content-area form {
-}
-
-#main #content #content-area form div input {
-    width: 230px;
-}
-
-#main #content #content-area form div .description {
-}
-
-
-
 /* convencendo o mapa a aparecer de um jeito razoavel  */
 body.front #openlayers-map-auto-id-0 .olMapViewport { 
   min-height: 640px;
@@ -702,6 +690,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
+#user-login,
 #contact-mail-page { 
   @include pie-clearfix;
   @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
@@ -716,7 +705,6 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
     @include border-radius(3px);
     @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
     padding: 5px 10px;
-    width: 230px;
     background: rgba(0,174,239,1);
     color: rgba(255,255,255,1);
     font-size: 14px;

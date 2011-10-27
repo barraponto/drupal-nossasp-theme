@@ -821,28 +821,23 @@
   padding: 0;
 }
 
-/* line 668, ../sass/nossasp.scss */
-#main #content #content-area form div input {
-  width: 230px;
-}
-
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-/* line 678, ../sass/nossasp.scss */
+/* line 666, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
   height: 640px;
 }
 
-/* line 682, ../sass/nossasp.scss */
+/* line 670, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
 
-/* line 686, ../sass/nossasp.scss */
+/* line 674, ../sass/nossasp.scss */
 #block-block-6 {
   margin-left: 15px;
 }
-/* line 688, ../sass/nossasp.scss */
+/* line 676, ../sass/nossasp.scss */
 #block-block-6 .title {
   padding: 10px;
   background-color: #F7F7F7;
@@ -854,7 +849,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   line-height: 36px;
   font-weight: normal;
 }
-/* line 698, ../sass/nossasp.scss */
+/* line 686, ../sass/nossasp.scss */
 #block-block-6 p {
   font-family: 'Arimo',sans-serif;
   line-height: 1.6em;
@@ -862,7 +857,8 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
-/* line 705, ../sass/nossasp.scss */
+/* line 694, ../sass/nossasp.scss */
+#user-login,
 #contact-mail-page {
   *zoom: 1;
   -moz-box-shadow: 4px 4px 1px rgba(100, 100, 100, 0.6);
@@ -876,16 +872,19 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   color: #757d82;
 }
 /* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#user-login:after,
 #contact-mail-page:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 713, ../sass/nossasp.scss */
+/* line 702, ../sass/nossasp.scss */
+#user-login h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 715, ../sass/nossasp.scss */
+/* line 704, ../sass/nossasp.scss */
+#user-login #edit-submit,
 #contact-mail-page #edit-submit {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -898,7 +897,6 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   -o-box-shadow: 4px 4px 1px rgba(100, 100, 100, 0.6);
   box-shadow: 4px 4px 1px rgba(100, 100, 100, 0.6);
   padding: 5px 10px;
-  width: 230px;
   background: #00aeef;
   color: white;
   font-size: 14px;
