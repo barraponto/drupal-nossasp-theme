@@ -331,8 +331,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left;
-}
+    background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left; }
 
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
 #page .region-sidebar-first #block-block-2 {
@@ -438,6 +437,18 @@
   font-weight: bold;
 }
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
+#block-views-ac1d059bc0aeabb5015c2d28f61ba744 { 
+  margin: 0;
+  .content, .views_view { height: 100%; }
+  .view-content { 
+    overflow-y: auto;
+    width: auto;
+    min-height: 180px; }
+  .item-list { 
+    margin: 0 15px;
+    padding: 15px 0;
+  }
+}
 #page .region-sidebar-first .view-content {
     padding-left: 15px;
 }
@@ -471,64 +482,31 @@
     color: rgba(0,0,0,1);
 }
 
-/* ---------- SDBL: PAGINAÇÃO DAS ENTIDADES ---------- */
-#page .region-sidebar-first .item-list {
-    padding: 15px 0 15px 30px;
-    background: rgba(255,255,255,1);
-}
-
-#page .region-sidebar-first .item-list ul {
-    padding: 0;
-    margin: 0;
-}
-
-#page .region-sidebar-first .item-list .pager-first,
-#page .region-sidebar-first .item-list .pager-last {
-    display:none;
-}
-
-#page .region-sidebar-first .item-list {
-
-}
-
-#page .region-sidebar-first .item-list {
-
-}
-
 /* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
-#page .region-sidebar-first #block-block-3 {
+.region-sidebar-first {
+  #block-block-3 {
     margin: 0 0 0 15px;
-    padding: 25px 0 25px 15px;
     text-align: center;
     background: rgba(247,247,247,1);
-    width: 290px;
-}
-
-#page .region-sidebar-first #block-block-3 .content {
-    width: auto;
-}
-
-#page .region-sidebar-first #block-block-3 p {
-    margin: 0;
-    padding: 0;
-    width: auto;
-}
-
-#page .region-sidebar-first #block-block-3 p a {
-    font-size: 12px;
+  .content { 
+    margin: 20px 0;
+    padding: 20px 0; }
+  .content p { 
+    margin: 0; padding: 0; }
+  .content a {
+    @include border-radius(8px);
+    @include box-shadow(3px 3px 5px rgba(50,50,50,0.6));
+    display: block;
+    margin: 0 1.5em;
+    padding: .5em;
+    font-size: 18px;
     font-family: 'Abel', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    color: rgba(255,255,255,1);
+    color: white;
     text-decoration: none;
-    padding: 15px 10px;
     background: rgba(222,8,0,1);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -moz-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
-    -webkit-box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
-    box-shadow: 3px 3px 5px rgba(50,50,50,0.6);
+  } }
 }
 
 /* ----------- Barra de Navegação ----------- */
