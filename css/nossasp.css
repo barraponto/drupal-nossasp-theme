@@ -843,3 +843,26 @@ body.front #openlayers-map-auto-id-0 .olMapViewport {
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
+
+/* line 699, ../sass/nossasp.scss */
+#block-block-6 {
+  margin-left: 15px;
+}
+/* line 701, ../sass/nossasp.scss */
+#block-block-6 .title {
+  padding: 10px;
+  background-color: #F7F7F7;
+  font-size: 16px;
+  color: #2692CB;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-family: 'Abel',sans-serif;
+  line-height: 36px;
+  font-weight: normal;
+}
+/* line 711, ../sass/nossasp.scss */
+#block-block-6 p {
+  font-family: 'Arimo',sans-serif;
+  line-height: 1.6em;
+  padding: 0 1em;
+}
