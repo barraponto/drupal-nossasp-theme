@@ -173,7 +173,7 @@
 }
 /* line 112, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .vew-1 #edit-circle-location.throbbing {
-  background: white url('../images/ajax.gif?1319605132') 90% center no-repeat;
+  background: white url('../images/ajax.gif?1319741484') 90% center no-repeat;
 }
 /* line 117, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .vew-1 #autocomplete {
@@ -243,7 +243,7 @@
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
-  background: white url('../images/select-button.png?1319645071') right center no-repeat;
+  background: white url('../images/select-button.png?1319741484') right center no-repeat;
   height: 42px;
   width: 180px;
   padding-right: 40px;
@@ -297,7 +297,7 @@
   -khtml-border-radius: 6px;
   border-radius: 6px;
   display: block;
-  background: white url('../images/select-button.png?1319645071') right center no-repeat;
+  background: white url('../images/select-button.png?1319741484') right center no-repeat;
   height: 42px;
   width: 180px;
   padding-right: 40px;
@@ -857,7 +857,8 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
-/* line 694, ../sass/nossasp.scss */
+/* line 695, ../sass/nossasp.scss */
+#user-register,
 #user-login,
 #contact-mail-page {
   *zoom: 1;
@@ -872,18 +873,21 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   color: #757d82;
 }
 /* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#user-register:after,
 #user-login:after,
 #contact-mail-page:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 702, ../sass/nossasp.scss */
+/* line 703, ../sass/nossasp.scss */
+#user-register h1,
 #user-login h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 704, ../sass/nossasp.scss */
+/* line 705, ../sass/nossasp.scss */
+#user-register #edit-submit,
 #user-login #edit-submit,
 #contact-mail-page #edit-submit {
   -moz-border-radius: 3px;
