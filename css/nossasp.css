@@ -841,3 +841,7 @@ body.front #openlayers-map-auto-id-0 .olMapViewport {
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
+
+.sidebar .block {
+  margin: 0;
+}
