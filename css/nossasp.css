@@ -802,7 +802,9 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
-/* line 623, ../sass/nossasp.scss */
+/* line 625, ../sass/nossasp.scss */
+#user-pass,
+#user-register,
 #user-login,
 #contact-mail-page {
   *zoom: 1;
@@ -818,18 +820,24 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   color: #757d82;
 }
 /* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#user-pass:after,
+#user-register:after,
 #user-login:after,
 #contact-mail-page:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 632, ../sass/nossasp.scss */
+/* line 634, ../sass/nossasp.scss */
+#user-pass h1,
+#user-register h1,
 #user-login h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 634, ../sass/nossasp.scss */
+/* line 636, ../sass/nossasp.scss */
+#user-pass #edit-submit,
+#user-register #edit-submit,
 #user-login #edit-submit,
 #contact-mail-page #edit-submit {
   -moz-border-radius: 3px;
@@ -850,7 +858,9 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   font-family: 'Abel', sans-serif;
   float: right;
 }
-/* line 644, ../sass/nossasp.scss */
+/* line 646, ../sass/nossasp.scss */
+#user-pass .form-text,
+#user-register .form-text,
 #user-login .form-text,
 #contact-mail-page .form-text {
   width: 230px;
