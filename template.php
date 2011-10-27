@@ -99,9 +99,21 @@ function nossasp_preprocess(&$vars, $hook) {
 function nossasp_preprocess_page(&$vars, $hook) {
   drupal_set_html_head('<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">');
   $vars['head'] = drupal_get_html_head();
+
   if (arg(0) == 'organizations' && arg(1) == 'search') {
     $vars['classes_array'][] = 'full-sized-map';
   }
+
+  if (isset($vars['node']) && ($vars['node']->type == 'nossasp_organization' || $vars['node']->type == 'nossasp_council')) { 
+    foreach(taxonomy_node_get_terms_by_vocabulary($vars['node'], '2') as $orgtype) {
+      $vars['classes_array'][] = 'org-type-' . $orgtype->tid;
+      $vars['orgtype'] = $orgtype->name;
+    }
+    if (!empty($vars['node']->primary_term)) {
+
+    }
+  }
+
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
 }

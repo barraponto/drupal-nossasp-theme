@@ -1,4 +1,29 @@
-/**Levar para css/fields.css**/
+body.node-type-nossasp-organization,
+body.node-type-nossasp-council { 
+  h1.title { 
+    font-family: 'Abel', sans-serif;
+    padding: 0.4em 0 0.4em 1.4em;
+    position: relative;
+    &:after { 
+      background-color: red;
+      content: "";
+      height: 12px;
+      left: 0;
+      margin: 0 15px;
+      padding: 0 0;
+      position: absolute;
+      top: 23px;
+      width: 12px;
+    }
+  }
+  .org-type { 
+    padding-left: 40px;
+    color: red;
+    font-size: 0.9em;
+    margin-top: -1em;
+  }
+}
+
 .fieldgroup {
 	margin-bottom: 25px;
 	padding: 0;

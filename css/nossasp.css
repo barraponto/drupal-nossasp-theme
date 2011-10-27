@@ -796,17 +796,12 @@
 }
 
 /* line 678, ../sass/nossasp.scss */
-#main #content h1.title {
-  display: none;
-}
-
-/* line 682, ../sass/nossasp.scss */
 #main #content #content-area {
   margin: 0;
   padding: 0;
 }
 
-/* line 687, ../sass/nossasp.scss */
+/* line 683, ../sass/nossasp.scss */
 #main #content #content-area form {
   padding: 3em;
   background: #f7f7f7;
@@ -815,12 +810,12 @@
   color: #757d82;
 }
 
-/* line 695, ../sass/nossasp.scss */
+/* line 691, ../sass/nossasp.scss */
 #main #content #content-area form div input {
   width: 230px;
 }
 
-/* line 702, ../sass/nossasp.scss */
+/* line 698, ../sass/nossasp.scss */
 #main #content #content-area form #edit-submit {
   width: auto;
   -webkit-border-radius: 3px;
@@ -836,13 +831,13 @@
 }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-/* line 717, ../sass/nossasp.scss */
+/* line 713, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
   height: 640px;
 }
 
-/* line 721, ../sass/nossasp.scss */
+/* line 717, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
