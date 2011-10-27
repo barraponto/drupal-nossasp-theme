@@ -31,7 +31,7 @@
 /* line 26, ../sass/content.scss */
 .map-and-text {
   float: left;
-  width: 70%;
+  width: 60%;
 }
 /* line 29, ../sass/content.scss */
 .map-and-text .content {
@@ -45,13 +45,22 @@
 /* line 34, ../sass/content.scss */
 .details {
   float: left;
-  width: 30%;
+  width: 40%;
 }
 /* line 37, ../sass/content.scss */
 .details h3 {
   padding: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.25em;
   color: #8F8F8F;
   font-size: 1.2em;
   font-weight: normal;
+}
+/* line 43, ../sass/content.scss */
+.details h3 ~ h3 {
+  margin-top: 2em;
+}
+/* line 45, ../sass/content.scss */
+.details a {
+  color: #376d8a;
+  white-space: nowrap;
 }
