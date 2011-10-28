@@ -65,67 +65,68 @@ body.node-type-nossasp-council .org-type {
   color: red;
   font-size: 0.9em;
   margin-top: -1em;
+  margin-bottom: 1em;
 }
 
-/* line 55, ../sass/content.scss */
+/* line 56, ../sass/content.scss */
 .fieldgroup {
   margin-bottom: 25px;
   padding: 0;
 }
 
-/* line 60, ../sass/content.scss */
+/* line 61, ../sass/content.scss */
 .field .field-label, .field .field-label-inline, .field .field-label-inline-first {
   font-weight: normal;
   color: #8f8f8f;
 }
 
-/* line 65, ../sass/content.scss */
+/* line 66, ../sass/content.scss */
 .field .field-items {
   color: #337180;
 }
 
-/* line 69, ../sass/content.scss */
+/* line 70, ../sass/content.scss */
 .group-resumo .field-label {
   visibility: hidden;
   display: inline;
 }
 
-/* line 74, ../sass/content.scss */
+/* line 75, ../sass/content.scss */
 .group-resumo .field-items {
   color: #4a4a4a;
   margin-top: -20px;
 }
 
-/* line 79, ../sass/content.scss */
+/* line 80, ../sass/content.scss */
 .map-and-text {
   border-right: 2px solid #d5d5d5;
   float: left;
   width: 60%;
   margin-right: -2px;
 }
-/* line 84, ../sass/content.scss */
+/* line 85, ../sass/content.scss */
 .map-and-text .content {
   padding: 1em;
 }
-/* line 86, ../sass/content.scss */
+/* line 87, ../sass/content.scss */
 .map-and-text p {
   margin: 0 0 1em 0;
 }
 
-/* line 89, ../sass/content.scss */
+/* line 90, ../sass/content.scss */
 .details {
   float: left;
   width: 40%;
 }
-/* line 92, ../sass/content.scss */
+/* line 93, ../sass/content.scss */
 .details > div {
   padding: 0 1em;
 }
-/* line 94, ../sass/content.scss */
+/* line 95, ../sass/content.scss */
 .details > div ~ div h3 {
   padding-top: 4em;
 }
-/* line 96, ../sass/content.scss */
+/* line 97, ../sass/content.scss */
 .details h3 {
   padding: 0;
   margin-bottom: 0.25em;
@@ -133,7 +134,7 @@ body.node-type-nossasp-council .org-type {
   font-size: 1.2em;
   font-weight: normal;
 }
-/* line 102, ../sass/content.scss */
+/* line 103, ../sass/content.scss */
 .details a {
   color: #376d8a;
   white-space: nowrap;
