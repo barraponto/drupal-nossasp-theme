@@ -7,6 +7,7 @@
 #header {
   @include background(linear-gradient(left, white, #6ca5b6));
   background-color: #6ca5b6;
+  height: 86px;
 }
 
 #logo {
@@ -274,7 +275,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    background: url(../images/nossasp_sidebar_main_bkgrnd.png) repeat-y top left; }
+    background: #e6eef1; }
 
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
 #page .region-sidebar-first #block-block-2 {
@@ -344,6 +345,7 @@
   text-transform: uppercase;
   overflow: hidden;
   border-bottom: #e7ecef solid 1px;
+  height: 56px;
 }
 
 
@@ -352,6 +354,7 @@
     float: left;
     margin: 0;
     background: rgba(247,247,247,1);
+    
 }
 
 #page .region-sidebar-first .view-header .counter {
@@ -381,14 +384,29 @@
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
 #block-views-ac1d059bc0aeabb5015c2d28f61ba744 { 
   margin: 0;
-  .content, .views_view { height: 100%; }
   .view-content { 
     overflow-y: auto;
     width: auto;
     min-height: 180px; }
   .item-list { 
-    margin: 0 15px;
-    padding: 15px 0;
+    height: 34px;
+    background-color: #F7F7F7;
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
+  .pager { 
+    padding: 8px;
+    margin: 0;
+    li { 
+      padding: 0;
+      display: inline-block;
+      &.pager-current {
+        font-weight: bold; } }
+    a { 
+      display: inline;
+      padding: 0;
+      text-decoration: none; 
+      color: black; }
   }
 }
 #page .region-sidebar-first .view-content {
@@ -396,7 +414,7 @@
 }
 
 #page .region-sidebar-first .view-content .views-row {
-    padding: 12px 0 12px 15px;
+    padding: 6px 0 6px 15px;
     font-size: 12px;
 }
 
@@ -426,12 +444,12 @@
 
 /* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
 .region-sidebar-first {
-  #block-block-3 {
+  #block-nossasp_contexts-0 {
     margin: 0 0 0 15px;
     text-align: center;
-    background: rgba(247,247,247,1);
+    background: white;
+    height: 76px;
   .content { 
-    margin: 20px 0;
     padding: 20px 0; }
   .content p { 
     margin: 0; padding: 0; }
@@ -453,6 +471,7 @@
 
 /* ----------- Barra de Navegação ----------- */
 #main #navigation {
+    display: none;
     position: absolute;
     bottom: -3px;
     right: 0;
@@ -594,9 +613,10 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 #block-block-6 {
-  margin-left: 15px;
+  margin: 0 0 0 15px;
+  background-color: white;
   .title { 
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #F7F7F7;
     font-size: 16px;
     color: #2692CB;
@@ -606,9 +626,10 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
     line-height: 36px;
     font-weight: normal; }
   p { 
-    font-family: 'Arimo',sans-serif;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
     line-height: 1.6em;
-    padding: 0 1em; }
+    padding: 0 15px; }
 }
 
 /* Temando as forms */
