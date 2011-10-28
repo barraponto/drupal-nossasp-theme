@@ -793,12 +793,12 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* line 615, ../sass/nossasp.scss */
-#block-block-6 {
+#block-boxes-nossasp_contexts_about {
   margin: 0 0 0 15px;
   background-color: white;
 }
 /* line 618, ../sass/nossasp.scss */
-#block-block-6 .title {
+#block-boxes-nossasp_contexts_about .title {
   padding: 10px 15px;
   background-color: #F7F7F7;
   font-size: 16px;
@@ -810,15 +810,16 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   font-weight: normal;
 }
 /* line 628, ../sass/nossasp.scss */
-#block-block-6 p {
+#block-boxes-nossasp_contexts_about p {
   font-family: 'Abel', sans-serif;
-  font-size: 18px;
-  line-height: 1.6em;
+  font-size: 16px;
+  line-height: 1.4em;
   padding: 0 15px;
+  margin: 1em 0 0;
 }
 
 /* Temando as forms */
-/* line 640, ../sass/nossasp.scss */
+/* line 641, ../sass/nossasp.scss */
 body.page-organizations-data #content-area,
 #user-pass,
 #user-register,
@@ -846,7 +847,7 @@ body.page-organizations-data #content-area:after,
   display: table;
   clear: both;
 }
-/* line 649, ../sass/nossasp.scss */
+/* line 650, ../sass/nossasp.scss */
 body.page-organizations-data #content-area h1,
 #user-pass h1,
 #user-register h1,
@@ -854,7 +855,7 @@ body.page-organizations-data #content-area h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 651, ../sass/nossasp.scss */
+/* line 652, ../sass/nossasp.scss */
 body.page-organizations-data #content-area #edit-submit,
 #user-pass #edit-submit,
 #user-register #edit-submit,
@@ -878,7 +879,7 @@ body.page-organizations-data #content-area #edit-submit,
   font-family: 'Abel', sans-serif;
   float: right;
 }
-/* line 661, ../sass/nossasp.scss */
+/* line 662, ../sass/nossasp.scss */
 body.page-organizations-data #content-area .form-text,
 #user-pass .form-text,
 #user-register .form-text,
@@ -887,18 +888,18 @@ body.page-organizations-data #content-area .form-text,
   width: 230px;
 }
 
-/* line 665, ../sass/nossasp.scss */
+/* line 666, ../sass/nossasp.scss */
 div#toolbar-toolbar {
   z-index: 110;
 }
 
 /* bordeando a sidebar */
-/* line 670, ../sass/nossasp.scss */
+/* line 671, ../sass/nossasp.scss */
 #main-wrapper {
   border-top: 2px solid #d5d5d5;
 }
 
-/* line 673, ../sass/nossasp.scss */
+/* line 674, ../sass/nossasp.scss */
 #page .region-sidebar-first .section {
   border-right: 2px solid #d5d5d5 !important;
 }
