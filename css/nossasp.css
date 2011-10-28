@@ -1,11 +1,12 @@
 @charset "UTF-8";
 /* line 3, ../sass/nossasp.scss */
 #page-wrapper {
+  min-width: 1200px;
   font-family: 'Arimo', sans-serif;
 }
 
 /* ----------- HEADER and LOGO ----------- */
-/* line 7, ../sass/nossasp.scss */
+/* line 8, ../sass/nossasp.scss */
 #header {
   background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #6ca5b6));
   background: -webkit-linear-gradient(left, #ffffff, #6ca5b6);
@@ -17,11 +18,10 @@
   height: 86px;
 }
 
-/* line 13, ../sass/nossasp.scss */
+/* line 14, ../sass/nossasp.scss */
 #logo {
   display: block;
-  width: 320px;
-  margin-right: -320px;
+  width: 230px;
   padding: 5px 0 5px 6px;
 }
 
@@ -217,13 +217,13 @@
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
-  width: 72px;
+  width: 50px;
   height: 42px;
   margin: 0;
   border: none;
   position: absolute;
   top: 23px;
-  left: 878px;
+  left: 815px;
   font-family: 'Abel', sans-serif;
   background-color: #6190A7;
   text-align: center;
@@ -245,7 +245,7 @@
 #views-exposed-form-nossasp-organizations-map-page-2 #area_atuacao {
   position: absolute;
   top: 23px;
-  left: 408px;
+  left: 405px;
 }
 /* line 171, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 #area_atuacao .jquery_dropdown_header {
@@ -257,7 +257,7 @@
   border-radius: 6px;
   background: white url('../images/select-button.png?1319741484') right center no-repeat;
   height: 42px;
-  width: 180px;
+  width: 150px;
   padding-right: 40px;
   font-size: 14px;
   border: none;
@@ -271,7 +271,7 @@
 #views-exposed-form-nossasp-organizations-map-page-2 #area_atuacao .jquery_dropdown_list {
   border: none;
   padding: 0;
-  width: 220px;
+  width: 190px;
 }
 /* line 189, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 #area_atuacao .jquery_dropdown_list li {
@@ -294,10 +294,10 @@
 }
 /* line 201, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .vew-3 {
-  width: 220px;
+  width: 190px;
   position: absolute;
   top: 23px;
-  left: 644px;
+  left: 610px;
   z-index: 101;
 }
 /* line 205, ../sass/nossasp.scss */
@@ -311,7 +311,7 @@
   display: block;
   background: white url('../images/select-button.png?1319741484') right center no-repeat;
   height: 42px;
-  width: 180px;
+  width: 150px;
   padding-right: 40px;
   border: none;
   font-size: 14px;

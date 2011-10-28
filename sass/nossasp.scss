@@ -1,6 +1,7 @@
 @import "compass";
 
 #page-wrapper { 
+  min-width: 1200px;
   font-family: 'Arimo', sans-serif; }
 
 /* ----------- HEADER and LOGO ----------- */
@@ -12,8 +13,7 @@
 
 #logo {
   display: block;
-  width: 320px;
-  margin-right: -320px;
+  width: 230px;
   padding: 5px 0 5px 6px;
 }
 
@@ -143,13 +143,13 @@
   #edit-submit-nossasp-organizations-map {
     @include text-shadow(rgba(100,100,100,0.6) 2px 2px 2px);
     @include border-radius(6px);
-    width: 72px;
+    width: 50px;
     height: 42px;
     margin: 0;
     border: none;
     position: absolute;
     top: 23px; 
-    left: 878px;
+    left: 815px;
     font-family: 'Abel', sans-serif;
     background-color: #6190A7;
     text-align: center;
@@ -167,12 +167,12 @@
 
   #area_atuacao { 
     position: absolute;
-    top: 23px; left: 408px;
+    top: 23px; left: 405px;
     .jquery_dropdown_header {
       @include border-radius(6px);
       background: white image-url('select-button.png') right center no-repeat;
       height: 42px;
-      width: 180px;
+      width: 150px;
       padding-right: 40px;
       font-size: 14px;
       border: none;
@@ -185,7 +185,7 @@
     .jquery_dropdown_list {
       border: none; 
       padding: 0;
-      width: 220px;
+      width: 190px;
       li {
         border: none;
         padding: 0 1em;
@@ -199,15 +199,15 @@
             background-color: #6190a7; } } } } }
  
   .vew-3 {
-      width: 220px;
+      width: 190px;
       position: absolute;
-      top: 23px; left: 644px; z-index: 101;
+      top: 23px; left: 610px; z-index: 101;
     > label { 
       @include border-radius(6px);
       display: block;
       background: white image-url('select-button.png') right center no-repeat;
       height: 42px;
-      width: 180px;
+      width: 150px;
       padding-right: 40px;
       border: none;
       font-size: 14px;
