@@ -585,12 +585,6 @@
     right: 35px;
 }
 
-/* ----------- MAPA ----------- */
-#main #content #content-area {
-    margin: 0;
-    padding: 0;
-}
-
 /* convencendo o mapa a aparecer de um jeito razoavel  */
 body.front #openlayers-map-auto-id-0 .olMapViewport { 
   min-height: 640px;
@@ -619,6 +613,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
+body.page-organizations-data #content-area,
 #user-pass,
 #user-register,
 #user-login,

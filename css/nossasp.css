@@ -759,30 +759,23 @@
   right: 35px;
 }
 
-/* ----------- MAPA ----------- */
-/* line 589, ../sass/nossasp.scss */
-#main #content #content-area {
-  margin: 0;
-  padding: 0;
-}
-
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-/* line 595, ../sass/nossasp.scss */
+/* line 589, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
   height: 640px;
 }
 
-/* line 599, ../sass/nossasp.scss */
+/* line 593, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
 
-/* line 603, ../sass/nossasp.scss */
+/* line 597, ../sass/nossasp.scss */
 #block-block-6 {
   margin-left: 15px;
 }
-/* line 605, ../sass/nossasp.scss */
+/* line 599, ../sass/nossasp.scss */
 #block-block-6 .title {
   padding: 10px;
   background-color: #F7F7F7;
@@ -794,7 +787,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   line-height: 36px;
   font-weight: normal;
 }
-/* line 615, ../sass/nossasp.scss */
+/* line 609, ../sass/nossasp.scss */
 #block-block-6 p {
   font-family: 'Arimo',sans-serif;
   line-height: 1.6em;
@@ -802,7 +795,8 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
-/* line 625, ../sass/nossasp.scss */
+/* line 620, ../sass/nossasp.scss */
+body.page-organizations-data #content-area,
 #user-pass,
 #user-register,
 #user-login,
@@ -820,6 +814,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   color: #757d82;
 }
 /* line 38, ../../../../../../../.rvm/gems/ruby-1.9.2-p290@compassdev/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+body.page-organizations-data #content-area:after,
 #user-pass:after,
 #user-register:after,
 #user-login:after,
@@ -828,14 +823,16 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   display: table;
   clear: both;
 }
-/* line 634, ../sass/nossasp.scss */
+/* line 629, ../sass/nossasp.scss */
+body.page-organizations-data #content-area h1,
 #user-pass h1,
 #user-register h1,
 #user-login h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 636, ../sass/nossasp.scss */
+/* line 631, ../sass/nossasp.scss */
+body.page-organizations-data #content-area #edit-submit,
 #user-pass #edit-submit,
 #user-register #edit-submit,
 #user-login #edit-submit,
@@ -858,7 +855,8 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   font-family: 'Abel', sans-serif;
   float: right;
 }
-/* line 646, ../sass/nossasp.scss */
+/* line 641, ../sass/nossasp.scss */
+body.page-organizations-data #content-area .form-text,
 #user-pass .form-text,
 #user-register .form-text,
 #user-login .form-text,

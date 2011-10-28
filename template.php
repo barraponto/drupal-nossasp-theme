@@ -168,3 +168,27 @@ function nossasp_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+/**
+ * Theme callback for the export complete page.
+ *
+ * @param $file
+ *  Link to output file
+ */
+function nossasp_views_data_export_complete_page($file, $errors = array(), $return_url = '') {
+  drupal_set_title(t('Data export successful'));
+  drupal_set_html_head('<meta http-equiv="refresh" content="3;url='. check_plain($file) . '" />');
+  $output = '<h1 class="form-title">' . drupal_get_title() . '</h1>';
+  $output .= '<p>';
+  $output .= t('Your export has been created. View/download the file <a href="@link">here</a> (will automatically download in 3 seconds.)', array('@link' => $file));
+  $output .= '</p>';
+
+  if (!empty($return_url)) {
+    $output .= '<p>';
+    $output .= l(t('Return to previous page'), $return_url);
+    $output .= '</p>';
+  }
+  return $output;
+}
+
+
