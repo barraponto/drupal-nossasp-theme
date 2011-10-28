@@ -1,3 +1,11 @@
+$conselho: #eedc41;
+$ongs: #2880af;
+$bairro: #de0800;
+$sindicatos: #bd4448;
+$empresarios: #90159f;
+$sociais: #12b012;
+$virtuais: #fe900f;
+
 body.node-type-nossasp-organization,
 body.node-type-nossasp-council { 
   h1.title { 
@@ -16,6 +24,21 @@ body.node-type-nossasp-council {
       width: 12px;
     }
   }
+  &.org-type-16 h1.title:after { 
+    background-color: $conselho; } 
+  &.org-type-17 h1.title:after { 
+    background-color: $ongs; } 
+  &.org-type-18 h1.title:after { 
+    background-color: $bairro; } 
+  &.org-type-19 h1.title:after { 
+    background-color: $sindicatos; } 
+  &.org-type-20 h1.title:after { 
+    background-color: $empresarios; } 
+  &.org-type-21 h1.title:after { 
+    background-color: $sociais; } 
+  &.org-type-22 h1.title:after { 
+    background-color: $virtuais; } 
+
   .org-type { 
     padding-left: 40px;
     color: red;
