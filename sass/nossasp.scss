@@ -270,7 +270,7 @@
 }
 
 #page .region-sidebar-first .section {
-    width: 320px;
+    width: 318px;
     margin: 0;
     padding: 0;
     border: none;
@@ -279,7 +279,6 @@
 /* ---------- SDBL: "COMO FUNCIONA" ---------- */
 #page .region-sidebar-first #block-block-2 {
     background-color: rgba(240,249,251,1);
-    width: 305px;
     height: 28px;
     padding: 10px 0 10px 15px;
     display: block;
@@ -640,4 +639,16 @@ body.page-organizations-data #content-area,
     float: right; }
   .form-text { 
     width: 230px; }
+}
+
+div#toolbar-toolbar { 
+  z-index: 110;
+}
+
+/* bordeando a sidebar */
+#main-wrapper {
+  border-top: 2px solid #d5d5d5;
+}
+#page .region-sidebar-first .section {
+  border-right: 2px solid #d5d5d5 !important;
 }

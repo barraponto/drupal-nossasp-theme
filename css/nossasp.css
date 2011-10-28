@@ -384,7 +384,7 @@
 
 /* line 272, ../sass/nossasp.scss */
 #page .region-sidebar-first .section {
-  width: 320px;
+  width: 318px;
   margin: 0;
   padding: 0;
   border: none;
@@ -395,14 +395,13 @@
 /* line 280, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 {
   background-color: #f0f9fb;
-  width: 305px;
   height: 28px;
   padding: 10px 0 10px 15px;
   display: block;
   margin: 0;
 }
 
-/* line 289, ../sass/nossasp.scss */
+/* line 288, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 h2.title {
   font-size: 14px;
   color: #2692cb;
@@ -411,7 +410,7 @@
   font-family: 'Abel', sans-serif;
 }
 
-/* line 297, ../sass/nossasp.scss */
+/* line 296, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 .content a {
   margin: 0;
   padding: 14px 0;
@@ -423,14 +422,14 @@
   text-decoration: none;
 }
 
-/* line 307, ../sass/nossasp.scss */
+/* line 306, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-2 .content p {
   margin: 0;
   padding: 0;
 }
 
 /* ---------- SDBL: DOWNLOAD DO BANCO DE DADOS ---------- */
-/* line 313, ../sass/nossasp.scss */
+/* line 312, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 {
   /*    background-color: rgba(234,234,234,1);*/
   background: #f7f7f7;
@@ -442,7 +441,7 @@
   text-align: center;
 }
 
-/* line 323, ../sass/nossasp.scss */
+/* line 322, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 #texto_download {
   margin: 4px 5px 0 0;
   padding: 4px 36px 0 0;
@@ -450,7 +449,7 @@
   font-weight: bold;
 }
 
-/* line 330, ../sass/nossasp.scss */
+/* line 329, ../sass/nossasp.scss */
 #page .region-sidebar-first #block-block-1 #img_download {
   margin: 0;
   padding: 0;
@@ -460,7 +459,7 @@
 }
 
 /* ---------- SDBL: NUM DE RESULTADOS ---------- */
-/* line 339, ../sass/nossasp.scss */
+/* line 338, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header {
   margin-left: 15px;
   padding-left: 10px;
@@ -472,7 +471,7 @@
   border-bottom: #e7ecef solid 1px;
 }
 
-/* line 352, ../sass/nossasp.scss */
+/* line 351, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .counter,
 #page .region-sidebar-first .view-header .download {
   float: left;
@@ -480,7 +479,7 @@
   background: #f7f7f7;
 }
 
-/* line 358, ../sass/nossasp.scss */
+/* line 357, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .counter {
   padding: 10px 0;
   text-indent: 5px;
@@ -489,14 +488,14 @@
   width: 130px;
 }
 
-/* line 366, ../sass/nossasp.scss */
+/* line 365, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .download {
   width: 164px;
   border-left: #e7ecef solid 1px;
   text-align: right;
 }
 
-/* line 372, ../sass/nossasp.scss */
+/* line 371, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-header .download a {
   background: url("../images/nossasp_download_banco.png") no-repeat 90% 50%;
   padding: 10px 60px 10px 0;
@@ -509,84 +508,84 @@
 }
 
 /* ---------- SDBL: LISTA DE ENTIDADES (Resultados)  ---------- */
-/* line 383, ../sass/nossasp.scss */
+/* line 382, ../sass/nossasp.scss */
 #block-views-ac1d059bc0aeabb5015c2d28f61ba744 {
   margin: 0;
 }
-/* line 385, ../sass/nossasp.scss */
+/* line 384, ../sass/nossasp.scss */
 #block-views-ac1d059bc0aeabb5015c2d28f61ba744 .content, #block-views-ac1d059bc0aeabb5015c2d28f61ba744 .views_view {
   height: 100%;
 }
-/* line 386, ../sass/nossasp.scss */
+/* line 385, ../sass/nossasp.scss */
 #block-views-ac1d059bc0aeabb5015c2d28f61ba744 .view-content {
   overflow-y: auto;
   width: auto;
   min-height: 180px;
 }
-/* line 390, ../sass/nossasp.scss */
+/* line 389, ../sass/nossasp.scss */
 #block-views-ac1d059bc0aeabb5015c2d28f61ba744 .item-list {
   margin: 0 15px;
   padding: 15px 0;
 }
 
-/* line 395, ../sass/nossasp.scss */
+/* line 394, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content {
   padding-left: 15px;
 }
 
-/* line 399, ../sass/nossasp.scss */
+/* line 398, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row {
   padding: 12px 0 12px 15px;
   font-size: 12px;
 }
 
-/* line 404, ../sass/nossasp.scss */
+/* line 403, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row-odd {
   background: white;
 }
 
-/* line 408, ../sass/nossasp.scss */
+/* line 407, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row-even {
   /*    background: rgba(230,230,230,1);*/
   background: #f7f7f7;
 }
 
-/* line 413, ../sass/nossasp.scss */
+/* line 412, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-title * {
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
 
-/* line 419, ../sass/nossasp.scss */
+/* line 418, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-tid {
   color: #518099;
   text-overflow: clip;
 }
 
-/* line 424, ../sass/nossasp.scss */
+/* line 423, ../sass/nossasp.scss */
 #page .region-sidebar-first .view-content .views-row .views-field-tid-1 {
   color: black;
 }
 
 /* ---------- SDBL: CADASTRE SUA ORGANIZAÇÃO ---------- */
-/* line 430, ../sass/nossasp.scss */
+/* line 429, ../sass/nossasp.scss */
 .region-sidebar-first #block-block-3 {
   margin: 0 0 0 15px;
   text-align: center;
   background: #f7f7f7;
 }
-/* line 434, ../sass/nossasp.scss */
+/* line 433, ../sass/nossasp.scss */
 .region-sidebar-first #block-block-3 .content {
   margin: 20px 0;
   padding: 20px 0;
 }
-/* line 437, ../sass/nossasp.scss */
+/* line 436, ../sass/nossasp.scss */
 .region-sidebar-first #block-block-3 .content p {
   margin: 0;
   padding: 0;
 }
-/* line 439, ../sass/nossasp.scss */
+/* line 438, ../sass/nossasp.scss */
 .region-sidebar-first #block-block-3 .content a {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -611,7 +610,7 @@
 }
 
 /* ----------- Barra de Navegação ----------- */
-/* line 456, ../sass/nossasp.scss */
+/* line 455, ../sass/nossasp.scss */
 #main #navigation {
   position: absolute;
   bottom: -3px;
@@ -622,7 +621,7 @@
   height: auto;
 }
 
-/* line 466, ../sass/nossasp.scss */
+/* line 465, ../sass/nossasp.scss */
 #main #navigation ul {
   margin: 0 10px 4px 0;
   padding: 0;
@@ -631,7 +630,7 @@
   box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
 }
 
-/* line 474, ../sass/nossasp.scss */
+/* line 473, ../sass/nossasp.scss */
 #main #navigation ul li {
   margin: 0;
   padding: 0;
@@ -639,7 +638,7 @@
   background: #c8c8c8;
 }
 
-/* line 482, ../sass/nossasp.scss */
+/* line 481, ../sass/nossasp.scss */
 #main #navigation ul li.first {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -649,7 +648,7 @@
   -moz-border-radius-bottomleft: 7px;
 }
 
-/* line 491, ../sass/nossasp.scss */
+/* line 490, ../sass/nossasp.scss */
 #main #navigation ul li.last {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -659,7 +658,7 @@
   -moz-border-radius-bottomright: 7px;
 }
 
-/* line 500, ../sass/nossasp.scss */
+/* line 499, ../sass/nossasp.scss */
 #main #navigation ul li a {
   margin: 0 2px 0 0;
   background: white;
@@ -670,7 +669,7 @@
   font-family: 'Abel', sans-serif;
 }
 
-/* line 510, ../sass/nossasp.scss */
+/* line 509, ../sass/nossasp.scss */
 #main #navigation ul li.first a {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -680,7 +679,7 @@
   -moz-border-radius-bottomleft: 7px;
 }
 
-/* line 519, ../sass/nossasp.scss */
+/* line 518, ../sass/nossasp.scss */
 #main #navigation ul li.last a {
   border: 0;
   margin: 0;
@@ -693,7 +692,7 @@
 }
 
 /* ----------- Logo Rede Nossa SP ----------- */
-/* line 531, ../sass/nossasp.scss */
+/* line 530, ../sass/nossasp.scss */
 #main #content .region-content-top {
   position: absolute;
   bottom: 0;
@@ -701,7 +700,7 @@
   z-index: 1;
 }
 
-/* line 538, ../sass/nossasp.scss */
+/* line 537, ../sass/nossasp.scss */
 #main #content #block-block-4 {
   position: absolute;
   bottom: 0;
@@ -713,7 +712,7 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 554, ../sass/nossasp.scss */
+/* line 553, ../sass/nossasp.scss */
 #main #content #block-block-4 .content,
 #main #content #block-block-5 .content,
 #main #content #block-block-4 .content p,
@@ -725,7 +724,7 @@
 }
 
 /* ----------- Redes Sociais Nossa SP ----------- */
-/* line 560, ../sass/nossasp.scss */
+/* line 559, ../sass/nossasp.scss */
 #main #content #block-block-5 {
   display: block;
   position: absolute;
@@ -737,45 +736,45 @@
   height: auto;
 }
 
-/* line 571, ../sass/nossasp.scss */
+/* line 570, ../sass/nossasp.scss */
 #main #content #block-block-5 .content p {
   position: relative;
 }
 
-/* line 576, ../sass/nossasp.scss */
+/* line 575, ../sass/nossasp.scss */
 #twitter_img,
 #facebook_img {
   position: absolute;
   bottom: 0;
 }
 
-/* line 580, ../sass/nossasp.scss */
+/* line 579, ../sass/nossasp.scss */
 #facebook_img {
   right: 0;
 }
 
-/* line 584, ../sass/nossasp.scss */
+/* line 583, ../sass/nossasp.scss */
 #twitter_img {
   right: 35px;
 }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-/* line 589, ../sass/nossasp.scss */
+/* line 588, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
   height: 640px;
 }
 
-/* line 593, ../sass/nossasp.scss */
+/* line 592, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
 
-/* line 597, ../sass/nossasp.scss */
+/* line 596, ../sass/nossasp.scss */
 #block-block-6 {
   margin-left: 15px;
 }
-/* line 599, ../sass/nossasp.scss */
+/* line 598, ../sass/nossasp.scss */
 #block-block-6 .title {
   padding: 10px;
   background-color: #F7F7F7;
@@ -787,7 +786,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   line-height: 36px;
   font-weight: normal;
 }
-/* line 609, ../sass/nossasp.scss */
+/* line 608, ../sass/nossasp.scss */
 #block-block-6 p {
   font-family: 'Arimo',sans-serif;
   line-height: 1.6em;
@@ -795,7 +794,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 }
 
 /* Temando as forms */
-/* line 620, ../sass/nossasp.scss */
+/* line 619, ../sass/nossasp.scss */
 body.page-organizations-data #content-area,
 #user-pass,
 #user-register,
@@ -823,7 +822,7 @@ body.page-organizations-data #content-area:after,
   display: table;
   clear: both;
 }
-/* line 629, ../sass/nossasp.scss */
+/* line 628, ../sass/nossasp.scss */
 body.page-organizations-data #content-area h1,
 #user-pass h1,
 #user-register h1,
@@ -831,7 +830,7 @@ body.page-organizations-data #content-area h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 631, ../sass/nossasp.scss */
+/* line 630, ../sass/nossasp.scss */
 body.page-organizations-data #content-area #edit-submit,
 #user-pass #edit-submit,
 #user-register #edit-submit,
@@ -855,11 +854,27 @@ body.page-organizations-data #content-area #edit-submit,
   font-family: 'Abel', sans-serif;
   float: right;
 }
-/* line 641, ../sass/nossasp.scss */
+/* line 640, ../sass/nossasp.scss */
 body.page-organizations-data #content-area .form-text,
 #user-pass .form-text,
 #user-register .form-text,
 #user-login .form-text,
 #contact-mail-page .form-text {
   width: 230px;
+}
+
+/* line 644, ../sass/nossasp.scss */
+div#toolbar-toolbar {
+  z-index: 110;
+}
+
+/* bordeando a sidebar */
+/* line 649, ../sass/nossasp.scss */
+#main-wrapper {
+  border-top: 2px solid #d5d5d5;
+}
+
+/* line 652, ../sass/nossasp.scss */
+#page .region-sidebar-first .section {
+  border-right: 2px solid #d5d5d5 !important;
 }
