@@ -105,21 +105,27 @@
 
   <div class="details">
       <?php if ($field_atuacao_rendered): ?>
-        <h3>Área de Atuação</h3>
-        <?php print $field_atuacao_rendered; ?>
+        <div class="work">
+          <h3>Área de Atuação</h3>
+          <?php print $field_atuacao_rendered; ?>
+        </div>
       <?php endif; ?>
       <?php if ($field_street_rendered || $field_zip_rendered || $field_phone_text_rendered || $field_email_rendered): ?>
-        <h3>Endereço</h3>
-        <?php print $field_street_rendered; ?>
-        <?php print $field_zip_rendered; ?>
-        <?php print $field_phone_text_rendered; ?>
-        <?php print $field_email_rendered; ?>
+        <div class="address">
+          <h3>Endereço</h3>
+          <?php print $field_street_rendered; ?>
+          <?php print $field_zip_rendered; ?>
+          <?php print $field_phone_text_rendered; ?>
+          <?php print $field_email_rendered; ?>
+        </div>
       <?php endif; ?>
       <?php if ($field_website_rendered || $field_twitter_rendered || $field_facebook_rendered): ?>
-      <h3>Na rede</h3>
-        <?php print $field_website_rendered; ?>
-        <?php print $field_twitter_rendered; ?>
-        <?php print $field_facebook_rendered; ?>
+        <div class="internet">
+          <h3>Na rede</h3>
+          <?php print $field_website_rendered; ?>
+          <?php print $field_twitter_rendered; ?>
+          <?php print $field_facebook_rendered; ?>
+        </div>
       <?php endif; ?>
   </div>
 

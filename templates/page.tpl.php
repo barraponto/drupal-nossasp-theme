@@ -208,8 +208,7 @@
             ));
           ?>
 
-          <?php print $navigation; ?>
-
+          <?php print $rede_logo; ?>
         </div></div><!-- /.section, /#navigation -->
       <?php endif; ?>
 

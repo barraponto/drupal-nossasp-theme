@@ -8,6 +8,11 @@ $virtuais: #fe900f;
 
 body.node-type-nossasp-organization,
 body.node-type-nossasp-council { 
+
+  #content-area { 
+    border-top: 2px solid #d5d5d5;
+  }
+
   h1.title { 
     font-family: 'Abel', sans-serif;
     padding: 0.4em 0 0.4em 1.4em;
@@ -72,8 +77,10 @@ body.node-type-nossasp-council {
 }
 
 .map-and-text {
+  border-right: 2px solid #d5d5d5;
   float: left;
   width: 60%;
+  margin-right: -2px;
   .content { 
     padding: 1em; }
   p { margin: 0 0 1em 0; }
@@ -82,14 +89,16 @@ body.node-type-nossasp-council {
 .details { 
   float: left;
   width: 40%;
+  > div { 
+    padding: 0 1em;
+    ~ div h3 { 
+      padding-top: 4em; } }
   h3 {
     padding: 0;
     margin-bottom: 0.25em;
     color: #8F8F8F;
     font-size: 1.2em;
-    font-weight: normal;
-    ~ h3 { 
-      margin-top: 4em; }  }
+    font-weight: normal; }
   a { 
     color: #376d8a;
     white-space: nowrap; }

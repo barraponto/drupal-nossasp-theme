@@ -100,6 +100,8 @@ function nossasp_preprocess_page(&$vars, $hook) {
   drupal_set_html_head('<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">');
   $vars['head'] = drupal_get_html_head();
 
+  $vars['rede_logo'] = l('Rede Nossa São Paulo', 'http://www.nossasaopaulo.org.br/', array('attributes' => array('class' => 'rede-logo')));
+
   if (arg(0) == 'organizations' && arg(1) == 'search') {
     $vars['classes_array'][] = 'full-sized-map';
     $js = drupal_add_js(NULL, 'module', 'header');
