@@ -385,6 +385,9 @@
 #block-views-ac1d059bc0aeabb5015c2d28f61ba744 { 
   margin: 0;
   .view-content { 
+    margin: 0 0 0 15px;
+    padding: 0;
+    background-color: white;
     overflow-y: auto;
     width: auto;
     min-height: 180px; }
@@ -408,9 +411,6 @@
       text-decoration: none; 
       color: black; }
   }
-}
-#page .region-sidebar-first .view-content {
-    padding-left: 15px;
 }
 
 #page .region-sidebar-first .view-content .views-row {
@@ -617,4 +617,71 @@ div#toolbar-toolbar {
 }
 #page .region-sidebar-first .section {
   border-right: 2px solid #d5d5d5 !important;
+}
+
+/* Cadastro e node/add */
+.cadastro { 
+  h1 { 
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    padding: 0.5em 0.5em 0.25em 0.5em; 
+    .and-title { 
+      color: #d90e0c; } }
+  h2 { 
+    color: #1e6283;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 0;
+  & + p { 
+    font-size: 12px;
+    margin-top: 0; } }
+  .form-region-main { 
+    float: none;
+    width: auto; }
+  .tip { 
+    padding: 0 1em;
+    font-size: 12px;
+    color: #1e6283;
+    font-style: italic; }
+  .section { 
+    overflow: hidden; }
+  #content-area { 
+    overflow: hidden;
+    padding: 0 1em; }
+  fieldset { 
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arimo, sans-serif;
+  }
+  .form-item { 
+    display: inline-block;
+    label { color: #1e6283; font-weight: normal; } }
+  .form-text { 
+    border: 1px solid lighten(#1e6283, 42%);
+    line-height: 1.6em; }
+  .form-select { 
+    border: 1px solid lighten(#1e6283, 42%);
+    line-height: 1.6em;
+    background-color: white;
+  }
+  .form-textarea { 
+    border: 1px solid lighten(#1e6283, 42%);
+  }
+  #edit-submit { 
+    @include border-radius(3px);
+    @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
+    padding: 5px 10px;
+    background: #497F2D;
+    width: 120px;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+    float: right;
+    margin: -3.5em 2em 0 0; }
+  #navigation { 
+    display: none; }
 }
