@@ -116,7 +116,7 @@ function nossasp_preprocess_page(&$vars, $hook) {
       $vars['orgtype'] = $orgtype->name;
     }
   }
-  else { 
+  elseif (!(arg(0) == 'node' && arg(1) == 'add')) { 
     $vars['title'] = FALSE;
   }
 
@@ -314,3 +314,53 @@ function nossasp_pager($tags = array(), $limit = 10, $element = 0, $parameters =
 }
 
 
+
+function nossasp_preprocess_node_form(&$vars) {
+  global $user;
+
+  if ($user->uid == 0) {
+    $vars['form']['nodeformcols_region_main']['primaryterm'] = $vars['form']['nodeformcols_region_right']['primaryterm'];
+    unset($vars['form']['nodeformcols_region_right']['primaryterm']);
+
+    $vars['form']['nodeformcols_region_main']['buttons'] = $vars['form']['nodeformcols_region_right']['buttons'];
+    unset($vars['form']['nodeformcols_region_right']['buttons']);
+
+    $vars['form']['nodeformcols_region_main']['field_phone_text'] = $vars['form']['nodeformcols_region_right']['group_contact']['field_phone_text'];
+    unset($vars['form']['nodeformcols_region_right']['group_contact']['field_phone_text']);
+
+    $vars['form']['nodeformcols_region_main']['field_email'] = $vars['form']['nodeformcols_region_right']['group_contact']['field_email'];
+    unset($vars['form']['nodeformcols_region_right']['group_contact']['field_email']);
+    
+    $vars['form']['nodeformcols_region_main']['field_website'] = $vars['form']['nodeformcols_region_right']['group_contact']['field_website'];
+    unset($vars['form']['nodeformcols_region_right']['group_contact']['field_website']);
+
+    unset($vars['form']['nodeformcols_region_right']['group_contact']);
+
+    $vars['form']['nodeformcols_region_main']['field_tipo'] = $vars['form']['nodeformcols_region_right']['group_tipo']['field_tipo'];
+    unset($vars['form']['nodeformcols_region_right']['group_tipo']['field_tipo']);
+
+    unset($vars['form']['nodeformcols_region_right']['group_tipo']);
+
+    $vars['form']['nodeformcols_region_main']['field_complemento'] = $vars['form']['nodeformcols_region_main']['group_address']['field_complemento'];
+    unset($vars['form']['nodeformcols_region_main']['group_address']);
+
+    $vars['form']['nodeformcols_region_main']['field_sigla']['#weight'] = 1;
+    $vars['form']['nodeformcols_region_main']['field_address']['#weight'] = 2;
+    $vars['form']['nodeformcols_region_main']['field_address']['openlayers_geocoder_query']['#title'] = 'Endereço';
+    $vars['form']['nodeformcols_region_main']['field_complemento']['#weight'] = 3;
+    $vars['form']['nodeformcols_region_main']['field_phone_text']['#weight'] = 4;
+    $vars['form']['nodeformcols_region_main']['field_phone_text'][0]['value']['#title'] = 'Telefone';
+    $vars['form']['nodeformcols_region_main']['field_phone_text'][0]['value']['#description'] = FALSE;
+    $vars['form']['nodeformcols_region_main']['field_email']['#weight'] = 5;
+    $vars['form']['nodeformcols_region_main']['field_website']['#weight'] = 6;
+    $vars['form']['nodeformcols_region_main']['field_website'][0]['value']['#title'] = 'Site';
+    $vars['form']['nodeformcols_region_main']['field_tipo']['#weight'] = 7;
+    $vars['form']['nodeformcols_region_main']['field_tipo']['value']['#title'] = 'Tipo de Organização';
+    $vars['form']['nodeformcols_region_main']['primaryterm']['#weight'] = 8;
+    $vars['form']['nodeformcols_region_main']['primaryterm']['#title'] = 'Área de Atuação';
+    $vars['form']['nodeformcols_region_main']['primaryterm']['#description'] = FALSE;
+    $vars['form']['nodeformcols_region_main']['body_field']['#weight'] = 9;
+    $vars['form']['nodeformcols_region_main']['buttons']['#weight'] = 10;
+  }
+
+}
