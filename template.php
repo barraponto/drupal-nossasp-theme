@@ -347,9 +347,9 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['field_complemento'] = $vars['form']['nodeformcols_region_main']['group_address']['field_complemento'];
     unset($vars['form']['nodeformcols_region_main']['group_address']);
     
-    $vars['form']['nodeformcols_region_main']['titlen']['#weight'] = -1;
+    $vars['form']['nodeformcols_region_main']['titlen']['#weight'] = -2;
     $vars['form']['nodeformcols_region_main']['titlen']['#value'] = '<h2>Sua organização</h2>';
-    $vars['form']['nodeformcols_region_main']['briefn']['#weight'] = 0;
+    $vars['form']['nodeformcols_region_main']['briefn']['#weight'] = -1;
     $vars['form']['nodeformcols_region_main']['briefn']['#value'] = '<p>Os dados referentes à organização cadastrada serão de visualização pública e estarão publicados em regime de dados abertos para qualquer usuário do site.</p>';
 
     $vars['form']['nodeformcols_region_main']['field_sigla']['#weight'] = 1;
@@ -369,6 +369,9 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['primaryterm']['#description'] = FALSE;
     $vars['form']['nodeformcols_region_main']['body_field']['#weight'] = 9;
     $vars['form']['nodeformcols_region_main']['buttons']['#weight'] = 10;
+    $vars['form']['nodeformcols_region_main']['buttons']['submit']['#value'] = 'Criar Perfil';
+
+    uasort($vars['form']['nodeformcols_region_main'], 'element_sort');
 
     $vars['form']['nodeformcols_region_main']['register']['#title'] = FALSE;
     $vars['form']['nodeformcols_region_main']['register']['#description'] = FALSE;
@@ -394,6 +397,7 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['name']['#weight'] = 2;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['mail']['#weight'] = 3;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['profile_phone']['#weight'] = 4;
+
     uasort($vars['form']['nodeformcols_region_main']['register']['form']['account'], 'element_sort');
 
   }

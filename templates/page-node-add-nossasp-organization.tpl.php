@@ -170,7 +170,7 @@
 
         <?php print $breadcrumb; ?>
         <?php if ($title): ?>
-          <h1 class="title">Cadastro |<span class="and-title"> Crie o perfil da sua Organização</span></h1>
+          <h1 class="title">Novo Cadastro |<span class="and-title"> Crie o perfil da sua Organização</span></h1>
           <div class="tip">* campos obrigatórios</div>
         <?php endif; ?>
         <?php print $messages; ?>
