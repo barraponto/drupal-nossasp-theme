@@ -329,22 +329,15 @@ function nossasp_preprocess_node_form(&$vars) {
     unset($vars['form']['nodeformcols_region_right']['buttons']);
 
     $vars['form']['nodeformcols_region_main']['field_phone_text'] = $vars['form']['nodeformcols_region_right']['group_contact']['field_phone_text'];
-    unset($vars['form']['nodeformcols_region_right']['group_contact']['field_phone_text']);
-
     $vars['form']['nodeformcols_region_main']['field_email'] = $vars['form']['nodeformcols_region_right']['group_contact']['field_email'];
-    unset($vars['form']['nodeformcols_region_right']['group_contact']['field_email']);
-    
     $vars['form']['nodeformcols_region_main']['field_website'] = $vars['form']['nodeformcols_region_right']['group_contact']['field_website'];
-    unset($vars['form']['nodeformcols_region_right']['group_contact']['field_website']);
-
     unset($vars['form']['nodeformcols_region_right']['group_contact']);
 
     $vars['form']['nodeformcols_region_main']['field_tipo'] = $vars['form']['nodeformcols_region_right']['group_tipo']['field_tipo'];
-    unset($vars['form']['nodeformcols_region_right']['group_tipo']['field_tipo']);
-
     unset($vars['form']['nodeformcols_region_right']['group_tipo']);
 
     $vars['form']['nodeformcols_region_main']['field_complemento'] = $vars['form']['nodeformcols_region_main']['group_address']['field_complemento'];
+    $vars['form']['nodeformcols_region_main']['field_street'] = $vars['form']['nodeformcols_region_main']['group_address']['field_street'];
     unset($vars['form']['nodeformcols_region_main']['group_address']);
     
     $vars['form']['nodeformcols_region_main']['titlen']['#weight'] = -2;
@@ -353,8 +346,7 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['briefn']['#value'] = '<p>Os dados referentes à organização cadastrada serão de visualização pública e estarão publicados em regime de dados abertos para qualquer usuário do site.</p>';
 
     $vars['form']['nodeformcols_region_main']['field_sigla']['#weight'] = 1;
-    $vars['form']['nodeformcols_region_main']['field_address']['#weight'] = 2;
-    $vars['form']['nodeformcols_region_main']['field_address']['openlayers_geocoder_query']['#title'] = 'Endereço';
+    $vars['form']['nodeformcols_region_main']['field_street']['#weight'] = 2;
     $vars['form']['nodeformcols_region_main']['field_complemento']['#weight'] = 3;
     $vars['form']['nodeformcols_region_main']['field_phone_text']['#weight'] = 4;
     $vars['form']['nodeformcols_region_main']['field_phone_text'][0]['value']['#title'] = 'Telefone';
@@ -399,6 +391,37 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['profile_phone']['#weight'] = 4;
 
     uasort($vars['form']['nodeformcols_region_main']['register']['form']['account'], 'element_sort');
-
   }
+}
+
+function nossasp_better_messages_content($display = NULL) {
+	$output = '';
+	$first = TRUE;
+  $all = drupal_get_messages($display);
+  if (arg(0) == 'obrigado' && $user->uid == 0) {
+    foreach ($all['status'] as $key => $message) {
+      if (substr($message, -7) == 'criado.' || substr($message, 0, 8)) { 
+        unset($all['status'][$key]);
+      }
+    }
+  }
+	foreach ($all as $type => $messages) {
+    if (!empty($messages)){
+		$class = $first ? 'first' : '';
+		$first = FALSE;
+		$output .= "<h2 class=\"messages-label $type\">" . t(drupal_ucfirst($type)) . "</h2>\n";
+		$output .= "<div class=\"messages $type\">\n";
+		if (count($messages) > 1) {
+			$output .= " <ul>\n";
+			foreach ($messages as $k => $message) {
+		        if ($k == 0) { $output .= "<li class='message-item first'>$message</li>"; }
+		        else if ($k == count($messages) - 1) { $output .= "<li class='message-item last'>$message</li>"; }
+		        else { $output .= "<li class='message-item'>$message</li>"; }
+		    }
+			$output .= " </ul>\n";
+		}
+		else { $output .= $messages[0];	}
+		$output .= "</div>\n";
+	} }
+	return $output;
 }
