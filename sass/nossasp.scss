@@ -685,3 +685,29 @@ div#toolbar-toolbar {
   #navigation { 
     display: none; }
 }
+.page-obrigado {
+  h1 { 
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    padding: 0.5em 0.5em 0.25em 0.5em; 
+    .and-title { 
+      color: #d90e0c; } }
+  .message {
+    text-align: center;
+    padding: 1em;
+    margin: 6em 3em 0 3em;
+    border: #E6EEF1 solid 10px;
+    h2 { 
+      font-size: 2em;
+      margin-bottom: 1.5em;
+      font-family: 'Abel', sans-serif;
+      color: #59a166;
+      text-transform: uppercase; }
+    p { 
+      font-size: 1.4em;
+      color: #6190A7;
+      &.thank-you { 
+        color: #D90E0C; } }
+  }
+}
+
