@@ -1,6 +1,7 @@
 (function ($) {
 
   Drupal.behaviors.fullsizedmap = function(context) {
+	
     $map = $('body.front .openlayers-map, .sidebar', context);
     $header = $('#header', context);
 
