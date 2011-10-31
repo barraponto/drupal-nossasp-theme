@@ -1,0 +1,9 @@
+(function ($) {
+	Drupal.behaviors.fullsizedmap = function(context) {
+		$(window).resize(function() {
+			$(document).height($(window).height());
+			$(document).width($(window).width());
+			$('.openlayers-map.openlayers-preset-nossasp_search', context).height($(document).height() - $('#header').height());
+			$('.region-sidebar-first .section', context).height($(document).height() - $('#header').height());
+		});
+ 	} } )(jQuery);

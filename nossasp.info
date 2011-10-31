@@ -51,6 +51,7 @@ conditional-stylesheets[if lte IE 6][all][] = css/ie6.css
   ; Optionally add some JavaScripts to your theme.
 scripts[] = js/nossasp.js
 scripts[] = js/full-sized-map.js
+scripts[] = js/sidebar.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.

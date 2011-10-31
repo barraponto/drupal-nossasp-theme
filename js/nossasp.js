@@ -31,6 +31,11 @@
     });
   }
 
+	Drupal.behaviors.nossaspOQueEbox = function(context) {
+		$('#block-boxes-nossasp_contexts_about .content').hide();
+	}
+	
+	
 } )(jQuery);
 
 //function area_atuacao(id) {
