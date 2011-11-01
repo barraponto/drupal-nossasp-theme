@@ -183,20 +183,47 @@
       color: #666;
     }
     .jquery_dropdown_list {
+      @include border-radius;
       border: none; 
       padding: 0;
       width: 190px;
+      top: 30px;
+      background-color: white;
       li {
         border: none;
-        padding: 0 1em;
-        &:hover { 
-          background-color: #6190a7; }
+        padding: 0;
+        background-color: transparent;
         a { 
           display: block;
-          padding: 0.25em 0;
+          padding: 0.5em 1em 0.5em 2em;
+          width: auto;
           font-size: 12px;
+          position: relative;
           &:hover { 
-            background-color: #6190a7; } } } } }
+            background-color: lighten(#6190A7, 42%); }
+          &:after { 
+            @include border-radius(3px);
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 6px;
+            height: 10px;
+            width: 10px;
+            background-color: #ccc; }
+          &[rel="16"]:after { background-color: #eedc41; }
+          &[rel="17"]:after { background-color: #2880af; }
+          &[rel="18"]:after { background-color: #de0800; }
+          &[rel="19"]:after { background-color: #bd4448; }
+          &[rel="20"]:after { background-color: #90159f; }
+          &[rel="21"]:after { background-color: #12b012; }
+          &[rel="22"]:after { background-color: #fe900f; } }
+        &:first-child a { 
+          @include border-top-left-radius;
+          @include border-top-right-radius; }
+        &:last-child a { 
+          @include border-bottom-left-radius;
+          @include border-bottom-right-radius; }
+    } } }
  
   .vew-3 {
       width: 190px;
@@ -218,26 +245,65 @@
       color: #666;
       }
     .views-widget {
+      @include border-radius;
+      @include box-shadow(0px 0px 3px 2px #ccc);
       display: none;
       border: none; 
-      margin-top: -3px;
-      padding: 0;
-      width: 220px;
+      margin-top: 2px;
+      padding: 0.25em 0;
+      width: 100%;
       background: white;
     
       .form-checkboxes { 
         margin: 0; }
       .form-item { 
         margin: 0;
-        padding: 0.25em 1em;
-        font-size: 12px; }
+        padding: 0.5em 1em 0.5em 2.5em;
+        font-size: 12px;
+        &:first-child {
+          @include border-top-left-radius;
+          @include border-top-right-radius; }
+        &:last-child {
+          @include border-bottom-left-radius;
+          @include border-bottom-right-radius; }
+        &:hover {
+          background-color: lighten(#6190A7, 42%); } }
       label { 
         display: block;
         padding-left: 1.5em;
-        position: relative; }
+        position: relative;
+        &:after { 
+          background: image-url('icones-neutros.png') no-repeat 2px 0px; 
+          content: "";
+          position: absolute;
+          width: 32px;
+          height: 29px; 
+          top: -4px;
+          left: -29px; }
+        &[for="edit-tid-1-1"]:after { background-position: 2px 0px; }
+        &[for="edit-tid-2"]:after { background-position: 2px -30px; }
+        &[for="edit-tid-3"]:after { background-position: 2px -60px; }
+        &[for="edit-tid-4"]:after { background-position: 2px -90px; }
+        &[for="edit-tid-5"]:after { background-position: 2px -120px; }
+        &[for="edit-tid-6"]:after { background-position: 2px -150px; }
+        &[for="edit-tid-7"]:after { background-position: 2px -330px; }
+        &[for="edit-tid-8"]:after { background-position: 2px -360px; }
+        &[for="edit-tid-9"]:after { background-position: 2px -390px; }
+        &[for="edit-tid-10"]:after { background-position: 2px -420px; }
+        &[for="edit-tid-11"]:after { background-position: 2px -570px; }
+        &[for="edit-tid-12"]:after { background-position: 2px -450px; }
+        &[for="edit-tid-13"]:after { background-position: 2px -480px; }
+        &[for="edit-tid-14"]:after { background-position: 2px -510px; }
+        &[for="edit-tid-15"]:after { background-position: 2px -540px; }
+        &[for="edit-tid-25"]:after { background-position: 2px -300px; }
+        &[for="edit-tid-26"]:after { background-position: 2px -600px; }
+        &[for="edit-tid-27"]:after { background-position: 2px -270px; }
+        &[for="edit-tid-28"]:after { background-position: 2px -240px; }
+        &[for="edit-tid-29"]:after { background-position: 2px -180px; }
+        &[for="edit-tid-30"]:after { background-position: 2px -210px; } }
       .form-checkbox { 
         position: absolute;
-        top: auto; left: 0;
+        top: auto; left: 0px;
         margin: 2px 0; } }
   }
 }
