@@ -24,10 +24,10 @@
       $(this).children('.views-widget').show(); 
     });
 
-    $('#views-exposed-form-nossasp-organizations-map-page-2 .vew-3', context).hover(
+    $('#views-exposed-form-nossasp-organizations-map-page-2 .vew-3 .views-widget', context).hover(
       function(){},
       function() {
-      $(this).children('.views-widget').hide();
+      $(this).hide();
     });
   }
 
