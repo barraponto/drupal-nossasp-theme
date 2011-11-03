@@ -1145,15 +1145,11 @@ div#toolbar-toolbar {
   font-style: italic;
 }
 /* line 717, ../sass/nossasp.scss */
-.cadastro .section {
-  overflow: hidden;
-}
-/* line 719, ../sass/nossasp.scss */
 .cadastro #content-area {
   overflow: hidden;
   padding: 0 1em;
 }
-/* line 722, ../sass/nossasp.scss */
+/* line 720, ../sass/nossasp.scss */
 .cadastro fieldset {
   display: block;
   margin: 0;
@@ -1161,31 +1157,31 @@ div#toolbar-toolbar {
   border: none;
   font-family: Arimo, sans-serif;
 }
-/* line 729, ../sass/nossasp.scss */
+/* line 727, ../sass/nossasp.scss */
 .cadastro .form-item {
   display: inline-block;
 }
-/* line 731, ../sass/nossasp.scss */
+/* line 729, ../sass/nossasp.scss */
 .cadastro .form-item label {
   color: #1e6283;
   font-weight: normal;
 }
-/* line 732, ../sass/nossasp.scss */
+/* line 730, ../sass/nossasp.scss */
 .cadastro .form-text {
   border: 1px solid #91cae6;
   line-height: 1.6em;
 }
-/* line 735, ../sass/nossasp.scss */
+/* line 733, ../sass/nossasp.scss */
 .cadastro .form-select {
   border: 1px solid #91cae6;
   line-height: 1.6em;
   background-color: white;
 }
-/* line 740, ../sass/nossasp.scss */
+/* line 738, ../sass/nossasp.scss */
 .cadastro .form-textarea {
   border: 1px solid #91cae6;
 }
-/* line 743, ../sass/nossasp.scss */
+/* line 741, ../sass/nossasp.scss */
 .cadastro #edit-submit {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1208,29 +1204,45 @@ div#toolbar-toolbar {
   float: right;
   margin: -3.5em 2em 0 0;
 }
-/* line 756, ../sass/nossasp.scss */
+/* line 758, ../sass/nossasp.scss */
+.cadastro #edit-profile-realname,
+.cadastro #edit-mail,
+.cadastro #edit-title,
+.cadastro #edit-field-street-0-value,
+.cadastro #edit-field-email-0-email {
+  width: 420px;
+}
+/* line 765, ../sass/nossasp.scss */
+.cadastro #edit-name-1,
+.cadastro #edit-field-sigla-0-value,
+.cadastro #edit-profile-phone,
+.cadastro #edit-field-complemento-0-value,
+.cadastro #edit-field-phone-text-0-value {
+  width: 240px;
+}
+/* line 768, ../sass/nossasp.scss */
 .cadastro #navigation {
   display: none;
 }
 
-/* line 760, ../sass/nossasp.scss */
+/* line 772, ../sass/nossasp.scss */
 .page-obrigado h1 {
   font-family: 'Abel', sans-serif;
   text-transform: uppercase;
   padding: 0.5em 0.5em 0.25em 0.5em;
 }
-/* line 764, ../sass/nossasp.scss */
+/* line 776, ../sass/nossasp.scss */
 .page-obrigado h1 .and-title {
   color: #d90e0c;
 }
-/* line 766, ../sass/nossasp.scss */
+/* line 778, ../sass/nossasp.scss */
 .page-obrigado .message {
   text-align: center;
   padding: 1em;
   margin: 6em 3em 0 3em;
   border: #E6EEF1 solid 10px;
 }
-/* line 771, ../sass/nossasp.scss */
+/* line 783, ../sass/nossasp.scss */
 .page-obrigado .message h2 {
   font-size: 2em;
   margin-bottom: 1.5em;
@@ -1238,12 +1250,12 @@ div#toolbar-toolbar {
   color: #59a166;
   text-transform: uppercase;
 }
-/* line 777, ../sass/nossasp.scss */
+/* line 789, ../sass/nossasp.scss */
 .page-obrigado .message p {
   font-size: 1.4em;
   color: #6190A7;
 }
-/* line 780, ../sass/nossasp.scss */
+/* line 792, ../sass/nossasp.scss */
 .page-obrigado .message p.thank-you {
   color: #D90E0C;
 }

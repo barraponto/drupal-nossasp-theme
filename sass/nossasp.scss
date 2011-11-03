@@ -714,8 +714,6 @@ div#toolbar-toolbar {
     font-size: 12px;
     color: #1e6283;
     font-style: italic; }
-  .section { 
-    overflow: hidden; }
   #content-area { 
     overflow: hidden;
     padding: 0 1em; }
@@ -753,6 +751,20 @@ div#toolbar-toolbar {
     font-family: 'Abel', sans-serif;
     float: right;
     margin: -3.5em 2em 0 0; }
+    #edit-profile-realname,
+    #edit-mail,
+    #edit-title,
+    #edit-field-street-0-value,
+    #edit-field-email-0-email { 
+      width: 420px;
+    }
+    #edit-name-1,
+    #edit-field-sigla-0-value,
+    #edit-profile-phone,
+    #edit-field-complemento-0-value,
+    #edit-field-phone-text-0-value { 
+      width: 240px;
+    }
   #navigation { 
     display: none; }
 }
