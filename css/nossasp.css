@@ -181,7 +181,7 @@
 }
 /* line 119, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .vew-1 #edit-circle-location.throbbing {
-  background: white url('../images/ajax.gif?1319741484') 90% center no-repeat;
+  background: white url('../images/ajax.gif?1320173530') 90% center no-repeat;
 }
 /* line 124, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .vew-1 #autocomplete {
@@ -255,7 +255,7 @@
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   border-radius: 6px;
-  background: white url('../images/select-button.png?1319741484') right center no-repeat;
+  background: white url('../images/select-button.png?1320173530') right center no-repeat;
   height: 42px;
   width: 150px;
   padding-right: 40px;
@@ -314,7 +314,7 @@
   content: "";
   position: absolute;
   left: 8px;
-  top: 6px;
+  top: 10px;
   height: 10px;
   width: 10px;
   background-color: #ccc;
@@ -394,7 +394,7 @@
   -khtml-border-radius: 6px;
   border-radius: 6px;
   display: block;
-  background: white url('../images/select-button.png?1319741484') right center no-repeat;
+  background: white url('../images/select-button.png?1320173530') right center no-repeat;
   height: 42px;
   width: 150px;
   padding-right: 40px;
@@ -477,7 +477,7 @@
 }
 /* line 276, ../sass/nossasp.scss */
 #views-exposed-form-nossasp-organizations-map-page-2 .vew-3 .views-widget label:after {
-  background: url('../images/icones-neutros.png?1320167993') no-repeat 2px 0px;
+  background: url('../images/icones-neutros.png?1320173852') no-repeat 2px 0px;
   content: "";
   position: absolute;
   width: 32px;
@@ -820,7 +820,7 @@
 }
 /* line 519, ../sass/nossasp.scss */
 .region-sidebar-first #block-nossasp_contexts-0 .content {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 /* line 521, ../sass/nossasp.scss */
 .region-sidebar-first #block-nossasp_contexts-0 .content p {
@@ -840,6 +840,7 @@
   -o-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.6);
   box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.6);
   display: block;
+  letter-spacing: -1px;
   margin: 0 1.5em;
   padding: .5em;
   font-size: 18px;
@@ -852,7 +853,7 @@
 }
 
 /* ----------- Barra de Navegação ----------- */
-/* line 540, ../sass/nossasp.scss */
+/* line 541, ../sass/nossasp.scss */
 #main #navigation {
   position: absolute;
   bottom: 1em;
@@ -864,7 +865,7 @@
   height: 55px;
   line-height: 55px;
 }
-/* line 550, ../sass/nossasp.scss */
+/* line 551, ../sass/nossasp.scss */
 #main #navigation ul {
   -moz-box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
   -webkit-box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
@@ -881,13 +882,13 @@
   line-height: 25px;
   margin-right: 1em;
 }
-/* line 557, ../sass/nossasp.scss */
+/* line 558, ../sass/nossasp.scss */
 #main #navigation ul li {
   margin: 0;
   padding: 0;
   background: #c8c8c8;
 }
-/* line 561, ../sass/nossasp.scss */
+/* line 562, ../sass/nossasp.scss */
 #main #navigation ul li.first {
   -moz-border-radius-topleft: 7px;
   -webkit-border-top-left-radius: 7px;
@@ -902,7 +903,7 @@
   -khtml-border-bottom-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-/* line 564, ../sass/nossasp.scss */
+/* line 565, ../sass/nossasp.scss */
 #main #navigation ul li.last {
   -moz-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
@@ -917,7 +918,7 @@
   -khtml-border-bottom-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-/* line 567, ../sass/nossasp.scss */
+/* line 568, ../sass/nossasp.scss */
 #main #navigation ul a {
   margin: 0 2px 0 0;
   background: white;
@@ -927,12 +928,12 @@
   font-size: 16px;
   font-family: 'Abel', sans-serif;
 }
-/* line 576, ../sass/nossasp.scss */
+/* line 577, ../sass/nossasp.scss */
 #main #navigation .rede-logo {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/nossasp_logo.png?1319824741');
+  background-image: url('../images/nossasp_logo.png?1320173530');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 70px;
@@ -942,7 +943,7 @@
   vertical-align: middle;
 }
 
-/* line 585, ../sass/nossasp.scss */
+/* line 586, ../sass/nossasp.scss */
 #main #navigation ul li.first a {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -952,7 +953,7 @@
   -moz-border-radius-bottomleft: 7px;
 }
 
-/* line 594, ../sass/nossasp.scss */
+/* line 595, ../sass/nossasp.scss */
 #main #navigation ul li.last a {
   border: 0;
   margin: 0;
@@ -965,38 +966,39 @@
 }
 
 /* convencendo o mapa a aparecer de um jeito razoavel  */
-/* line 606, ../sass/nossasp.scss */
+/* line 607, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0 .olMapViewport {
   min-height: 640px;
   height: 640px;
 }
 
-/* line 610, ../sass/nossasp.scss */
+/* line 611, ../sass/nossasp.scss */
 body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   min-height: 0;
 }
 
 /* popup dos mapas */
-/* line 615, ../sass/nossasp.scss */
+/* line 616, ../sass/nossasp.scss */
 .openlayers-popup a {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: normal;
   color: #2692CB;
 }
-/* line 620, ../sass/nossasp.scss */
+/* line 621, ../sass/nossasp.scss */
 .openlayers-popup a:hover {
   text-shadow: #eaeaea 1px 1px;
 }
 
 /* novo bloco de sobre */
-/* line 625, ../sass/nossasp.scss */
+/* line 626, ../sass/nossasp.scss */
 #block-boxes-nossasp_contexts_about {
   margin: 0 0 0 15px;
   background-color: white;
 }
-/* line 628, ../sass/nossasp.scss */
+/* line 629, ../sass/nossasp.scss */
 #block-boxes-nossasp_contexts_about .title {
+  height: 36px;
   padding: 10px 15px;
   background-color: #F7F7F7;
   font-size: 16px;
@@ -1007,17 +1009,21 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
   line-height: 36px;
   font-weight: normal;
 }
-/* line 638, ../sass/nossasp.scss */
+/* line 640, ../sass/nossasp.scss */
+#block-boxes-nossasp_contexts_about .content {
+  overflow-y: auto;
+}
+/* line 642, ../sass/nossasp.scss */
 #block-boxes-nossasp_contexts_about p {
   font-family: 'Abel', sans-serif;
   font-size: 16px;
   line-height: 1.4em;
-  padding: 0 15px;
-  margin: 1em 0 0;
+  padding: 0.5em 15px;
+  margin: 0;
 }
 
 /* Temando as forms */
-/* line 651, ../sass/nossasp.scss */
+/* line 655, ../sass/nossasp.scss */
 body.page-organizations-data #content-area,
 #user-pass,
 #user-register,
@@ -1045,7 +1051,7 @@ body.page-organizations-data #content-area:after,
   display: table;
   clear: both;
 }
-/* line 660, ../sass/nossasp.scss */
+/* line 664, ../sass/nossasp.scss */
 body.page-organizations-data #content-area h1,
 #user-pass h1,
 #user-register h1,
@@ -1053,7 +1059,7 @@ body.page-organizations-data #content-area h1,
 #contact-mail-page h1 {
   font-family: 'Abel', sans-serif;
 }
-/* line 662, ../sass/nossasp.scss */
+/* line 666, ../sass/nossasp.scss */
 body.page-organizations-data #content-area #edit-submit,
 #user-pass #edit-submit,
 #user-register #edit-submit,
@@ -1077,7 +1083,7 @@ body.page-organizations-data #content-area #edit-submit,
   font-family: 'Abel', sans-serif;
   float: right;
 }
-/* line 672, ../sass/nossasp.scss */
+/* line 676, ../sass/nossasp.scss */
 body.page-organizations-data #content-area .form-text,
 #user-pass .form-text,
 #user-register .form-text,
@@ -1087,67 +1093,67 @@ body.page-organizations-data #content-area .form-text,
 }
 
 /* corrigindo a posição da toolbar no stack */
-/* line 677, ../sass/nossasp.scss */
+/* line 681, ../sass/nossasp.scss */
 div#toolbar-toolbar {
   z-index: 110;
 }
 
 /* bordeando a sidebar */
-/* line 682, ../sass/nossasp.scss */
+/* line 686, ../sass/nossasp.scss */
 #main-wrapper {
   border-top: 2px solid #d5d5d5;
 }
 
-/* line 685, ../sass/nossasp.scss */
+/* line 689, ../sass/nossasp.scss */
 #page .region-sidebar-first .section {
   border-right: 2px solid #d5d5d5 !important;
 }
 
 /* Cadastro e node/add */
-/* line 691, ../sass/nossasp.scss */
+/* line 695, ../sass/nossasp.scss */
 .cadastro h1 {
   font-family: 'Abel', sans-serif;
   text-transform: uppercase;
   padding: 0.5em 0.5em 0.25em 0.5em;
 }
-/* line 695, ../sass/nossasp.scss */
+/* line 699, ../sass/nossasp.scss */
 .cadastro h1 .and-title {
   color: #d90e0c;
 }
-/* line 697, ../sass/nossasp.scss */
+/* line 701, ../sass/nossasp.scss */
 .cadastro h2 {
   color: #1e6283;
   text-transform: uppercase;
   font-family: 'Abel', sans-serif;
   margin-bottom: 0;
 }
-/* line 702, ../sass/nossasp.scss */
+/* line 706, ../sass/nossasp.scss */
 .cadastro h2 + p {
   font-size: 12px;
   margin-top: 0;
 }
-/* line 705, ../sass/nossasp.scss */
+/* line 709, ../sass/nossasp.scss */
 .cadastro .form-region-main {
   float: none;
   width: auto;
 }
-/* line 708, ../sass/nossasp.scss */
+/* line 712, ../sass/nossasp.scss */
 .cadastro .tip {
   padding: 0 1em;
   font-size: 12px;
   color: #1e6283;
   font-style: italic;
 }
-/* line 713, ../sass/nossasp.scss */
+/* line 717, ../sass/nossasp.scss */
 .cadastro .section {
   overflow: hidden;
 }
-/* line 715, ../sass/nossasp.scss */
+/* line 719, ../sass/nossasp.scss */
 .cadastro #content-area {
   overflow: hidden;
   padding: 0 1em;
 }
-/* line 718, ../sass/nossasp.scss */
+/* line 722, ../sass/nossasp.scss */
 .cadastro fieldset {
   display: block;
   margin: 0;
@@ -1155,31 +1161,31 @@ div#toolbar-toolbar {
   border: none;
   font-family: Arimo, sans-serif;
 }
-/* line 725, ../sass/nossasp.scss */
+/* line 729, ../sass/nossasp.scss */
 .cadastro .form-item {
   display: inline-block;
 }
-/* line 727, ../sass/nossasp.scss */
+/* line 731, ../sass/nossasp.scss */
 .cadastro .form-item label {
   color: #1e6283;
   font-weight: normal;
 }
-/* line 728, ../sass/nossasp.scss */
+/* line 732, ../sass/nossasp.scss */
 .cadastro .form-text {
   border: 1px solid #91cae6;
   line-height: 1.6em;
 }
-/* line 731, ../sass/nossasp.scss */
+/* line 735, ../sass/nossasp.scss */
 .cadastro .form-select {
   border: 1px solid #91cae6;
   line-height: 1.6em;
   background-color: white;
 }
-/* line 736, ../sass/nossasp.scss */
+/* line 740, ../sass/nossasp.scss */
 .cadastro .form-textarea {
   border: 1px solid #91cae6;
 }
-/* line 739, ../sass/nossasp.scss */
+/* line 743, ../sass/nossasp.scss */
 .cadastro #edit-submit {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1202,29 +1208,29 @@ div#toolbar-toolbar {
   float: right;
   margin: -3.5em 2em 0 0;
 }
-/* line 752, ../sass/nossasp.scss */
+/* line 756, ../sass/nossasp.scss */
 .cadastro #navigation {
   display: none;
 }
 
-/* line 756, ../sass/nossasp.scss */
+/* line 760, ../sass/nossasp.scss */
 .page-obrigado h1 {
   font-family: 'Abel', sans-serif;
   text-transform: uppercase;
   padding: 0.5em 0.5em 0.25em 0.5em;
 }
-/* line 760, ../sass/nossasp.scss */
+/* line 764, ../sass/nossasp.scss */
 .page-obrigado h1 .and-title {
   color: #d90e0c;
 }
-/* line 762, ../sass/nossasp.scss */
+/* line 766, ../sass/nossasp.scss */
 .page-obrigado .message {
   text-align: center;
   padding: 1em;
   margin: 6em 3em 0 3em;
   border: #E6EEF1 solid 10px;
 }
-/* line 767, ../sass/nossasp.scss */
+/* line 771, ../sass/nossasp.scss */
 .page-obrigado .message h2 {
   font-size: 2em;
   margin-bottom: 1.5em;
@@ -1232,12 +1238,12 @@ div#toolbar-toolbar {
   color: #59a166;
   text-transform: uppercase;
 }
-/* line 773, ../sass/nossasp.scss */
+/* line 777, ../sass/nossasp.scss */
 .page-obrigado .message p {
   font-size: 1.4em;
   color: #6190A7;
 }
-/* line 776, ../sass/nossasp.scss */
+/* line 780, ../sass/nossasp.scss */
 .page-obrigado .message p.thank-you {
   color: #D90E0C;
 }
