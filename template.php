@@ -348,10 +348,10 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['field_sigla']['#weight'] = 1;
     $vars['form']['nodeformcols_region_main']['field_street']['#weight'] = 2;
     $vars['form']['nodeformcols_region_main']['field_complemento']['#weight'] = 3;
-    $vars['form']['nodeformcols_region_main']['field_phone_text']['#weight'] = 4;
+    $vars['form']['nodeformcols_region_main']['field_email']['#weight'] = 4;
+    $vars['form']['nodeformcols_region_main']['field_phone_text']['#weight'] = 5;
     $vars['form']['nodeformcols_region_main']['field_phone_text'][0]['value']['#title'] = 'Telefone';
     $vars['form']['nodeformcols_region_main']['field_phone_text'][0]['value']['#description'] = FALSE;
-    $vars['form']['nodeformcols_region_main']['field_email']['#weight'] = 5;
     $vars['form']['nodeformcols_region_main']['field_website']['#weight'] = 6;
     $vars['form']['nodeformcols_region_main']['field_website'][0]['value']['#title'] = 'Site';
     $vars['form']['nodeformcols_region_main']['field_tipo']['#weight'] = 7;
