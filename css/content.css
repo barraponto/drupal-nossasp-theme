@@ -1,7 +1,7 @@
 /* line 12, ../sass/content.scss */
 body.node-type-nossasp-organization #content-area,
 body.node-type-nossasp-council #content-area {
-  border-top: 2px solid #d5d5d5;
+  border-top: 2px solid #f3f3f3;
 }
 /* line 16, ../sass/content.scss */
 body.node-type-nossasp-organization .back,
@@ -117,7 +117,7 @@ body.node-type-nossasp-council .org-type {
 
 /* line 93, ../sass/content.scss */
 .map-and-text {
-  border-right: 2px solid #d5d5d5;
+  border-right: 2px solid #f3f3f3;
   float: left;
   width: 60%;
   margin-right: -2px;
