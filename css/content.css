@@ -132,19 +132,25 @@ body.node-type-nossasp-council .org-type {
 }
 
 /* line 103, ../sass/content.scss */
+.field-field-address {
+  margin-top: 2em;
+  border: 1px solid #72bde5;
+}
+
+/* line 108, ../sass/content.scss */
 .details {
   float: left;
   width: 40%;
 }
-/* line 106, ../sass/content.scss */
+/* line 111, ../sass/content.scss */
 .details > div {
   padding: 0 1em;
 }
-/* line 108, ../sass/content.scss */
+/* line 113, ../sass/content.scss */
 .details > div ~ div h3 {
   padding-top: 4em;
 }
-/* line 110, ../sass/content.scss */
+/* line 115, ../sass/content.scss */
 .details h3 {
   padding: 0;
   margin-bottom: 0.25em;
@@ -152,7 +158,7 @@ body.node-type-nossasp-council .org-type {
   font-size: 1.2em;
   font-weight: normal;
 }
-/* line 116, ../sass/content.scss */
+/* line 121, ../sass/content.scss */
 .details a {
   color: #376d8a;
   white-space: nowrap;
