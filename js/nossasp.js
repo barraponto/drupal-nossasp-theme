@@ -40,12 +40,6 @@
 				$('.content .view-content', context).toggle("");
 				$('.item-list', context).toggle("");
 			});
-
-			$('#block-views-ac1d059bc0aeabb5015c2d28f61ba744 .view-header', context).click(function () {
-				$('#block-boxes-nossasp_contexts_about .content', context).toggle("");
-				$('.content .view-content', context).toggle("");
-				$('.item-list', context).toggle("");
-			});
 	  	} else {
 	    	$('#block-boxes-nossasp_contexts_about .content', context).toggle("");
 	  	}
