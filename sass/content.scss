@@ -13,10 +13,23 @@ body.node-type-nossasp-council {
     border-top: 2px solid #d5d5d5;
   }
 
+  .back {
+    float: right;
+    padding: 1em;
+    a {
+      color: black;
+      font-family: Abel,sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.5em;
+      text-decoration: none;
+      text-transform: uppercase; } }
+
   h1.title { 
     font-family: 'Abel', sans-serif;
     padding: 0.4em 0 0.4em 1.4em;
     position: relative;
+    margin-right: 8em;
     &:after { 
       background-color: red;
       content: "";

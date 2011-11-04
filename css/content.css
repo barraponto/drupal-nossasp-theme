@@ -4,13 +4,31 @@ body.node-type-nossasp-council #content-area {
   border-top: 2px solid #d5d5d5;
 }
 /* line 16, ../sass/content.scss */
+body.node-type-nossasp-organization .back,
+body.node-type-nossasp-council .back {
+  float: right;
+  padding: 1em;
+}
+/* line 19, ../sass/content.scss */
+body.node-type-nossasp-organization .back a,
+body.node-type-nossasp-council .back a {
+  color: black;
+  font-family: Abel,sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 28, ../sass/content.scss */
 body.node-type-nossasp-organization h1.title,
 body.node-type-nossasp-council h1.title {
   font-family: 'Abel', sans-serif;
   padding: 0.4em 0 0.4em 1.4em;
   position: relative;
+  margin-right: 8em;
 }
-/* line 20, ../sass/content.scss */
+/* line 33, ../sass/content.scss */
 body.node-type-nossasp-organization h1.title:after,
 body.node-type-nossasp-council h1.title:after {
   background-color: red;
@@ -23,42 +41,42 @@ body.node-type-nossasp-council h1.title:after {
   top: 23px;
   width: 12px;
 }
-/* line 32, ../sass/content.scss */
+/* line 45, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-16 h1.title:after,
 body.node-type-nossasp-council.org-type-16 h1.title:after {
   background-color: #eedc41;
 }
-/* line 34, ../sass/content.scss */
+/* line 47, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-17 h1.title:after,
 body.node-type-nossasp-council.org-type-17 h1.title:after {
   background-color: #2880af;
 }
-/* line 36, ../sass/content.scss */
+/* line 49, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-18 h1.title:after,
 body.node-type-nossasp-council.org-type-18 h1.title:after {
   background-color: #de0800;
 }
-/* line 38, ../sass/content.scss */
+/* line 51, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-19 h1.title:after,
 body.node-type-nossasp-council.org-type-19 h1.title:after {
   background-color: #bd4448;
 }
-/* line 40, ../sass/content.scss */
+/* line 53, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-20 h1.title:after,
 body.node-type-nossasp-council.org-type-20 h1.title:after {
   background-color: #90159f;
 }
-/* line 42, ../sass/content.scss */
+/* line 55, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-21 h1.title:after,
 body.node-type-nossasp-council.org-type-21 h1.title:after {
   background-color: #12b012;
 }
-/* line 44, ../sass/content.scss */
+/* line 57, ../sass/content.scss */
 body.node-type-nossasp-organization.org-type-22 h1.title:after,
 body.node-type-nossasp-council.org-type-22 h1.title:after {
   background-color: #fe900f;
 }
-/* line 47, ../sass/content.scss */
+/* line 60, ../sass/content.scss */
 body.node-type-nossasp-organization .org-type,
 body.node-type-nossasp-council .org-type {
   padding-left: 40px;
@@ -68,65 +86,65 @@ body.node-type-nossasp-council .org-type {
   margin-bottom: 1em;
 }
 
-/* line 56, ../sass/content.scss */
+/* line 69, ../sass/content.scss */
 .fieldgroup {
   margin-bottom: 25px;
   padding: 0;
 }
 
-/* line 61, ../sass/content.scss */
+/* line 74, ../sass/content.scss */
 .field .field-label, .field .field-label-inline, .field .field-label-inline-first {
   font-weight: normal;
   color: #8f8f8f;
 }
 
-/* line 66, ../sass/content.scss */
+/* line 79, ../sass/content.scss */
 .field .field-items {
   color: #337180;
 }
 
-/* line 70, ../sass/content.scss */
+/* line 83, ../sass/content.scss */
 .group-resumo .field-label {
   visibility: hidden;
   display: inline;
 }
 
-/* line 75, ../sass/content.scss */
+/* line 88, ../sass/content.scss */
 .group-resumo .field-items {
   color: #4a4a4a;
   margin-top: -20px;
 }
 
-/* line 80, ../sass/content.scss */
+/* line 93, ../sass/content.scss */
 .map-and-text {
   border-right: 2px solid #d5d5d5;
   float: left;
   width: 60%;
   margin-right: -2px;
 }
-/* line 85, ../sass/content.scss */
+/* line 98, ../sass/content.scss */
 .map-and-text .content {
   padding: 1em;
 }
-/* line 87, ../sass/content.scss */
+/* line 100, ../sass/content.scss */
 .map-and-text p {
   margin: 0 0 1em 0;
 }
 
-/* line 90, ../sass/content.scss */
+/* line 103, ../sass/content.scss */
 .details {
   float: left;
   width: 40%;
 }
-/* line 93, ../sass/content.scss */
+/* line 106, ../sass/content.scss */
 .details > div {
   padding: 0 1em;
 }
-/* line 95, ../sass/content.scss */
+/* line 108, ../sass/content.scss */
 .details > div ~ div h3 {
   padding-top: 4em;
 }
-/* line 97, ../sass/content.scss */
+/* line 110, ../sass/content.scss */
 .details h3 {
   padding: 0;
   margin-bottom: 0.25em;
@@ -134,7 +152,7 @@ body.node-type-nossasp-council .org-type {
   font-size: 1.2em;
   font-weight: normal;
 }
-/* line 103, ../sass/content.scss */
+/* line 116, ../sass/content.scss */
 .details a {
   color: #376d8a;
   white-space: nowrap;

@@ -114,10 +114,13 @@ function nossasp_preprocess_page(&$vars, $hook) {
     foreach(taxonomy_node_get_terms_by_vocabulary($vars['node'], '2') as $orgtype) {
       $vars['classes_array'][] = 'org-type-' . $orgtype->tid;
       $vars['orgtype'] = $orgtype->name;
-      if (!empty($vars['node']->field_sigla[0]['value'])) {
-        $vars['title'] .= ' — ' . $vars['node']->field_sigla[0]['value'];
-      }
     }
+    if (!empty($vars['node']->field_sigla[0]['value'])) {
+      $vars['title'] .= ' — ' . $vars['node']->field_sigla[0]['value'];
+    }
+    $back_options = $_GET;
+    unset($back_options['q']);
+    $vars['back'] = l('Voltar', 'organizations/search', array('query' => $back_options));
   }
   elseif (arg(0) == 'node' && arg(1) == 'add') { 
     $vars['classes_array'][] = 'cadastro';

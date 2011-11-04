@@ -169,9 +169,14 @@
         <?php print $highlight; ?>
 
         <?php print $breadcrumb; ?>
+          <?php if ($back): ?>
+          <div class="back"><?php print $back; ?></div>
+          <?php endif; ?>
         <?php if ($title): ?>
           <h1 class="title"><?php print $title; ?></h1>
+          <?php if ($orgtype): ?>
           <div class="org-type"><?php print $orgtype; ?></div>
+          <?php endif; ?>
         <?php endif; ?>
         <?php print $messages; ?>
         <?php if ($tabs): ?>
