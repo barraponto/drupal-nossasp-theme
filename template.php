@@ -328,6 +328,9 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['primaryterm'] = $vars['form']['nodeformcols_region_right']['primaryterm'];
     unset($vars['form']['nodeformcols_region_right']['primaryterm']);
 
+    $vars['form']['nodeformcols_region_main']['field_atuacao'] = $vars['form']['nodeformcols_region_right']['group_atuacao']['field_atuacao'];
+    unset($vars['form']['nodeformcols_region_right']['group_atuacao']);
+
     $vars['form']['nodeformcols_region_main']['buttons'] = $vars['form']['nodeformcols_region_right']['buttons'];
     unset($vars['form']['nodeformcols_region_right']['buttons']);
 
@@ -362,6 +365,8 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['primaryterm']['#weight'] = 8;
     $vars['form']['nodeformcols_region_main']['primaryterm']['#title'] = 'Área de Atuação';
     $vars['form']['nodeformcols_region_main']['primaryterm']['#description'] = FALSE;
+    $vars['form']['nodeformcols_region_main']['primaryterm']['#suffix'] = '<p><a href="#">Adicione outras áreas de atuação à sua organização</a><p>';
+    $vars['form']['nodeformcols_region_main']['field_atuacao']['#weight'] = 8.5;
     $vars['form']['nodeformcols_region_main']['body_field']['#weight'] = 9;
     $vars['form']['nodeformcols_region_main']['buttons']['#weight'] = 10;
     $vars['form']['nodeformcols_region_main']['buttons']['submit']['#value'] = 'Criar Perfil';
