@@ -170,7 +170,10 @@
 
         <?php print $breadcrumb; ?>
           <?php if ($back): ?>
-          <div class="back"><?php print $back; ?></div>
+          <div class="back">
+            <?php print $back; ?>
+            <?php if (!empty($edit_link)) print $edit_link; ?>
+          </div>
           <?php endif; ?>
         <?php if ($title): ?>
           <h1 class="title"><?php print $title; ?></h1>

@@ -44,7 +44,13 @@
 	    	$('#block-boxes-nossasp_contexts_about .content', context).toggle("");
 	  	}
 	}
-	
+
+  Drupal.behaviors.nossaspAtuacao = function(context) {
+    $('.cadastro #edit-primaryterm-wrapper + p', context).click(function(event){
+     $(this).next('.form-item').toggle('slow'); 
+     event.preventDefault();
+    });
+  }
 	
 } )(jQuery);
 

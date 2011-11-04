@@ -1,7 +1,7 @@
 $conselho: #eedc41;
 $ongs: #2880af;
 $bairro: #de0800;
-$sindicatos: #bd4448;
+$sindicatos: #604830;
 $empresarios: #90159f;
 $sociais: #12b012;
 $virtuais: #fe900f;
@@ -17,6 +17,8 @@ body.node-type-nossasp-council {
     float: right;
     padding: 1em;
     a {
+      display: block;
+      height: 1.75em;
       color: black;
       font-family: Abel,sans-serif;
       font-size: 1.5em;

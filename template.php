@@ -97,6 +97,8 @@ function nossasp_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function nossasp_preprocess_page(&$vars, $hook) {
+  global $user;
+
   drupal_set_html_head('<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">');
   $vars['head'] = drupal_get_html_head();
 
@@ -121,12 +123,19 @@ function nossasp_preprocess_page(&$vars, $hook) {
     $back_options = $_GET;
     unset($back_options['q']);
     $vars['back'] = l('Voltar', 'organizations/search', array('query' => $back_options));
+    if (node_access('update', $vars['node'])) {
+      $vars['edit_link'] = l('Editar', 'node/' . $vars['node']->nid . '/edit');
+    }
   }
   elseif (arg(0) == 'node' && arg(1) == 'add') { 
     $vars['classes_array'][] = 'cadastro';
   }
   else { 
     $vars['title'] = FALSE;
+  }
+
+  if ($user->uid != 1) {
+    $vars['tabs'] = FALSE;
   }
 
   // To remove a class from $classes_array, use array_diff().
@@ -368,7 +377,7 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['primaryterm']['#weight'] = 8;
     $vars['form']['nodeformcols_region_main']['primaryterm']['#title'] = 'Área de Atuação';
     $vars['form']['nodeformcols_region_main']['primaryterm']['#description'] = FALSE;
-    $vars['form']['nodeformcols_region_main']['primaryterm']['#suffix'] = '<p><a href="#">Adicione outras áreas de atuação à sua organização</a><p>';
+    $vars['form']['nodeformcols_region_main']['primaryterm']['#suffix'] = '<p><a href="#">+Adicione outras áreas de atuação à sua organização</a></p>';
     $vars['form']['nodeformcols_region_main']['field_atuacao']['#weight'] = 8.5;
     $vars['form']['nodeformcols_region_main']['body_field']['#weight'] = 9;
     $vars['form']['nodeformcols_region_main']['buttons']['#weight'] = 10;
@@ -400,6 +409,7 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['name']['#weight'] = 2;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['mail']['#weight'] = 3;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['profile_phone']['#weight'] = 4;
+    $vars['form']['nodeformcols_region_main']['register']['form']['account']['pass']['#weight'] = 5;
 
     uasort($vars['form']['nodeformcols_region_main']['register']['form']['account'], 'element_sort');
   }

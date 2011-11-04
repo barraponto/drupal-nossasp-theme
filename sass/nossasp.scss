@@ -190,6 +190,7 @@
       width: 190px;
       top: 30px;
       background-color: white;
+      z-index: 102;
       li {
         border: none;
         padding: 0;
@@ -214,7 +215,7 @@
           &[rel="16"]:after { background-color: #eedc41; }
           &[rel="17"]:after { background-color: #2880af; }
           &[rel="18"]:after { background-color: #de0800; }
-          &[rel="19"]:after { background-color: #bd4448; }
+          &[rel="19"]:after { background-color: #604830; }
           &[rel="20"]:after { background-color: #90159f; }
           &[rel="21"]:after { background-color: #12b012; }
           &[rel="22"]:after { background-color: #fe900f; } }
@@ -229,7 +230,7 @@
   .vew-3 {
       width: 190px;
       position: absolute;
-      top: 23px; left: 610px; z-index: 101;
+      top: 23px; left: 610px; z-index: 102;
     > label { 
       @include border-radius(6px);
       display: block;
@@ -547,7 +548,7 @@
     position: absolute;
     bottom: 1em;
     right: 1em;
-    z-index: 200;
+    z-index: 101;
     padding: 0;
     margin: 0;
     width: auto;
@@ -631,7 +632,6 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 #block-boxes-nossasp_contexts_about {
   margin: 0 0 0 15px;
   background-color: white;
-  cursor: pointer;
   .title { 
     height: 36px;
     padding: 10px 15px;
@@ -641,6 +641,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
     text-transform: uppercase;
     overflow: hidden;
     font-family: 'Abel',sans-serif;
+    cursor: pointer;
     line-height: 36px;
     font-weight: normal; }
   .content { 
@@ -771,6 +772,23 @@ div#toolbar-toolbar {
     #edit-field-phone-text-0-value { 
       width: 240px;
     }
+    #edit-primaryterm-wrapper { 
+      display: block;
+      margin-bottom: 0.25em;
+      + p { 
+        margin: 0.25em 0;
+        a {
+          color: #2692CB;
+          text-decoration: none; } }
+      + p + .form-item { 
+        display: none;
+        margin-top: 0.5em;
+        padding: 0.25em;
+        border: 1px solid #2692CB;
+        > .form-checkboxes { 
+          margin: 0; } } }
+    #edit-pass-wrapper { 
+      margin: 0; }
   #navigation { 
     display: none; }
 }
