@@ -114,6 +114,9 @@ function nossasp_preprocess_page(&$vars, $hook) {
     foreach(taxonomy_node_get_terms_by_vocabulary($vars['node'], '2') as $orgtype) {
       $vars['classes_array'][] = 'org-type-' . $orgtype->tid;
       $vars['orgtype'] = $orgtype->name;
+      if (!empty($vars['node']->field_sigla[0]['value'])) {
+        $vars['title'] .= ' — ' . $vars['node']->field_sigla[0]['value'];
+      }
     }
   }
   elseif (arg(0) == 'node' && arg(1) == 'add') { 
