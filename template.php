@@ -315,7 +315,7 @@ function nossasp_pager($tags = array(), $limit = 10, $element = 0, $parameters =
       }
     }
     // End generation.
-    if ($li_last) {
+    if ($li_last && ($pager_max > $pager_last)) {
       $items[] = array(
         'class' => 'pager-last',
         'data' => $li_last,
