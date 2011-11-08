@@ -1,0 +1,34 @@
+#user-login {
+	width:500px;
+	margin:15px;
+	font-family: Arimo,sans-serif;
+}
+#contact-mail-page {
+	margin:15px;
+	font-family: Arimo,sans-serif;
+}
+#user-login h1, #contact-mail-page h1 {
+	font-family: 'Abel', sans-serif;
+}
+#user-login .form-item label, #contact-mail-page .form-item label {
+    color: #1E6283;
+    font-weight: normal;
+}
+#user-login .form-text, #contact-mail-page .form-text {
+	border: 1px solid #91CAE6;
+    line-height: 1.6em;
+}
+
+#user-login #edit-submit, #contact-mail-page #edit-submit {
+    background: none repeat scroll 0 0 #497F2D;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 4px 4px 1px rgba(100, 100, 100, 0.6);
+    color: white;
+    font-family: 'Abel',sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: -3.5em 2em 0 0;
+    padding: 5px 10px;
+    text-align: center;
+    width: 120px;
+}
