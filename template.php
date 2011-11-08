@@ -361,7 +361,7 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['titlen']['#weight'] = -2;
     $vars['form']['nodeformcols_region_main']['titlen']['#value'] = '<h2>Sua organização</h2>';
     $vars['form']['nodeformcols_region_main']['briefn']['#weight'] = -1;
-    $vars['form']['nodeformcols_region_main']['briefn']['#value'] = '<p>Os dados referentes à organização cadastrada serão de visualização pública e estarão publicados em regime de dados abertos para qualquer usuário do site.</p>';
+    $vars['form']['nodeformcols_region_main']['briefn']['#value'] = '<p>Os dados referentes à organização cadastrada poderão ser visualizados por qualquer usuário do site.</p>';
 
     $vars['form']['nodeformcols_region_main']['field_sigla']['#weight'] = 1;
     $vars['form']['nodeformcols_region_main']['field_street']['#weight'] = 2;
@@ -404,12 +404,13 @@ function nossasp_preprocess_node_form(&$vars) {
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['title']['#weight'] = -1;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['title']['#value'] = '<h2>Sua conta</h2>';
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['brief']['#weight'] = 0;
-    $vars['form']['nodeformcols_region_main']['register']['form']['account']['brief']['#value'] = '<p>Ao criar uma conta no Mapa da Participação Cidadã você poderá cadastrar sua organização e editar as informações fornecidas sempre que necessário.</p>';
+    $vars['form']['nodeformcols_region_main']['register']['form']['account']['brief']['#value'] = '<p>Ao criar uma conta no <b>Mapa da Participação Cidadã</b> você poderá cadastrar sua organização e editar as informações fornecidas sempre que desejar.</p>';
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['profile_realname']['#weight'] = 1;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['name']['#weight'] = 2;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['mail']['#weight'] = 3;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['profile_phone']['#weight'] = 4;
     $vars['form']['nodeformcols_region_main']['register']['form']['account']['pass']['#weight'] = 5;
+    unset($vars['form']['nodeformcols_region_main']['register']['form']['account']['pass']['#description']);
 
     uasort($vars['form']['nodeformcols_region_main']['register']['form']['account'], 'element_sort');
   }
