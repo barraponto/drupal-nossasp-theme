@@ -656,10 +656,7 @@ body.front #openlayers-map-auto-id-0.full-sized .olMapViewport {
 
 /* Temando as forms */
 body.page-organizations-data #content-area,
-#user-pass,
-#user-register,
-#user-login,
-#contact-mail-page { 
+#user-pass { 
   @include pie-clearfix;
   @include box-shadow(4px 4px 1px rgba(100,100,100,0.6));
   padding: 1.5em 3em;

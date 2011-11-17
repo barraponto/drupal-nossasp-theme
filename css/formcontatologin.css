@@ -14,7 +14,7 @@
     color: #1E6283;
     font-weight: normal;
 }
-#user-login .form-text, #contact-mail-page .form-text {
+#user-login .form-text, #contact-mail-page .form-text, .form-textarea {
 	border: 1px solid #91CAE6;
     line-height: 1.6em;
 }
