@@ -126,6 +126,7 @@ function nossasp_preprocess_page(&$vars, $hook) {
     if (node_access('update', $vars['node'])) {
       $vars['edit_link'] = l('Editar', 'node/' . $vars['node']->nid . '/edit');
     }
+    $vars['addthis'] = $vars['node']->links['addthis']['title'];
   }
   elseif (arg(0) == 'node' && arg(1) == 'add') { 
     $vars['classes_array'][] = 'cadastro';
@@ -153,6 +154,7 @@ function nossasp_preprocess_page(&$vars, $hook) {
  */
 function nossasp_preprocess_node(&$vars, $hook) {
   $vars['terms'] = FALSE;
+  $vars['links'] = FALSE;
   // Optionally, run node-type-specific preprocess functions, like
   // nossasp_preprocess_node_page() or nossasp_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $vars['node']->type;

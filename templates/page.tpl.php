@@ -178,7 +178,7 @@
         <?php if ($title): ?>
           <h1 class="title"><?php print $title; ?></h1>
           <?php if ($orgtype): ?>
-          <div class="org-type"><?php print $orgtype; ?></div>
+          <div class="org-type"><?php print $orgtype; ?><?php if ($addthis) print $addthis; ?></div>
           <?php endif; ?>
         <?php endif; ?>
         <?php print $messages; ?>
